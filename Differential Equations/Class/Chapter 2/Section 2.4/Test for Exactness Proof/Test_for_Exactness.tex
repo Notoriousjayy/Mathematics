@@ -1,0 +1,49 @@
+\nopagenumbers
+{\bf Theorem: Test for Exactness}: Suppose the first partial derivatives of $M(x,y)$ and $N(x,y)$ are continuous in a rectangle $R$. Then
+
+$$M(x,y)dx+N(x,y)dy=0$$
+
+is an exact equation in $R$ if and only if the compatibility condition
+
+$${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$$
+
+holds for all $(x,y)$ in $R$.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+There are two parts to the theorem: Exactness implies compatiblity and compatibilty implies exactness. First, we have seen that if the differential equation is exact, then the two members of ${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$ are simply the mixed second partials of a function $F(x,y)$. As such, their equality is ensured by the theorem of calculus that states that mized second partials are equal if they are continuous. Because the hypothesis of the Test for Exactness guarantees the latter condition, ${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$ is validated.
+
+\vskip 1mm
+Rather than proceed directly with the proof of the second part of the theorem, let's derive a formula for a function $F(x,y)$ that satisfies ${\partial F\over\partial x}=M$ and ${\partial F\over \partial y}=N$. Integrating the first equation with respect to $x$ yields
+
+$$F(x,y)=\int M(x,y)dx+g(y)$$
+
+Notice that instead of using $C$ to represent the constant of integration, we have written $g(y)$. This is because $y$ is held fixed while integrating with respect to $x$, and so our "constant" may well depend on $y$. To determine $g(y)$, we differentiate both sides of $F(x,y)=\int M(x,y)dx+g(y)$ with respect to $y$ to obtain
+
+$${\partial F\over\partial y}(x,y)={\partial\over\partial y}\int M(x,y)dx+{\partial\over\partial y}g(y)$$
+
+As $g$ is a function of $y$ alone, we can write ${\partial g\over\partial y}=g'(y)$, and solving ${\partial F\over\partial y}(x,y)={\partial\over\partial y}\int M(x,y)dx+{\partial\over\partial y}g(y)$ for $g'(y)$  gives
+
+$$g'(y)={\partial F\over\partial y}(x,y)-{\partial\over\partial y}\int M(x,y)dx$$
+
+Since ${\partial F\over\partial y}=N$, this last equation becomes
+
+$$g'(y)=N(x,y)-{\partial\over\partial y}\int M(x,y)dx$$
+
+Notice that although the right-hand side of $g'(y)=N(x,y)-{\partial\over\partial y}\int M(x,y)dx$ indicates a possible dependence on $x$ the {\it appearance of this variable must cancel} because the left-hand side, $g'(y)$, depends only on $y$. By integrating $g'(y)=N(x,y)-{\partial\over\partial y}\int M(x,y)dx$, we can determine $g(y)$ up to a numerical constant from the functions $M(x,y)$ and $N(x,y)$.
+
+\vskip 1mm
+To finish the proof of the Test for Exactness, we need to show that the condition ${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$ implies that $M\,dx+N\,dy=0$ is an exact equation. This we do by actually exhibiting a function $F(x,y)$ that satisfies ${\partial F\over\partial x}=M$ and ${\partial F\over\partial y}=N$. Fortunately, we needn't look too far for such a function. The discussion in the first part of the proof suggests $F(x,y)=\int M(x,y)dx+g(y)$ as a canidate, where $g'(y)$ is given by $g'(y)=N(x,y)-{\partial\over\partial y}\int M(x,y)dx$. Namely, we define $F(x,y)$ by
+
+$$F(x,y):=\int^{x}_{x_{0}}M(t,y)dt+g(y)$$
+
+where $(x_0,y_0)$ is a fixed point in the rectangle $R$ and $g(y)$ is determined, up to a numerical constant, by the equation
+
+$$g'(y):=N(x,y)-{\partial\over\partial y}\int^{x}_{x_{0}}M(t,y)dt$$
+
+Before proceeding we must address an extremely important question concerning the definition of $F(x,y)$. That is, how can we be sure that $g'(y)$, as given in $g'(y):=N(x,y)-{\partial\over\partial y}\int^{x}_{x_{0}}M(t,y)dt$, is really a function of just $y$ alone? To show that the right-hand side of $g'(y):=N(x,y)-{\partial\over\partial y}\int^{x}_{x_{0}}M(t,y)dt$ is independent of $x$, all we need to do is show that its partial derivative with respect to $x$ is zero. This is where condition ${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$ is utilized. 
+
+\vfill\eject
+\bye

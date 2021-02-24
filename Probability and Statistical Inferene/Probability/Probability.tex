@@ -1,0 +1,160 @@
+\nopagenumbers
+\centerline{Chapter 1: Probability Definitions}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf Probability} 
+
+\vskip 3mm
+Probability is a real-values set functon $P$ that assigns, to each event $A$ in the sample space $S$, a number $P(A)$, called the probability off the event $A$, such that the following properties are satisfied:
+
+\vskip 6pt
+(a) $P(A)\geq 0$
+
+\vskip 6pt
+(b) $P(S)=1$
+
+\vskip 6pt
+(c) if $A_1,A_2,A_3,\ldots$ are events and $A_i\cap A_j=\emptyset$, $i\neq j$, then
+
+$$P(A_1\cup A_2\cup\cdots\cup A_k)=P(A_1)+P(A_2)+\cdots+P(A_k)$$
+
+for each positive integer $k$, and
+
+$$P(A_1\cup A_2\cup A_3\cup\cdots)=P(A_1)+P(A_2)+P(A_3)+\cdots$$
+
+for an infinite, but countable, number of events.
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Permutation}
+
+\vskip 6pt
+Each of the $n!$ arrangements (in a row) of $n$ different objects is called a permutation of the $n$ objects.
+
+$$n(n-1)\cdots(2)(1)=n!$$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Permutation of $n$ objects taken $r$ at a time}
+
+\vskip 1mm
+Each of the ${}_nP_r$ arrangmenets is called a permutation of $n$ objects taken $r$ at a time.
+
+$${}_nP_r={n(n-1)\cdots(n-r+1)(n-r)\cdots(3)(2)(1)\over (n-r)\cdots(3)(2)(1)}={n!\over (n-r)!}$$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Ordered Sample of Size $r$}
+
+\vskip 1mm
+If $r$ objects are selected from a set of $n$ objects, and if the order of selection is noted, then the selected set of $r$ objects is called an ordered sample of size $r$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Sampling with Replacement}
+
+\vskip 1mm
+Sampling with replacement occurs when an object is selected and then replaced before the next object is selected.
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Sampling without Replacement}
+
+\vskip 1mm
+Sampling without replacement occurs when an object is not replaced after it has been selected
+
+$$n(n-1)\cdots(n-r+1)={n!\over (n-r)!}$$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Combination of $n$ objects taken $r$ at a time}
+
+\vskip 1mm
+Each of the ${}_nC_r$ unordered subsets is called a combination of $n$ objects taken $r$ at a time, where
+
+$${}_nC_r={n\choose r}={n!\over r!(n-r)!}$$
+
+\vskip 15mm
+{\bf Distinguishable Permutation}
+
+\vskip 1mm
+Each of the ${}_nC_r$ permutations of $n$ objects, $r$ of one type and $n-r$ of another type, is called a distinguishable permutation.
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Conditional Probability}
+
+\vskip 1mm
+The conditional probability of an event $A$, given that event $B$ has occurred, is defined by
+
+$$P(A|B)={P(A\cap B})\over P(B)$$
+
+provided that $P(B)>0$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Multiplication Rule}
+
+\vskip 1mm
+The probability that two events $A$ and $B$, both occur is given by the multiplication rule
+
+$$P(A\cap B)=P(A)P(B|A)$$
+
+provided $P(A)>0$ or by
+
+$$P(A\cap B)=P(B)P(A|B)$$
+
+provided $P(B)>0$
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Independent Events}
+
+\vskip 1mm
+Events $A$ and $B$ are indepednent if and only if $P(A\cap B)=P(A)P(B)$. Otherwise, $A$ and $B$ are called depdendent events.
+
+\vskip 3mm
+\hrule
+
+\vskip 6pt
+{\bf Mutually Independent}
+
+Events $A,B$, and $C$ are mutually independent if and only if the following two conditions hold:
+
+\vskip 1mm
+(a) $A,b$, and $C$ are pairwise independent; that is
+
+$$P(A\cap B)=P(A)P(B_,\quad P(A\cap C)=P(A)P(C)$$
+
+and
+
+$$P(B\cap C)=P(B)P(C)$$
+
+(b) $P(A\cap B\cap C)=P(A)P(B)P(C)$
+
+\vskip 3mm
+\hrule
+
+
+\vfill\eject
+\bye

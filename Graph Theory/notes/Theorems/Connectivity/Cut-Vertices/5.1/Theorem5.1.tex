@@ -1,0 +1,20 @@
+\nopagenumbers
+{\bf Theorem 5.1}
+\vskip 6pt
+Let $v$ be a vertex incident with a bridge in a connected graph $G$. Then $v$ is a cut-vertex of $G$ {\it if and only if} $deg(v) \geq 2$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Suppose that $uv$ is a bridge of $G$. Then $deg(v) \geq 1$. Assume that $deg(v)=1$. Since $v$ is an end-vertex of $G$, the graph $G-v$ is connected and so $v$ is not a cut-vertex of $G$.
+\vskip 1mm
+For the converse, assume that $deg(v) \geq 2$. Then there is a vertex $w$ different from $u$ that is adjacent to $v$. Assume, to the contrary, that $v$ is not a cut-vertex. Thus $G-v$ is connected and so there is a $u$---$v$ path $P$ in $G$---$v$. However then, $P$ together with $v$ and the two edges $uv$ and $vw$ form a cycle containing the bridge $uv$. This contradicts Theorem 4.1.
+
+\vskip 10pt
+{\bf Corollary 5.2}
+\vskip 6pt
+Let $G$ be a connected graph or order $3$ or more. If $G$ {\it contains a bridge, then $G$ contains a cut-vertex}.
+\vskip 10pt
+If $v$ is a cut-vertex in a connected graph $G$, then, of course $G-v$ contains two or more components. If $u$ and $w$ are vertices in distinct components of $G-v$, then $u$ and $w$ are not connected in $G-v$. On the other hand, $u$ and $w$ are necessarily connected in $G$.
+
+
+\vfill\eject

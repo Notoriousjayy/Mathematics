@@ -1,0 +1,19 @@
+\nopagenumbers
+{\bf Theorem: Determinant of an Invertible Matrix}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+A square matrix $A$ is invertible (nonsingular) if and only if $det(A)\neq 0$.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+To prove the theorem in one direction, assume $A$ is invertible. Then $AA^{-1}=I$, and by Theorem Determinant of a Matrix Product, you can write $|A||A^{-1}|=|I|$. Now, $|I|=1$, so you know that neither determinant on the left is zero. Specifically, $|A|\neq 0$.
+
+\vskip 1mm
+To prove the theorem in the other direction, assume the determinant of $A$ is nonzero. Then using Gauss-Jordan, find a matrix $B$, in reduced row-echelon form, that is row-equivalent to $A$. The matrix $B$ must be the identity matrix $I$ or it must have at least one row that consists entirely of zeros, because $B$ is in redued row-echelon form. But if $B$ has a row of all zeros, then by Theorem Conditions That Yield a Zero Determinant, you know that $|B|=0$, which would imply that $|A|=0$. You assumed that $|A|$ is nonzero, so you can conclude that $B=I$. The matrix $A$ is, therefore, row-equivalent to the identity matrix, and by Theorem Equivalent Conditions, you know that $A$ is invertible.
+
+\vfill\eject
+\bye

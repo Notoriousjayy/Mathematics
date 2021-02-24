@@ -1,0 +1,36 @@
+\nopagenumbers
+{\bf Example 2:} A rock contains two radioactive isotopes, $RA_1$ and $RA_2$, that belong to the same radioactive series; that is, $RA_1$ decays into $RA_2$, which then decays into stable atoms. Assume that the rate at which $RA_1$ decays into $RA_2$ is $50e^{-10t}$kg/sec. Because the rate of decay of $RA_2$ is proportional to the mass $y(t)$ of $RA_2$ present, the rate of change in $RA_2$ is
+
+$$\eqalign{{dy\over dt}&=\quad\hbox{rate of creation $-$ rate of decay}\cr
+	{dy\over dt}&=50e^{-10t}-ky}$$
+
+where $k>0$ is the decay constant. If $k=2/\hbox{sec}$ and initially $y(0)=40\hbox{kg}$, find the mass $y(t)$ of $RA_2$ for $t\geq 0$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+${dy\over dt}=50e^{-10t}-ky$ is linear, so we begin by writing it in standard form
+
+$${dt\over dt}+2y=50e^{-10t},\quad y(0)=40$$
+
+where we have substituted $k=2$ and displayed the initial condition. We now see that $P(t)=2$, so $\int P(t)dt=\int 2\,dt=2t$. Thus, an integrating factor is $\mu(t)=e^{2t}$. multiplying ${dt\over dt} +2y=50e^{-10t}$ by $\mu(t)$ yields
+
+$$\eqalign{\underbrace{e^{2t}{dy\over dx}+2e^{2t}y}&=50e^{-10t+2t}=50e^{-8t}\cr
+	{d\over dt}(e^{2t}y)&=50e^{-8t}\cr}$$
+
+Integrating both sides and solving for $y$, we find
+
+$$\eqalign{e^{2t}y&=-{25\over 4}e^{-8t}+C\cr
+	y&={25\over 4}e^{-10t}+Ce^{-2t}}$$
+
+Substituting $t=0$ and $y(0)=40$ gives
+
+$$40=-{25\over 4}e^0+Ce^0=-{25\over 4}+C$$
+
+so $C=40+{25\over 4}={185\over 4}$. Thus, the mass $y(t)$ of $RA_2$ at time $t$ is given by
+
+$$y(t)=\biggl({185\over 4}\biggr)e^{-2t}-\biggl({25\over 4}\biggr)e^{-10t},\quad t\geq 0$$
+
+\vfill\eject
+\bye

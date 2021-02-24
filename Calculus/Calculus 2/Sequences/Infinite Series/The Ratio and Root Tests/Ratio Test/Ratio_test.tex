@@ -1,0 +1,21 @@
+\nopagenumbers
+{\bf Theorem: Ration Test}
+\vskip 6pt
+Let $\sum a_n$ be a series with non-zero terms.
+\vskip 12pt
+$1.$ The series $\sum a_n$ converges absolutely when $$\lim_{n\to\infty}{a_{n+1}\over a_n}<1$$
+\vskip 1mm
+$2.$ The series $\sum a_n$ diverges when $$\lim_{n\to\infty}\biggl|{a_{n+1}\over a_n}\biggr|>1 \;\; or \;\; \lim_{n\to\infty}\biggl|{a_{n+1}\over a_n}\biggr|=\infty$$
+\vskip 1mm
+$3.$ The Ratio Test is inconclusive when $$\lim_{n\to\infty}\biggl|{a_{n+1}\over a_n}\biggr|=1$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Assume that $$\lim_{n\to\infty}\biggl|{a_{n+1}\over a_n}\biggr|=r<1$$ and choose $R$ such that $0\leq r<R<1$. By the definition of the limit of a sequence, there exists some $N>0$ such that $|{a_{n+1}\over a_n}|<R$ for all $n>N$. Therefore, you can write the following inequalities.
+$$|a_{N+1}|<|a_N|R$$
+$$|a_{N+2}|<|a_{N+1}|R<|a_N|R^2$$
+$$|a_{N+3}|<|a_{N+2}|R<|a_{N+1}|R^2<|a_N|R^3$$
+\centerline{$\vdots$}
+\vskip 1mm
+The geometric series $\sum_{n=1}^\infty |a_N|R^n=|a_N|R+|a_N|R^2+\ldots+|a_N|R^n+\ldots$ converges, and so, by the Direct Comparison Test, the series $$\sum_{n=1}^\infty|a_{N+n}|=|a_{N+1}|+|a_{N+2}|+\ldots+|a_{N+n}|+\ldots$$ also converges. This in turn implies that the series $\sum |a_n|$ converges, because discarding a finite number of terms $(n=N-1)$ does not affect convergence. Consequently, by Theorem 9.16, the series $\sum a_n$ converges absolutely.
+\vfill\eject

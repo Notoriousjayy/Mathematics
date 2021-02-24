@@ -1,0 +1,25 @@
+This is TeX, Version 3.14159265 (TeX Live 2019/dev/Debian) (preloaded format=tex 2019.8.14)  2 JUN 2020 04:15
+**Example2
+(./Example2.tex
+Underfull \vbox (badness 3148) has occurred while \output is active
+\vbox(643.20255+4.0)x469.75499, glue set 3.16132
+.\glue(\topskip) 3.05556
+.\hbox(6.94444+1.94444)x469.75499, glue set 255.24113fil
+..\hbox(0.0+0.0)x20.0
+..\tenbf E
+..\tenbf x
+..\tenbf a
+..\tenbf m
+..etc.
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\baselineskip) 10.05556
+.\hbox(0.0+0.0)x469.75499, glue set 449.75499fil
+..\hbox(0.0+0.0)x20.0
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.etc.
+
+ [1]
+[2] )
+Output written on Example2.dvi (2 pages, 5040 bytes).

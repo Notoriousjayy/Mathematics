@@ -1,0 +1,64 @@
+\nopagenumbers
+{\bf Theorem: Sum of a Geometric Sequence}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+For any real real number $r$ excdept $1$, and any integer $n\geq 0$,
+
+$$\sum^n_{i=0}r^i={r^{n+1}-1\over r-1}$$
+
+\vskip 10pt
+{\bf Proof (by mathematical induction)}
+
+Suppose $r$ is a particular but arbitrarily chosen real number that is not equal to $1$, and let the property $P(n)$ be the equation
+
+$$\sum^n_{i=0}r^i={r^{n+1}-1\over r-1}\qquad\hbox{$\longleftarrow P(n)$}$$
+
+We must show that $P(n)$ is true for all integers $n\geq 0$. We do this by mathematical induction on $n$.
+
+\vskip 1mm
+{\bf Show that $P(0)$ is true}:
+
+\vskip 1mm
+To establish $P(0)$, we must show that
+
+$$\sum^0_{i=0}r^i={r^{0+1}-1\over r-1}\qquad\hbox{$\longleftarrow P(0)$}$$
+
+The left-hand side of this equation is $r^0=1$ and the right-hand side is $${r^{0+1}-1\over r-1}={{r-1}\over r-1}=1$$
+
+also because $r^1=r$ and $r\neq 1$. Hence $P(0)$ is true
+
+\vskip 6pt
+{\bf Show that for all integers $k\geq 0$, if $P(k)$ is true then $P(k+1)$ is also true}:
+
+\vskip 1mm
+[Suppose that $P(k)$is true for a particular but arbitrarily chosen integer $k\geq 0$. That is:]
+
+\vskip 1mm
+Let $k$ be any integer with $k\geq 0$, and suppose that
+
+$$\sum^k_{i=0}r^i={r^{k+1}-1\over r-1}\qquad\hbox{$\longleftarrow P(k)$ inductive hypothesis}\qquad$$
+
+[We must show that $P(k+1)$ is true. That is:] We must show that
+
+$$\sum^{k+1}_{i=0}r^i={r^{{(k+1)}+1}-1\over r-1}$$
+
+or equivalently, that
+
+$$\sum^{k+1}_{i=0}r^i={r^{{k+2}}-1\over r-1}$$
+
+\vskip 2in
+[We will show that the left-hand side of $P(k+1)$ equals the right-hand side.] The left-hand side of $P(k+1)$ is
+
+$$\eqalign{\sum^{k+1}_{i=0}r^i	&= \sum^k_{i=0}r^i+r^{k+1}\qquad\hbox{by writing the $(k+1)$st term separtely from the first $k$ terms}\cr
+				&= {{r^{k+1}-1}\over r-1}+r^{k+1}\qquad\hbox{by substitution from the inductive hypothesis}\cr
+				&= {{r^{k+1}-1}\over r-1}+{{r^{k+1}(r-1)}\over r-1}\cr
+				&= {{(r^{k+1}-1){r^{k+1}(r-1)}\over r-1}}\cr
+				&= {{(r^{k+1}-1){r^{k+2}-(r^{k+1})}\over r-1}}\cr
+				&= {r^{k+2}-1\over r-1}\cr}$$
+
+Which is the right-hand side of $P(k+1)$
+
+
+\vfill\eject

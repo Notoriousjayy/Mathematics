@@ -1,0 +1,12 @@
+\nopagenumbers
+{\bf Theorem 5.17}
+\vskip 6pt
+A non-trivial graph $H$ is $k$-connected for some integer $k \geq 2$ {\it if and only if} for each pair of $u,v$ of distinct vertices of $G$ there are at least $k$ internally disjoint $u$---$v$ paths in $G$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Since the result holds if $G$ is complete, we may assume that $G$ is not complete. Assume that $G$ is  $k$-connected graph, where $k \geq 2$. Let $u$ and $v$ be two distinct vertices of $G$. Suppose first that $u$ and $v$ are not adjacent and let $U$ be a minimum $u$---$v$ separating set. Then $|U| \geq \kappa (G) \geq k$. By the Theorem 5.16, $G$ contains at least $k$ internally disjoint $u$---$v$ paths. Next, suppose that $u$ and $v$ are adjacent, where $e=uv$. Then $G-e$ is $(k-1)$-connected. Let $W$ be a minimum $u$---$v$ separating set in $G-e$. This $$|W| \geq \kappa (G-e) \geq k-1$$ By Theorem 5.16, $G-e$ contains at least $k-1$ internally disjoint $u$---$v$ paths.
+\vskip 1mm
+For the converse, assume that $G$ is a graph containing at least $k$ internally disjoint $u$---$v$ paths for every pair $u,v$ of distinct vertices of $G$. Let $U$ be a minimum vertex-cut of $G$. Then $|U|= \kappa (G)$. Let $x$ and $y$ be vertices in distinct components of $G-U$, Thus $U$ is an $x$---$y$ separating set of $G$. Since there are at least $k$ internally disjoint $x$---$y$ paths in $G$, it follows by Theorem 5.16 that $\kappa (G)=|U| \geq k$. Therefore $G$ is $k$-connected.
+
+\vfill\eject

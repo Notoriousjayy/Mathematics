@@ -1,0 +1,79 @@
+\nopagenumbers
+{\bf Theorem: Existence and Uniqueness of Binary Integer Representations}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+Given any positive integer $n$, $n$ has a unique representation in the form $$n=c_r \cdot 2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_2\cdot 2^2+c_1\cdot 2+c_0$$
+
+where $r$ is a non-negative integer, $c_r=1$, and $c_j=1$ or $0$ for all $j=0,1,2\ldots ,r-1$.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+We give separate proofs by strong mathematical induction to show first the existence and second the uniqueness of the binary representation.
+
+\vskip 1pt
+{\bf Existence (proof by strong mathematical induction)}: Let the property $P(n)$ be the equation
+
+$$n=c_r \cdot 2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_2\cdot 2^2+c_1\cdot 2+c_0 \quad\quad\quad \longleftarrow P(n)$$
+
+where $r$ is a non-negative integer, $c_r=1$, and $c_j=1$ or $0$ for all $j=0,1,2,\ldots , r-1$.
+
+\vskip 6pt
+{\bf Show that $P(1)$ is true}:
+
+\vskip 1mm
+Let $r=0$ and $c_0=1$. Then $1=c_r\cdot 2^r$, and so $n=1$ can be written in the required form.
+
+\vskip 10pt
+{\bf Show that for all integers $k\geq 1$, if $P(i)$ is true for all integers $i$ from $1$ through $k$, then $P(k+1)$ is also true}:
+
+\vskip 1mm
+Let $k$ be an integer with $k\geq 1$. Suppose that for all integers $i$ from $1$ through $k$,
+
+$$i=c_r \cdot 2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_2\cdot 2^2+c_1\cdot 2+c_0\quad\quad\quad\hbox{$\longleftarrow$ inductive hypothesis}$$
+
+where $r$ is a non-negative integer, $c_r=1$, and $c_j=1$ or $0$ for all $j=0,1,2,\ldots , r-1$. We must show that $k+1$ can be written as a sum of powers of $2$ in the required form.
+
+\vskip 6pt
+{\bf Case 1 $(k+1)$ is even}: In this case ${k+1}\over 2$ is an integer, and by inductive hypothesis, since $1\geq {(k+1)\over 2}\leq k$, then,
+
+$${(k+1)\over 2}=c_r \cdot 2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_2\cdot 2^2+c_1\cdot 2+c_0$$
+
+where $r$ is a non-negative integer, $c_r=1$, and $c_j=1$ or $0$ for all $j=0,1,2,\ldots , r-1$. Multiplying both sides of the equation by $2$ gives
+
+$$k+1=c_r \cdot 2^{r+1}+c_{r-1}\cdot 2^r+\cdots + c_2\cdot 2^3+c_1\cdot 2^2+c_0\cdot 2$$
+
+which is a sum of powers of $2$ of the required form.
+
+\vskip 6pt
+{\bf Case 2 $(k+1)$ is odd}: in the case $k\over 2$ is an integer, and by inductive hypothesis, since $1\leq {k\over 2}\leq k$, then
+
+$${k\over 2}=c_r \cdot 2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_2\cdot 2^2+c_1\cdot 2+c_0$$
+where $r$ is a non-negative integer, $c_r=1$, and $c_j=1$ or $0$ for all $j=0,1,2,\ldots , r-1$. Multiplying both sides of the equation by $2$ and adding $1$ gives
+
+$$k+1=c_r \cdot 2^{r+1}+c_{r-1}\cdot 2^r+\cdots + c_2\cdot 2^3+c_1\cdot 2^2+c_0\cdot 2+1$$
+
+which is also a sum of powers of $2$ of the required form.
+
+\vskip 2pt
+The preceeding arguments show that regardless of whether $k+1$ is even or ordd, $k+1$ has a presentation of the required form. [Or, in other words, $P(k+1)$ is true.]
+
+\vskip 1in
+{\bf Uniqueness}: To proveuniqueness, suppose that there is an integer $n$ with two different representations as a sum of non-negative integer powers of $2$. Equating the two representations and canceling all identical terms gives
+
+$$2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_1\cdot 2+c_0=2^s+d_{s-1}\cdot 2^{s-1}+\cdots+d_1\cdot 2+d_0 \quad\quad\longleftarrow 5.4.1$$
+
+where $r$ and $s$ are non-negative integers, and each $c_i$ and each $d_i$ equal $0$ or $1$. Without loss of generality, we may assume that $r<s$. But by the formula for the sum of a geometric sequence and because $r<s$
+
+$$2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_1\cdot 2+c_0\leq 2^r+2^{r-1}+\cdots+ 2+1=2^{r+1}-1< 2^s$$
+
+Thus
+
+$$2^r+c_{r-1}\cdot 2^{r-1}+\cdots + c_1\cdot 2+c_0<2^s+d_{s-1}\cdot 2^{s-1}+\cdots+d_1\cdot 2+d_0$$
+
+which contradicts equation $(5.4.1)$. Hence the supposition is false, so any integer $n$ has only one representation as a sum of non-negative integer powers of $2$.
+
+\vfill\eject

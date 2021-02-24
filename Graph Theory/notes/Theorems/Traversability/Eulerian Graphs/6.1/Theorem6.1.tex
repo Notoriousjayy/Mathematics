@@ -1,0 +1,49 @@
+\nopagenumbers
+{\bf Theorem 6.1}
+\vskip 6pt
+A non-trivial connected graph $G$ is Eulerian {\it if and only if} every vertex of $G$ has even degree.
+\vskip 10pt
+{\bf Symbolically:}
+A non-trivial connected graph $G$ is Eulerian $\Leftrightarrow$ every vertex of $G$ has even degree.
+
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+
+Assume first that $G$ is Eulerian. Then $G$ contains an Eulerian circuit $C$. Suppose that $C$ begins at the
+vertex $u$ (and therefore ends at $u$). We show that every vertex of G is even. Let $v$ be a vertex of $G$ different from $u$.
+Since $C$ neither begins nor ends at $v$, each time that $v$ is encountered on $C$, two edges are accounted for (one to enter $v$ and another to exit $v$).
+Thus $v$ has even degree. Now to $u$ Since $C$ begins at $u$, this accounts for one edge. Another edge is accounted for because $C$ ends at $u$. If $u$ is encounted at other
+times, two edgesare accounted for. So $u$ is even as well.
+\vskip 1mm
+For the converse, assume that $G$ is a non-trivial connected graph in which every vertex is even. We show that $G$ contains an Eulerian circuit. Among all trails in $G$, let
+$T$ be one of maximum length. Suppose that $T$ is a $u$---$v$ trail. We claim that $u=v$. If not, then $T$ ends at $v$. It is possible that $v$ may have been encountered earlier in $T$.
+Each such encounter involves two edges of $G$, one to enter $v$ and another to exit $v$. Since $T$ ends $v$, an odd number of edges at $v$ has been encountered. But $v$ has even degree.
+This means that there is at least one edge at $v$, say $uv$, that does not appear on $T$. But then $T$ can be extended to $w$, contradicting the assumption that $T$ has maximum length. Thus $T$
+is a $u$---$v$ trail, that is, $C=T$ is a $u$---$u$ circuit. if $C$ contains all edges of $G$, then $C$ is an Eulerian circuit and the proof is complete.
+\vskip 1mm
+Suppose then that $C$ does not contain all edges of $G$, that is, there are someedges of $G$ that do not lie on $C$. Since $G$ is connected, some edge $e=xy$ not on $C$ incident with a vertex $x$
+that is on $C$. Let $H=G-E(C)$, that is, $H$ is the spanning subgraph of $G$ obtained by deleting the edges of $C$. Every of $C$ is incident with an even number of edges on $C$. Since every vertex of $G$
+has even degree, every vertex of $H$ has even degree. It is possible, however that $H$ is disconnected. On the other hand, $H$ has at least one non-trivial component, namely, the component $H_1$ of $H$ containing
+the edge $xy$. This means that $H_1$ is connected and every vertex of $H_1$ has even degree. Consider a trail of maximum length in $H_1$, beginning at $x$. As we just saw, this trail must also end
+at $x$ and is an $x$---$x$ circuit $C'$ of $H_1$
+\vskip 1mm
+Now if in the circuit $C$, we were to attach $C'$ when we arrive at $x$, we obtain a circuit $C''$ in $G$ of greater length than $C$, which is a contradiction. This implies that $C$ contains all edges of $G$
+and is an Eulerian circuit.
+
+\vskip 10pt
+{\bf Corollary}
+\vskip 6pt
+A connected graph $G$ contains an Eurlian trail {\it if and only if} exactly two vertices of $G$ have odd degree. Furthermore, each Eulerian trail of $G$ begins at one of these vertices and ends at the other.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Assume first that $G$ contains an Eulerian trail $T$. Thus $T$ is a $u$---$v$ trail for some distinct vertices $u$ and $v$. We now construct a new connected graph $H$ from $G$ by adding a new vertex $x$ of degree
+$2$ to $G$ and joining it to $u$ and $v$. Then $C=(T,x,u)$ is an Eulerian circuit in $H$. By Theorem 6.1, every vertex of $H$ is even and so only $u$ and $v$ have odd degrees in $G=H-x$.
+\vskip 1mm
+For the converse, we proceed in a similiar manner. Let $G$ be a connected graph containing exactly two vertices $u$ and $v$ of odd degree. We show that $G$ contains an Eulerian trail $T$, where $T$ is either a
+$u$---$v$ trail or a $v$---$u$ trail. Add a new vertex of degree $2$ to $G$ and join it to $u$ and $v$, calling the resulting graph $H$. Therefore, H is a connected graph all of whose vertices are even. By
+Theorem 6.1, $H$ is an Eulerian graph containing an Eulerian circuit $C$. Since it irrelevant which vertex of $C$ is the initial (and terminal) vertex, we assume that $C$ is an $x$---$x$ circuit. Since $x$
+us ubcudebt only with the edges of $C$ Deleting $x$ from $C$ results in an Eulerian trail $T$ of $G$ that begins either at $u$ or $v$ and ends at the other.
+
+\vfill\eject

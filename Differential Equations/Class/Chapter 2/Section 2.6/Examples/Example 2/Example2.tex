@@ -1,0 +1,45 @@
+\nopagenumbers
+{\bf Example 2}: Solve
+
+$${dy\over dx}=G(ax+by)$$
+
+then the substitution
+
+$$z=ax+by$$
+
+transforms the equation into a separable one.
+
+\vskip 6pt
+{\bf Solution}
+
+\vskip 6pt
+The right-hand side can be expressed as a function of $x-y$, that is,
+
+$$y-x-1+(x-y+2)^{-1}=-(x-y)-y+\bigl[(x-y)+2\bigr]^{-1}$$
+
+so let $z=x-y$. To solve for ${dy\over dx}$, we differentiate $z=x-y$ with respect to $x$ to obtain ${dz\over dx}=1-{dy\over dx}$, and so ${dy\over dx}=1-{dz\over dx}$. Substituting into ${dy\over dx}=G(ax+by)$ yields
+
+$$1-{dz\over dx}=-z-1+(z+2)^{-1}$$
+
+or
+
+$${dz\over dx}=(z+2)-(z+2)^{-1}$$
+
+Solving this separable equation, we obtain
+
+$$\eqalign{\int{z+2\over (z+2)^2-1}dz&=\int dx\cr
+	{1\over 2}\ln\bigl|(z+2)^2-1\bigr|&=x+C_1}$$
+
+from which it follows that
+
+$$(z+2)^2=Ce^{2x}+1$$
+
+Finally, replacing $z$ by $x-y$ yields
+
+$$(x-y+2)^2=Ce^{2x}+1$$
+
+as an implicit solution to ${dy\over dx}=G(ax+by)$
+
+
+\vfill\eject
+\bye

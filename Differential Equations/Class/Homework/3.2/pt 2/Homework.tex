@@ -1,0 +1,330 @@
+\centerline{{\bf Differential Equation Homework Pg. 99: 1, 3, 4, 6}}
+
+\vskip 1mm
+\centerline{Section 3.2: Compartmental Analysis}
+
+\vskip 1cm
+{\bf 1)} A brine solution of salt flows at a constant rate of $8$ L/min into a large tank that initially held $100L$ of brine solution in which was dissolved $0.5$ kg of salt. The solution inside the tank is ket well stirred and flows out of the tank at the same rate. If the concentration of salt in the brine entering the tank is $0.05$ kg/L, determine the mass of salt in the tank after $t$ minutes. When will the concentration of salt in the tank reach $0.02$ kg/L?
+
+\vskip 1cm
+{\bf Solution:}
+
+$$\hbox{rate of change=input rate-output rate}$$
+
+$$\eqalign{{dx\over dt}&=\Biggl({8L\over min}\Biggr)\Biggl({0.05\;kg\over L}\Biggr)-\Biggl({8L\over min}\Biggr)\Biggl({x(t)\over 100}\cdot{kg\over L}\Biggr)\cr
+			{dx\over dt}&={0.4\;kg\over min}-{0.08x\;kg\over min}\cr}$$
+
+so now we have,
+
+$${dx\over dt}=0.4-0.08x$$
+
+$${dx\over dt}+0.08x=0.4$$
+
+this is a linear equation, it has an integrating factor, where,
+
+$$\eqalign{P(t)&=0.08\cr
+	&=\int P(t)dt\cr
+	&=\int 0.08\; dt\cr
+	&=0.08t\cr}$$
+
+and so,
+
+$$\eqalign{\mu(t)&=e^{\int P(t)\; dt}\cr
+	&=e^{\int 0.08t}\cr
+	&=e^{0.08t}\cr}$$
+
+multiplying ${dx\over dt}+0.08x=0.4$ by $\mu(t)$
+
+$$\eqalign{e^{0.08t}{dx\over dt}+0.08e^{0.08t}&=0.4e^{0.08t}\cr
+		{d\over dt[e^{0.08t}]}&=0.4e^{0.08t}\cr}$$
+
+integrating both sides,
+
+$$\eqalign{\int{d\over dt}[e^{0.08t}x]dt&=\int0.4e^{0.08t}dt\cr
+	e^{0.08t}x&=5e^{0.08t}+C\cr
+	x(t)&=5+Ce^{-0.08t}\cr}$$
+
+applying the initial value condition, $x(0)=0.5$, to obtain the value of $C$
+
+$$\eqalign{0.5&=5Ce^0\cr
+		0.5-5&=C\cr
+		-4.5&=C\cr}$$
+
+and so
+
+$$x(t)=5-4.5e^{-0.08t}$$
+
+To determine when will the concentration of salt in the tank reach $0.02$ kg/L, we first need to obtain the mass of the salt, where
+
+$$\hbox{mass=concentration$\times$ volume}$$
+
+$$=\Biggl(0.02{kg\over L}\Biggr)(100L)=2\;kg$$
+
+and so
+
+$$\eqalign{2&=5-4.5e^{-0.08t}\cr
+	-3&=-4.5e^{-0.08t}\cr
+	{2\over 3}&=e^{-0.08t}\cr
+	\ln{2\over 3}&=-0.08t\cr
+	t&={\ln{2\over 3}\over -0.08}\cr
+	t&\approx 5.07\hbox{ min}}$$
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 3)} A nitric acid solution flows at a constant rate of $6$ L/min into a large tank that initially held $200\;L$ of $0.5\%$ nitric acid solution. The solution inside the tank is kept well stirred and flows out of the tank at a rate of $8$ L/min. If the solution entering the tank is $20\%$ nitric acid, determine the volume of nitric acid in the tank after $t$ minutes. When will the percentage of nitric acid in the tan reach $10\%$?
+
+\vskip 1cm
+{\bf Solution:} Let $y(t)$ be the volume of nitric acid in the container after $t$ minutes. Then, {\bf its time rate of change, $y'$, is the difference between its inflow and outflow (Balance law)}. Since $6L$ of nitric acid solution runs in the container per minute, containing $20\%$ of nitric acid, the needed inflow rate is
+
+$$6\cdot 0.2=1.2$$
+
+The amount of the solution in the container at any moment $t$ is
+
+$$200+(6-8)t=200-2t$$
+
+since the tank initially contained $200L$ of the solution and nitric solution is pumped into the top of the tank at the rate $6$ l/min, while well-mixed solution leaves the tank at the rate $8$ L/min. Now, the outflow is $8$ L of the mix in a minute. That is ${8\over 200-2t}$ of the total mix content in the container, hence ${4\over 100-t}$ of the nitric acid content $y(t)$, that is
+
+$${4y(t)\over 100-t}$$
+
+Initially the $200L$ tank contained solution with $0.5\%$ of nitric acid, therefore, we obtain the initial condition
+
+$$y(0)=200\cdot {0.5\over 100}=1$$
+
+Thus, the mathematical model for the problem is
+
+$$y'(t)=1.2-{4y(t)\over 100-t},\quad y(0)=1$$
+
+This is {\bf linear ODE}. In this case
+
+$$P(t)={4\over 100-t},\quad Q(t)=1.2$$
+
+Hence,
+
+$$\eqalign{h&=\int P\, dt\cr
+		&=4\int {dt\over 100-t}\cr
+		&=\ln(100-t)^{-4}\cr}$$
+
+So, an integrating factor is
+
+$$\eqalign{e^h&=e^{\ln(100-t)^{-4}}\cr
+		&={1\over (100-t)^4}\cr}$$
+
+and the general solution is
+
+$$\eqalign{y(t)=e^{-h}\Biggl(c+\int Qe^h\;dt\Biggr)\cr
+		&=(100-t)^4\Biggl( c+\int 1.2\cdot {1\over (100-t)^4}\Biggr)dt\cr
+		&=c(100-t)^4+{1.2\over 3}(100-t)^4\cdot (100-t)^{-3}\cr
+		&=c(100-t)^4+0.4(100-t)\cr}$$
+
+Now, we can use the initial condition to determine the numeric value of $c$. Substitute $0$ for $t$ and $1$ for $y$ in the equation.
+
+$$\eqalign{1=y(0)=c(100-0)^4+0.4(100-0)&\Rightarrow c\cdot 100^4+40\cr
+					&\Rightarrow 1-40=c\cdot 10^8\cr
+					&\Rightarrow c=-39\cdot 10^{-8}}$$
+
+Hence,
+
+$$y(t)=-39\cdot 10^{-8}(100-t)^4+0.4(100-t)$$
+
+is the volume of the nitric acid in the tank after $t$ minutes.
+
+We want to find the moment when the container hold $10\%$ of nitric acid. The amount of the solution in the tank at any minute $t$ is $200-2t$ and $y(t)$ represents the amount of the nitric acid in the solution. Hence, we need to solve
+
+$$y(t)=(200-2t)\cdot{10\over 100}=0.2(100-t)$$
+
+for $t$
+
+On the other hand, we know that the general solution $y(t)$ is equal to $-39\cdot 10^{-8}(100-t)^4+0.4(100-t)$. Hence, we obtain
+
+$$\eqalign{-39\cdot 10^{-8}(100-t)^4+0.4(100-t)&=0.2(100-t)\cr
+	{-39\cdot 10^{-8}(100-t)^4+0.4(100-t)\over 0.2(100-t)}&=1\cr
+	0.2-19.5\cdot 10^{-8}(100-t^3)&=0.1\cr
+	(100-t)^3&=51280.513\cr}$$
+
+Therefore,
+
+$$t=19.95\hbox{ min}$$
+
+which means that the container will hold $10\%$ of nitric acid in about $20$ minutes.
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 4)} A brine solution of salt flows at a constant rate of $4$L/min into a large tank that initially held $100L$ of pure water. The solution inside the tank is kept well stirred and flows out of the tan at a rate $3$L/min. If the concentration of salt in the brine entering the tank is $0.2$ kg/L, determine the mass of salt in the tank after $t$ min. When will the concentration of salt in the tank reach $0.1$ kg/L?
+
+\vskip 1cm
+{\bf Solution:} Let $y(t)$ be the amount (the mass) of salt in the container after $t$ minutes. Then, {\bf its time of rate of change, $y'$, is the difference between its inflow and outflow (Balance Law)}.
+
+\vskip 1mm
+Since $4L$ of saktwater runs in the container per minute, containing $0.2$ kg of salt per liter, the needed inflow is
+
+$$4\cdot 0.2=0.8$$
+
+The volume of the solution in the container at any moment $t$ is
+
+$$v(t)=100+(4-3)t=100+t$$
+
+the tank initially contained $100$ L of water and saltwater is pumped into the top of the tank at the rate $4$ L/min, while well-mixed solution leaves the tank at the rate $3$L/min.
+
+\vskip 1mm
+We can determine the concentration of the salt in the tank by dividing the amount of salt $y(t)$ with the volume of the solution $v(t)$ at any time $t$. Hence,
+
+$$c(t)={y(t)\over v(t)={y(t)\over 100+t}}$$
+
+Now, the outflow is $3$L of the mix in a minute. That is ${3\over 100+t}$ of the total mix content in the container, hence ${3\over 100 + t}$ of the salt content $y(t)$, that is
+
+$$3y(t)\over 100+t$$
+
+Initially, the tank contained $100$ L of clear water. Therefore, the concentraion of salt at the beginning was $0$ and we obtain the initial condition
+
+$$y(0)=0$$
+
+Thus, the mathematical model for this problem is 
+
+$$y'(t)=0.8-{3y(t)\over 100+t},\quad y(0)$$
+
+This is {\bf linear ODE}. In this case
+
+$$P(t)={3\over 100+t},\quad Q(t)=0.8$$
+
+Hence,
+
+$$\eqalign{h&=\int P\,dt\cr
+		&=3\int{dt\over 100+t}\cr
+		&=\ln(100+t)^3\cr}$$
+
+So, an integrating factor is
+
+$$\eqalign{e^h&=e^{\ln(100+t)^3}\cr
+		&=(100+t)^3\cr}$$
+
+and the general solution is
+
+$$\eqalign{y(t)&=e^{-h}\Biggl( c+\int Qe^h\,dt\Biggr)\cr
+		&=(100+t)^{-3}\Biggl( c+\int =0.8\cdot (100+t^3)\,dt\Biggr)\cr
+		&=c(100+t)^{-3}+0.8(100+t)^{-3}\cdot{(100+t)^{3+1}\over 3+1}\cr
+		&={c\over (100+t)^3}+{0.8\over 4}\cdot(100+t)^4\cr
+		&={c\over (100+t)^3}+0.2(100+t)\cr}$$
+
+Now, we can use the initial condition to determine the numeric value of $c$. Substritute $0$ for $t$ and $0$ for $y$ in the equation
+
+$$\eqalign{0=y(0)={c\over (100+0)^3}+0.2(100+0)&\Rightarrow 0={c\over 100^3}+20\cr
+						&=\Rightarrow -20=c\cdot 10^{-6}\cr
+						&=\Rightarrow c=-20\cdot 10^{6}\cr
+						&=\Rightarrow c=-2\cdot 10^{7}\cr}$$
+
+Hence,
+
+$$y(t)={-2\cdot 10^7\over (100+t)^3+0.2(100+t)}$$
+
+is the mass of salt in the tank after $t$ minutes.
+
+We want to find the moment when the concentration of salt in the tank reaches $0.1$kg/L. Hence, we need to solve
+
+$$c(t)=0.1$$
+
+for $t$.
+
+\vskip 1mm
+Therefore, we need to solve
+
+$${y(t)\over v(t)}={0.2(100+t)-{{2\cdot 10^7}\over (100+t)^3}\over 100+t}=0.1$$
+
+for $t$.
+
+$$\eqalign{0.2-{2\cdot 10^7}\over (100+t)^4&=0.1\cr
+		{2\cdot 10^7}\over (100+t)^4&=0.2-0.1\cr
+		{2\cdot 10^7\over (100+t)^4}&=0.1\cr
+		(100+t)^4&={2\cdot 10^7\over 0.1}\cr
+		t+100&=118.92\cr}$$
+
+Therefore,
+
+$$t=18.92\hbox{ min}$$
+
+which means that the solution will reach the given concentration in about $19$ minutes.
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 6)} The air in a small room $12$ft by $8$ft by $8$ft is $3\%$ carbon monoxide. Starting at $t=0$, fresh air containing no carbon monoxide is blown into the room at a rate of $100ft^3/min$. If air in the room flows out through a vent at the same rate, when will the air in the room be $0.01\%$ carbon monoxide?
+
+\vskip 1cm
+{\bf Solution:} First, we need to calculate the volume of the small room.
+
+$$V=12\cdot 8\cdot 8=768\hbox{ft$^3$}$$
+
+Now, let $y(t)$ be the amount of carbon monoxide in the room at time $t$. Then, {\bf its time rate of change, $y'$, is the difference between its inflow and outflow (Balance law)}.
+
+\vskip 1mm
+The needed inflow is $0$, because fresh air is inserted in the room, with no carbon monoxide.
+
+\vskip 1mm
+Now, the outflow is $100\hbox{ft$^3$}$ of the air in a minute. That is ${100\over V}={100\over 768}$ of the total content in the room, hene ${25\over 192}$ of the carbon monoxide content $y(t)$, that is
+
+$${}25y(t)\over 192$$
+
+Initially, at $t=0$, the air in the room contained $0.3\%$ of carbon monoxide. Therefore, the amount of carbon monoxide at the beginning was
+
+$$768\cdot {0.3\over 100}=23.04$$
+
+and we obtain the initial condition
+
+$$y(0)=23.04$$
+
+Thus, the mathematical model for this problem is
+
+$$y'(t)=-{25y(t)\over 192},\quad y(0)=23.04$$
+
+This is {\bf separable ODE}. Rearranging the terms in the equation gives
+
+$$\eqalign{{dy\over dt}&=-{25y\over 192}\cr
+		{1\over y}dy&=-0.13dt\cr}$$
+
+Integration on both sides gives
+
+$$\eqalign{\int{1\over y}dy&=-\int 0.13dt\cr
+		\ln|y|&=-0.13t+C\cr}$$
+
+By taking exponents, we obtain 
+
+$$\eqalign{|y|&=e^{-0.13t+C}\cr
+		&=e^{-0.13t}e^C\cr}$$
+
+Hence
+
+$$y=Ce^{-0.13t}$$
+
+where $C=e^C$.
+
+\vskip 1mm
+Now, we can use the initial condition to determine the numeric value of the constant $C$. Substitute $0$ for $t$ and $23.04$ for $y$ in the equation.
+
+$$\eqalign{23.04&=Ce^{-0.13\cdot 0}\cr
+		\Rightarrow C&=23.04\cr}$$
+
+Therefore, the amount of carbon monoxide at any moment $t$ is given by
+
+$$y=23.04e^{-0.13t}$$
+
+To find the moment when the air in the room will be $0.01\%$ carbon monoxide, we need to solve
+
+$$y(t)={0.01\over 100}V$$
+
+for $t$. Hence,
+
+$$23.04e^{-0.13t}=768\cdot 10^{-3}$$
+
+and we obtain that 
+
+$$t\approx 43.8$$
+
+which means that the air in the room will be $0.01\%$ carbon monoxide in about $44$ minutes.
+
+
+\vfill\eject
+\bye

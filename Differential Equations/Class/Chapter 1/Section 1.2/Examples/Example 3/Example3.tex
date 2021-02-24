@@ -1,0 +1,23 @@
+\nopagenumbers
+{\bf Example 3:} Show that the relation
+
+$$y^2-x^3+8=0$$
+
+implicitly defines a solution to the nonlinear equation
+
+$${dy\over dx}={3x^2\over 2y}$$
+
+on the interval $(2,\infty)$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+When we solve this equation for $y$, we obtain $y=\pm\sqrt{x^3-8}$. Let's try $\phi(x)=\sqrt{x^3-8}$ to see if it is an explicit solution. Since ${d\phi\over dx}={3x^2\over 2\sqrt{x^3-8}}$, both $\phi$ and ${d\phi\over dx}$ are defined on $(2,\infty)$. Substituting them into ${dy\over dx}={3x^2\over 2y}$ yields
+
+$${3x^2\over 2\sqrt{x^3-8}}={3x^2\over 2\bigl(\sqrt{x^3-8}\bigr)}$$
+
+which is indeed valid for all $x$ in $(2,\infty)$. You can check if $-\sqrt{x^3-8}$ is also an explicit solution to ${dy\over dx}={3x^2\over 2y}$
+
+\vfill\eject
+\bye

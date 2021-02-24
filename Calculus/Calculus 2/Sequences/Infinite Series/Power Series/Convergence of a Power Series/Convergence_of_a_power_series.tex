@@ -1,0 +1,27 @@
+\nopagenumbers
+{\bf Theorem: Convergence of a Power Series}
+\vskip 6pt
+For a power series centered at $c$, precisely one of the following is true.
+\vskip 1mm
+$1.$ The series converges only at $c$.
+\vskip 1mm
+$2.$ There exists a real number $R>0$ such that the series converges absolutely for $$|x-c|<R$$ and diverges for $$|x-c|>R$$
+\vskip 1mm
+$3.$ The series converges absolutely for all $x$.
+\vskip 6mm
+The number $R$ is the {\bf radius of convergence} of the power series. If the series converges only at $c$, then the radius of convergence is $R=0$. If the series converges for all $x$, then the radius of convergence is $R=\infty$. The set of all values of $x$ for which the power series converges is the {\bf interval of convergence} of the power series.
+\vskip 10pt
+{\bf Proof: (for $\sum a_nx^n$ cetered at $x=0$}
+\vskip 6pt
+By the completeness property: If a non-empty set $S$ of real numbers has an upper bound, then it must have a least upper bound.
+\vskip 1mm
+It must be shown that if a power series $\sum a_nx^n$ converges at $x=d$,$d\neq 0$, then it converges for all $b$ satisfying $|b|<|d|$. Because $\sum a_nx^n$ converges, $\lim_{n\to\infty}a_nd^n=0$. So, there exists an integer $N>0$ such that $|a_nd^n|<1$ for all $n>N$.
+\vskip 1mm
+Then for $n>N$, $$|a_nb^n|=\biggl|a_nb^n{d^n\over d^n}\biggr|=\biggl|a_nd^n\biggr|\biggl|{b^n\over d^n}\biggr|<\biggl|{b^n\over d^n}\biggr|$$ So, for $|b|<|d|$, $|{b\over d}|<1$, which implies that $$\sum \biggl| {b^n\over d^n}\biggr|=\sum \biggl|{b\over d}\biggr|^n$$ is a convergent geometric series. By the Comparison Test, the series $\sum a_nb^n$ converges.
+\vskip 1mm
+Similarly, if the power series $\sum a_nx^n$ diverges at $x=b$, $b\neq 0$ then it diverges for all $d$ satisfying $|d|>|b|$. If $\sum a_nd^n$ converged, then the argument above would imply that $\sum a_nb^n$ converged as well.
+\vskip 1mm
+To prove the theorem: suppose that neither Case 1 nor Case 3 is true. Then there exists points $b$ and $d$ such that $\sum a_nx^n$ converges at $b$ and diverges at $d$. Let $S=\lbrace x: \sum a_nx^n\quad\hbox{converges} \rbrace$.$S$ is non-empty becasue $b\in S$. If $x\in S$, then $|x|\leq |d|$, which shows that $|d|$ is an upper bound for the non-empty set $S$.
+\vskip 1mm
+By the completeness property, $S$ has a least upper bound, $R$. If $|x|>R$, then $x\not\in S$, so $\sum a_nx^n$ diverges. If $|x|<R$, then $|x|$ is not and upper bound for $S$, so there exists $b$ in $S$ satisfying $|b|>|x|$. Because $b\in S$, $\sum a_nb^n$ converges, $\Longrightarrow \sum a_nx^n$ converges.
+\vfill\eject

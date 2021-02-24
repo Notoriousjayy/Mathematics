@@ -1,0 +1,27 @@
+\nopagenumbers
+{\bf Theorem 8.3}
+\vskip 6pt
+Let $G$ be a {\it bipartite graph with partite sets $U$ and $W$ such that $r=|U| \leq |W|$. Then $G$ contains a matching of cardinality $r$ if and only if $G$ statisfies Hall's condition.}
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+
+If Hall's condition is not satisfied, then there is some subset $S$ of $U$ such that $|S| > |N(S)|$. Since $S$ cannot be matched to a subset of $W$, it follows that $U$ cannot be matched to a subset of $W$.
+\vskip 1mm
+The converse is verified by the Strong Principle of Mathematical Induction. We proceed by induction on the cardinality of $U$. Suppose first that Hall's condition is satisfied and $|U|=1$.
+Since $|N(U)| \geq |U|=1$, there is a vertex in $W$ adjacent to the vertex in $U$ and so $U$ can be matched to a subset of $W$. Assume, for an integer $k \geq 2$, that if $G_1$ is any bipartite graph with partite
+sets $U_1$ and $W_1$ where $${|U_1| \leq |W_1| \,and \, 1 \leq |U_1| < k}$$ that satisfies Hall's condition, then $U_1$ can be matched to a subset of $W_1$. Let $G$ be a bipartite graph with partite sets $U$
+and $W$, where $k=|U| \leq |W|$, such that Hall's condition is satisfied. We show that $U$ can be matched to a subset of $W$. We consider two cases.
+\vskip 1mm
+{\bf case 1.} F{\it or every subset $S$ of $U$ such that $1 \leq |S| < |U|$}, it follows that $|N(S) > |S|$. Let $u \in U$. By assumption, $u$ is adjacent to two or more vertices of $W$. Let $w$ be a vertex adjacent
+to $u$. Now let $H$ be the bipartite subgraph of $G$ with partite sets $U-\lbrace u \rbrace$ and $W- \lbrace w \rbrace$. For each subset $S$ of $U- \lbrace u \rbrace$, $|N(S) \geq |S|$ in $H$. By the induction
+hypotesis, $U- \lbrace u \rbrace$ can be matched to a subset of $W- \lbrace w \rbrace$. This matching together with the edge $uw$ shows that $U$ can be matched to a subset of $W$.
+\vskip 1mm
+{\bf case 2.} {\it There exists a proper subset $X$ of $U$ such that $|N(X)=|X|$}. Let $F$ be the bipartite subgraph of $G$ with partite sets $X$ and $N(X)$. Since Hall's condition is satisfied in $F$, it
+follows by the induction hypothesis that $X$ can be matched to a subset of $N(X)$. Indeed, since $|N(X)=|X|$, the set $X$ can be matched to $N(X)$. Let $M'$ be such a matching.
+\vskip 1mm
+Next, consider the bipartite subgraph $H$ of $G$ with partite sets $U-X$ and $W-N(X)$. Let $S$ be a subset of $U-X$ and let $$S'=N(S) \cap (W-N(X))$$ We show that $|S| \leq |S'|$. By assumption,
+$|N(X \cup S| \geq |X \cup S|$. Hence $$|N(X)+|S'|=|N(X \cup S)| \geq |X| + |S|$$ Since $|N(X)|=|X|$, it follows that $|S'| \geq |S'|$. Thus Hall's condition is satisfied in $H$ and so there is a matching
+$M''$ from $U-x$ to $W-N(X)$. Therefore, $M' \cup M''$ is a matching from $U$ to $W$ in $G$.
+
+\vfill\eject

@@ -1,0 +1,12 @@
+\nopagenumbers
+{\bf Theorem 8.17}
+\vskip 6pt
+For every integer $k \geq 1$, the complete graph $K_{2k+1}$ is Hamiltonian-factorable.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Since the theorem is true for $1 \leq k \leq 3$, we may assume that $k \geq 4$. Let $G=K_{2k+1}$ and $H=K_{2k}$, where $V(H)= \lbrace v_1,v_2, \ldots , v_{2k} \rbrace$ and let $V(G)=V(H) \cup \lbrace v_0 \rbrace$. Let the vertices of $H$ be the vertices of a regular $2k$-gon and let the edges of $H$ be straight line segments. A Hamiltonian cycle $C$ of $G$ is now constructed from a Hamiltonian path $P$ of $H$ that begins with $v_1,v_2,v_{2k},v_3,v_{2k-1}$ and then continues in this zig-zag pattern until arriving at the vertex $v_{k+1}$. The path $P$ is a $v_1$---$v_{k+1}$ path where edges are those parallel to $v_1v_2$ or $v_2v_{2k}$. The cycle $C$ in $G$ is completed by placing $v_0$ at some convient location within the regular $2k$-gon and joining $v_0$ to both $v_1$ and $v_{k+1}$.
+\vskip 1mm
+Observe that the Hamiltonian cycle $C$ of $G$ just constructed consists of two edges labeled with each og the integers $0,1, \ldots , k-1$ and one edge labeled $k$, By rotating the Hamiltonian path $P$ of $H$ clockwise through an angle of ${\pi \over k}$ radians, a new Hamiltonian path $P'$ of $H$ is constructed that is edge-disjoint with $P'$. The path $P'$ is a $v_2$---$v_{k+2}$ path. By joining $v_0$ to $v_2$ and $v_{k+2}$, a new Hamiltonian cycle $C'$ of $G$ is obtained that is edge-disjoint with $C$. We continue until $k$ Hamiltonian cycles $G$ are obtained producing a Hamiltonian factorization of $G$. In general, for each $i$ with $1 \leq i \leq k$, the $i^{th}$ Hamiltonian cycle of $G$ is $$(v_0,v_i,v_{i+1},v_{i-1},v_{i+2},v_{i-2}, \ldots ,v_{k+i+1},v_{k+i-1},v_{k+i},v_0)$$ where the subscripts are expressed modulo $2k$.
+
+\vfill\eject

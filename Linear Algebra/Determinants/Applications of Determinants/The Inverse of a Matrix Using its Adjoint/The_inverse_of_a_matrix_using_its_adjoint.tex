@@ -1,0 +1,47 @@
+\nopagenumbers
+{\bf Theorem: The Inverse of a Matrix Using its Adjoint}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If $A$ is an $n\times n$ invertible matrix, then $$A^{-1}={1\over det(A)}adj(A)$$
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+Begin by proving that the product of $A$ and its adjoint is equal to the product of the determinant of $A$ and $I_n$. Consider the product
+
+$$A=\left\lbrack\matrix{a_{11}&a_{12}&\cdots&a_{1n}\cr
+			a_{21}&a_{22}&\cdots&a_{2n}\cr
+			\vdots&\vdots&\vdots&\vdots\cr
+			a_{i1}&a_{i2}&\cdots&a_{in}\cr
+			\vdots&\vdots&\vdots&\vdots\cr
+			a_{n1}&a_{n2}&\cdots&a_{nn}\cr}\right\rbrack
+\left\lbrack\matrix{C_{11}&C_{21}&\cdots&C_{n1}\cr
+			C_{12}&C_{22}&\cdots&C_{n2}\cr
+			\vdots&\vdots&\vdots&\vdots\cr
+			C_{1n}&C_{2n}&\cdots&C_{nn}\cr}\right\rbrack$$
+
+\vskip 6pt
+The entry in the $i^{th}$ row and $j^{th}$ column of this product is
+
+$$a_{i1}C_{j1}+a_{i2}C_{j2}+\cdots+a_{in}C_{jn}$$
+
+If $i=j$, then this sum is simply the cofactor expansion of $A$ in its $i^{th}$ row, which means that the sum is the determinant of $A$. On the other hand, if $i\neq j$, then the sum is zero.
+
+$$A\bigl\lbrack adj(A)\bigr\rbrack=\left\lbrack\matrix{det(A)&0&\cdots&0\cr
+							0&det(A)&\cdots&0\cr
+							\vdots&\vdots&\vdots&\vdots\cr
+							0&0&\cdots&det(A)\cr}\right\rbrack=det(A)I$$
+
+The matrix $A$ is invertible, so $det(A)\neq 0$ and you can write
+
+$${1\over det(A)}A\bigl\lbrack adj(A) \bigr\rbrack=I\quad\hbox{or}\quad A\bigl\lbrack {1\over det(A)}adj(A) \bigr\rbrack=I$$
+
+by Theorem Uniqueness of an Inverse Matrix and the definition of the inverse matrix, it follows that
+
+$${1\over det(A)}adj(A)=A^{-1}$$
+
+\vfill\eject
+\bye

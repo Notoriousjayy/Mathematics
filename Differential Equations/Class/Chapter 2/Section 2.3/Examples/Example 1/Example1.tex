@@ -1,0 +1,35 @@
+\nopagenumbers
+{\bf Example 1:} Find the general solution to
+
+$${1\over x}{dy\over dx}-{2y\over x^2}=x\cos(x),\quad x>0$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+To put this linear equation in standard form, we multiply by $x$ to obtain
+
+$${dy\over dx}-{2\over x}y=x^2\cos(x)$$
+
+Here $P(x)={-2\over x}$, so
+
+$$\int P(x)dx=\int{-2\over x}dx=-2\ln|x|$$
+
+Thus, an integrating factor is
+
+$$\mu(x)=e^{-2\ln|x|}=e^{\ln(x^{-2})}=x^{-2}$$
+
+Multiplying $${dy\over dx}-{2\over x}y=x^2\cos(x)$$ by $\mu(x)$ yields
+
+$$\eqalign{\underbrace{x^{-2}{dy\over dx}-2x^{-3}y}&=\cos(x)\cr
+		{d\over dx}(x^{-2}y)&=\cos(x)\cr}$$
+
+We now integrate both sides and solve for $y$ to find
+
+$$\eqalign{x^{-2}y&=\int\cos(x)dx=\sin(x)+C\cr
+	y&=x^2\sin(x)+Cx^2}$$
+
+It is easily checked yhat this solution is valid for all $x>0$
+
+\vfill\eject
+\bye

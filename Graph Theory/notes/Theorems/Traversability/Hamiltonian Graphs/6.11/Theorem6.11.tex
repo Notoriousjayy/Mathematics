@@ -1,0 +1,16 @@
+\nopagenumbers
+{\bf Theorem 6.11}
+\vskip 6pt
+{Let G be a graph of order $ n \geq 3 $. If for every integer $j$ with $ 1 \leq j \leq {n\over 2}$, the number of vertices of $G$
+with degree at most $j$ is less than $j$, then $G$ is Hamiltonian.}
+
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+We show that $C(G) $ is complete. Assume, to the contray, that this is not the case. Among all pairs of non-adjacent vertices $C(G)$, let
+$u,w$ be a pair for which $deg_{C(G)}u+deg_{C(G)} w$ is maximum. Necessarily, $deg_{C(G)}u+deg_{C(G)}w \leq n-1$. We may also assume that
+$deg_{C(G)}u \leq deg_{C(G)}w$. Let $deg_{C(G)}u=k$. Thus $k \leq {{n-1}\over 2}$ and so. $$deg_{C(G)}w \leq n-k-1$$ Let $W$ be the set of all
+vertices distinct from $w$ that are not adjacent to $w$. Therefore, $u \in W$. Observe that if $v \in W$, then $deg_{C(G)}v \leq k$, for otherwise
+$$deg_{C(G)}v+deg_{C(G)}w > deg_{C(G)}+deg_{C(G)}w$$ contradicting the defining property of the pair $u,w$. Therefore, the degree of every vertex of
+$W$ is at most $k$. So by hypothesis, $|W| \leq k-1 $. Hence $$deg_{C(G)}w \geq (n-1)-(k-1)=n-k$$ which contradicts Theorem 6.1.
+\vfill\eject

@@ -1,0 +1,290 @@
+\centerline{{\bf Differential Equation Homework Pg. 99-100: 9, 14, 23, 24, 25}}
+
+\vskip 1mm
+\centerline{Section 3.2: Compartmental Analysis}
+
+\vskip 1cm
+{\bf 9)} In 1990 the Department of Natural Resources released $1000$ splake (a crossbreed of fish) into a lake. In 1997 the population in the lake was estimated to be $3000$. Using the Malthusian law for population growth, estimate the population of splake in the lake in the year 2020.
+
+\vskip 1cm
+{\bf Solution:} Let $y(t)$ be the population of splake into the lake at any time $t$. Then, {\bf the population is proportional to the speed to which the population grows} (Malthusian growth model). This can be represented as a differential equation
+
+$$y'(t)=ky(t)$$
+
+where $k$ is the constant of proportionality.
+
+\vskip 1mm
+Initially, $1000$ splake was released in the lake.ting time from 1990, we obtain the initial condition
+
+$$y(0)=1000$$
+
+In 1997, which is $7$ years later, the population was estimated to be $3000$. That gives as the second initial condition
+
+$$y(7)=3000$$
+
+Thus, the mathematical model for this problem is
+
+$$y'(t)=ky(t),\quad y(0)=1000\quad y(7)=3000$$
+
+This is {\bf separable ODE}. Rearranging terms in the equation gives
+
+$${dy\over dt}=ky\Rightarrow {1\over y}dy=kdt$$
+
+Integration on both sides gives
+
+$$\eqalign{\int{1\over y}dy&=\int kdt\cr
+	\ln|y|&=kt+C\cr}$$
+
+where $C$ is the constant of integration. By taking exponents, we obtain
+
+$$|y|=e^{kt+C}e^C$$
+
+Hence
+$$y=Ce^{kt}$$
+
+Where $C=e^C$. Now, we can use the first initial condition to determine the numeric value of the constant $C$. Substitute $0$ for $t$ and $1000$ for $y$ in the equation.
+
+$$\eqalign{1000&=y(0)=Ce^{k\cdot 0}\cr
+	1000&=Ce^0\cr
+	C&=1000\cr}$$
+
+To determine the numeric value of the constant of proportionality $k$, we use the second initial condition and the obtained result. Subtitute $7$ for $t$ and $3000$ for $y$ in the equation.
+
+$$\eqalign{3000&=y(7)=Ce^{k\cdot 7}=1000e^{7k}\cr
+	e^{7k}&=3\cr
+	k&={\ln 3\over 7}\cr}$$
+
+Therefore, the population of splake in the lake at any moment $t$ is
+
+$$y=1000e^{{\ln 3\over 7}t}$$
+
+To estimate the population of splake in the lake in 2020 using the obtained model, we need to calculate the value $y(30)$, since the initial observation of the population was in 1990, which is $30$ years prior to 2020. Therefore, we obtain
+
+$$y(30)=1000e^{{\ln 3\over 7}\cdot 30}=100,868$$
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 14)}  In 1980 the population of alligators on the Kennedy Space Center grounds was estimated to be $1500$. In 2006 the population had grown to an estimated $6000$. Using the Malthusian law for population growth, estimate the alligator population on the Kennedy Space Center grounds in the year 2020
+
+\vskip 1cm
+{\bf Solution:} Let $y(t)$ be the population of alligators on Kennedy Space Center at any time $t$. Then, {\bf the population is proportional to the speed to which the population grows} (Malthusian growth model). This can be represented as a differential equation
+
+$$y'(t)=ky(t)$$
+
+where $k$ is the constant of proportionality.
+
+\vskip 1mm
+In  1980, the number of aligators was $1500$. Counting time from 1980, we obtain the initial condition
+
+$$y(0)=1500$$
+
+In 2006, which is $26$ years later, the population was estimated to be $6000$. That gives as the second initial condition
+
+$$y(26)=6000$$
+
+Thus, the mathematical model for this problem is
+
+
+$$y'(t)=ky(t)\quad y(0)=1500\quad y(26)=6000$$
+
+This is {\bf separable ODE}. Rearranging terms in the equation gives
+
+$${dy\over dt}=ky\Rightarrow {1\over y}dy=kdt$$
+
+Integration on both sides gives
+
+$$\eqalign{\int{1\over y}dy&=\int kdt\cr
+	\ln|y|&=kt+C\cr}$$
+
+where $C$ is the constant of integration. By taking exponents, we obtain
+
+$$|y|=e^{kt+C}e^C$$
+
+Hence
+$$y=Ce^{kt}$$
+
+Where $C=e^C$. Now, we can use the first initial condition to determine the numeric value of the constant $C$. Substitute $0$ for $t$ and $1500$ for $y$ in the equation.
+
+$$\eqalign{1500&=y(0)=Ce^{k\cdot 0}\cr
+	1500&=Ce^0\cr
+	C&=1500\cr}$$
+
+To determine the numeric value of the constant of proportionality $k$, we use the second initial condition and the obtained result. Substitute $26$ for $t$ and $6000$ for $y$ in the equation.
+
+$$\eqalign{6000&=y(26)=1500e^{26k}\cr
+	e^{26l}&=4\cr
+	k&={\ln 4\over 26}\cr}$$
+
+Therefore, the population of alligators on the Kennedey Space Center at any moment $t$ is
+
+$$y=1500e^{{\ln 4\over 26}t}$$
+
+To estimate the population of alligators on the Kennedy Space Center using the obtained model , we need to calculate the value $y(40)$, since the initial observation of the population was in 1980, which is $40$ years prior to 2020. Therefore, we obtain
+
+$$y(40)=1500e^{{\ln 4\over 26}\cdot 40}=12,657$$
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 23)} If initially there are $50g$ of radioactive substance and after $3$ days there are only $10g$ remaining, what percentage of the original amount remains after $4$ days?
+
+\vskip 1cm
+{\bf Solution:} Let $m(t)$ be the mass of the radioactive substance, where $t$ represents time measured in days. By {\bf the law of decay}, we obtain the differential equation
+
+$${dm\over dt}=km(t)$$
+
+where $k$ is the decay constant, which depends on the substance. This is {\bf separable ODE}. Rearranging terms in the equations gives
+
+$${1\over m}dm=kdt$$
+
+Integration on both sides gives
+
+$$\eqalign{\int{1\over m}dm&=\int kdt\cr
+		\ln|m|&=kt+C\cr}$$
+
+By taking the exponents we obtain
+
+$$\eqalign{|m|&=e^{kt+C}\cr
+	m&=e^{kt}e^C}$$
+
+Therefore
+
+$$m=Ce^{kt}$$
+
+Where $C+e^C$. If the initial amount of the substance was $m_0$, we obtain the initial condition
+
+$$m(0)=m_0$$
+
+Substituting $0$ for $t$ and $m_0$ for $m$ in the general solution gives
+
+$$\eqalign{m_0&=m(0)=Ce^0\cr
+	C&=m_0\cr}$$
+
+Therefore, we obtain that
+
+$$m=m_0e^{kt}$$
+
+Here we have that $m_0=50g$ and $m(3)=10g$. We ca use the second condition to dtermine the numeric value of the decay constant $k$. Substituting $50$ for $m_0$, $3$ for $t$ and $10$ for $m$ in the equation gives
+
+$$\eqalign{10=50e^{3k}&\Rightarrow{1\over 5}=e^{3k}\cr
+	&\Rightarrow \ln{1\over 5}=3k\cr
+	&\Rightarrow k={\ln{1\over 5}\over 3}\cr}$$
+
+Therefore, the decay is modeled by the equation
+
+$$\eqalign{m(t)&=50e^{{\ln{1\over 5}\over 3}\cdot t}\cr
+	&= 50\Biggl({1\over 5}\Biggr)^{t\over 3}}$$
+
+After $4$ days, the amount of the substance is given by 
+
+$$m(4)=50\Biggl({1\over 5}\Biggr)^{4\over 3}\approx 5.848g$$
+
+and that is
+
+$${m_4\over m_0}\cdot 100={5.848\over 50}\cdot 100=11.63\%$$
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 24)} If initially there are $300g$ of a radioactive substance and after $5$ years there are $200g$ remaininf, how much time must elapse before $10g$ remain?
+
+\vskip 1cm
+{\bf Solution:} Let $m(t)$ be the mass of the radioactive substance, where $t$ represents time measured in years. By {\bf the law of decay}. we obtain the differential equation
+
+$${dm\over dt}=km(t)$$
+
+where $k$ is the decay constant, which depends on the substance. This is {\bf separable ODE}. Rearranging terms in the equations gives
+
+$${1\over m}dm=kdt$$
+
+Integration on both sides gives
+
+$$\eqalign{\int{1\over m}dm&=\int kdt\cr
+		\ln|m|&=kt+C\cr}$$
+
+By taking the exponents we obtain
+
+$$\eqalign{|m|&=e^{kt+C}\cr
+	m&=e^{kt}e^C}$$
+
+Therefore
+
+$$m=Ce^{kt}$$
+
+Where $C+e^C$. If the initial amount of the substance was $m_0$, we obtain the initial condition
+
+$$m(0)=m_0$$
+
+Substituting $0$ for $t$ and $m_0$ for $m$ in the general solution gives
+
+$$\eqalign{m_0&=m(0)=Ce^0\cr
+	C&=m_0\cr}$$
+
+Therefore, we obtain that
+
+$$m=m_0e^{kt}$$
+
+Here we have that $m_0=300g$ and $m(5)=200g$. we can use the second condition to determine the numeric value of the decay constant $k$. Substituting $300$ for $m_0$, $5$ for $t$ and $200$ for $m$ in the equation gives
+
+$$\eqalign{200=300e^{5k}&\Rightarrow {2\over 3}=e^{5k}\cr
+	&\Rightarrow \ln{2\over 3}=5k\cr
+	&\Rightarrow k={\ln{2\over 3}\over 5}\cr}$$
+
+Therefore, the decay is modeled by the equation
+
+$$\eqalign{m(t)&=300e^{\ln{2\over 3}\over 5}\cr
+		&=300\Biggl({2\over 3}\Biggr)^{0.2t}\cr}$$
+
+Let $\hat{t}$ be the moment when only $10g$ of the substance has left. To determine $\hat{t}$. we need to solve the equation
+
+$$m(\hat{t})=10$$
+
+for $\hat{t}$
+
+$$\eqalign{10&=m(\hat{t})=300\Biggl({2\over 3}\Biggr)^{0.2\hat{t}}\cr
+	&\Rightarrow t={5\ln 30\over \ln 1.5}\approx 41.94\cr}$$
+
+Which means that will happen in about $42$ years.
+
+\vskip 1mm
+\hrule
+
+\vskip 1cm
+{\bf 25)} Carbon dating is often used to determine the age of a fossil. For example, a humanoid skull was found in a cave in South Africa along with the remains of a campfire. Archaeologists believe the age of the skull to be the same age as the campefire. It is determined that only $2\%$ of the original amout of carbon-14 remainds in the burnt wood of the campfire. Estimate the age of the skull if the half-life of carbon-14 is about 5600 years.
+
+\vskip 1cm
+{\bf Solution:} Let the substance present at any time t is A(t).As it is given that rate of decay is proportional to amount present at that time so
+
+$${d(A(t))\over dt}=-kA(t)$$
+
+where $k$ is the decay constant, which depends on the substance. This is {\bf separable ODE}. Rearranging terms in the equations gives
+
+$${d(A(t))\over A(t)}=-kdt$$
+
+Integration on both sides assuming at $t=0$ amount present is $A_0$
+
+$$\eqalign{\int^{A(t)}_{A_0}{d(A(t))\over A(t)}dA&=\int^t_0-kdt\cr
+		\ln{A(t)}-\ln{A_0}&=-kt\cr
+		\ln{A(t)\over A_0}&=-kt\cr
+		{A(t)\over A_0}&=e^{-kt}\cr
+		A(t)&=A_0e^{-kt}\cr}$$
+
+It is given that time when $A(t)=0.5\times A_0$ is $5600$
+
+$$\eqalign{A(5600)&=A_0e^{-5600k}\cr
+	0.5\times A_0&=A_0e^{-5600k}\cr
+	k&={\ln 2\over 5600}=1.2377\times 10^{-4}\cr}$$
+
+Time $t$ is to be calculated when $A(t)=0.02\times A_0$
+
+$$\eqalign{A(t)&=A_0e^{-1.2377\times 10^{-4}\times t}\cr
+	0.02\times A_0&=A_0e^{-1.2377\times 10^{-4}\times t}\cr
+	\ln .02&=-1.2377\times 10^{-4}\times t\cr
+	t\approx 31607\cr}$$
+
+
+\vfill\eject
+\bye

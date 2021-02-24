@@ -1,0 +1,38 @@
+\nopagenumbers
+{\bf Example 2:} Use Euler's method to find approximation to the solution of the initial value problem
+
+$$y'=y,\quad y(0)=1$$
+
+at $x=1$, taking $1,2,4,8$, and $16$ steps.
+
+\vskip 2mm
+{\bf Remark.} Observe that the solution to $y'=y,\quad y(0)=1$ is just $\phi(x)=e^x$, so Euler's method will generate algebraic approximations to the transcendental number $e$.
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Here $f(x,y)=y,x_0$, and $y_0=1$. The recursive formula for Euler's method is
+
+$$y_{n+1}=y_n+hy_n=(1+h)y_n$$
+
+To obtain approximations at $x=1$ with $N$ steps, we take the step size $h={1\over N}$. For $N=1$, we have
+
+$$\phi(1)\approx y_1=(1+1)(1)=2$$
+
+For $N=2,\phi(x_2)=\phi(1)\approx y_2$. In this case we get
+
+$$\eqalign{y_1&=(1+0.5)(1)=1.5\cr
+	\phi(1)\approx y_2&=(1+0.5)(1.5)=2.25\cr}$$
+
+For $N=4,\phi(x_4)=\phi(1)\approx y_4$. In this case we get
+
+$$\eqalign{y_1&=(1+0.25)(1)=1.25\cr
+	y_2&=(1+0.25)(1.25)=1.5625\cr
+	y_3&=(1+0.25)(1.5625)=1.95313\cr
+	y_4&=(1+0.25)(1.95313)=2.44141\cr}$$
+
+Notice smaller steps sizes give better approximations. (But suffer the drawback of more computations and round-off error)
+
+\vfill\eject
+\bye

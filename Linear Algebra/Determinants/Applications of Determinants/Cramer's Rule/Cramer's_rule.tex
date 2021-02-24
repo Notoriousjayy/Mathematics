@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Theorem: Cramer's Rule}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If a system of $n$ linear equations in $n$ variables has a coefficient matrix $A$ with a nonzero determinant $|A|$, then the solution of the system is
+
+$$x_1={det(A_1)\over det(A)},x_2={det(A_2)\over det(A)},\cdots,x_n={det(A_n)\over det(A)}$$
+
+where the $i^{th}$ column of $A_i$ is the column of constants in the system of equations.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+Let the system be represented by $AX=B$. The determinant of $A$ is nonzero, so you can write
+
+$$X=A^{-1}B={1\over |A|}adj(A)B=\bigl\lbrack x_1\;x_2\cdots\;x_n\bigr\rbrack{}^T$$
+
+If the entries of $B$ are $b_1,b_2,\ldots,b_n$, then $x_1={1\over |A|}(b_{1}C_{1i}+b_{2}C_{2i}+\cdots+b_{n}C_{ni})$, but the sum (in parentheses) is precisely the cofactor expansion of $A_i$, which means that $x_i=|A_i|/|A|$, and the proof is complete.
+
+\vfill\eject
+\bye

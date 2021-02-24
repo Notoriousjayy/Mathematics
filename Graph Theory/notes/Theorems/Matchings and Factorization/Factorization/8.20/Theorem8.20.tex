@@ -1,0 +1,10 @@
+\nopagenumbers
+{\bf Theorem 8.20}
+\vskip 6pt
+For every integer $k \geq 1$, the complete graph $K_{2k}$ can be factored into $k-1$ Hamiltonian cycles and a $1$-factor.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Since the result is true for $k=1$ and $k=2$, we assume that $k \geq 3$. Let $G=K_{2k}$, where $V(G)= \lbrace v_0,v_1, \ldots , v_{2k-1} \rbrace$. Let $v_1,v_2, \ldots , v_{2k-1}$ be the vertices of a regular $(2k-1)$-gon and place $v_0$ in the center of the $(2k-1)$-gon. Join each two vertices of $G$ by a straight line segment. Let $G_1$ be the spanning subgraph of $G$ whose edges consist of $(1)$ $v_0v_1$ and $v_0v_{k+1}$, $(2)$ all edges parallel to $v_0v_1$ and $(3)$ all edges parallel to $v_0v_{k+1}$. Then $G_1=C_{2k}$. For $1 \leq i \leq k-1$, let $G_i$ be the spanning subgraph of $G$ whose edges consist of $(1)$ $v_0v_i$ and $v_0v_{k+i}$, $(2)$ all edges parallel to $v_0v_i$ and $(3)$ all edges parallel to $v_0v_{k+i}$. Then $G_i=C_{2k}$ for each $i(1 \leq i \leq k-1)$ and every edge of $G$ belongs to some subgraph $G_i(1 \leq i \leq k-1)$ except for the edges $v_1v_{2k-1},v_2v_{2k-2}, \ldots , v_{k-1}v_{k+1}$ and $v_ov_k$, which are the edges of a $1$-factor $G_k$ of $G$. Thus $G$ can be factored into $G_1,G_2, \ldots , G_k$.
+
+\vfill\eject

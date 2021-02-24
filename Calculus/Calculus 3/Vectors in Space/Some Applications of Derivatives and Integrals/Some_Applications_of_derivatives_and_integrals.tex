@@ -1,0 +1,165 @@
+{\bf Parametric and Polar Curves in $R^2$}
+
+\vskip 1mm
+{\bf Parametric Curve in $R^2$}
+
+\vskip 1mm
+A {\bf parametric curve} in $R^2$ is a function from an interval into $R^2$. For each $t$ in the interval, the value of the function must be in $R^2$ and have the form $\Bigl(f(t),g(t)\Bigr)$
+
+\vskip 1mm
+Sometimes we like to write $\Bigl(x(t),y(t)\Bigr)$ and sometimes we write
+
+$$\eqalign{x&=f(t)\cr
+	y&=g(t)\cr}$$
+
+The set of all points of the form $\Bigl(f(t),g(t)\Bigr)$ that we can get by taking $t$ in the domain interval is called the {\bf range} of the curve and sometimes, the {\bf orbit} of the curve.
+
+\filbreak
+\vskip 1cm
+{\bf Distance Travelled along a Curve}
+
+\vskip 1mm
+To motivate the idea of distance travelled along a curve we image that the orbit of the curve is made of string. The length of any portion of the orbit can be pictured as the length of the line segment we would obtain by pulling the thread from its initial curve shape into a straight line. The distance traveled by a particle moving along the curve from time $a$ to time $b$ is the length of the part of the orbit that we can show as
+
+$$\Bigl\{\Bigl(x(t),y(t)\Bigr)\bigl|\quad a\leq t\leq b\Bigr\}$$
+
+times the number of times that the particle moves through it.
+
+\vskip 1mm
+We shallnow introduce a function $s$ that describes the distance that a particle travels along a given curve. We suppose that the curve arrives at the point $\Bigl(x(t),y(t)\Bigr)$ at each $t$ in an interval $[a,b]$ and, for each $t$, we express the distance travelled by a particle moving along the curve from tome $a$ to time $t$ as $s(t)$. $s(t)$ is the length of the blue part of the orbit of the curve.
+
+\vskip 1mm
+We can obtain a formula for $s(t)$ by looking at a number $u$ just a little more that $t$. The number $s(u)-s(t)$ is the length of the red part of the curve.
+
+\vskip 1mm
+We can see that $s(a)=0$ and $s(b)$ is the total distance travelled from time $a$ to time $b$ We are interested in finding a formula for $s(b)$.
+
+\vskip 1mm
+We can obtain a formula for $s(t)$ by looking at a number $u$ just a little more than $t$. The number $s(u)-s(t)$ is the length of the red part of the curve.
+
+$$\eqalign{s(u)-s(t)&\approx ||\Bigl(x(u),y(u)\Bigr)-\Bigl(x(t),y(t)\Bigr)||\cr
+		&=\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigr(y(u)-y(t)\Bigr)^2}\cr
+		s(u)-s(t)&\approx \sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigr(y(u)-y(t)\Bigr)^2}\cr
+		{s(u)-s(t)\over u-t}&\approx {\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigr(y(u)-y(t)\Bigr)^2}\over (u-t)}\cr
+		&{\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigr(y(u)-y(t)\Bigr)^2}\over (u-t)^2}\cr
+		{s(u)-s(t)\over u-t}&\approx \sqrt{\Biggl({x(u)-x(t)\over u-t}\Biggr)^2+\Biggl({y(u)-y(t)\over u-t}\Biggr)^2}\cr}$$
+
+and now we are going to take the limit as $u\to t$.
+
+$$\eqalign{\lim_{u\to t}{s(u)-s(t)\over u-t}&=\lim_{u\to t}\sqrt{\Bigl({x(u)-x(t)\over u-t}\Bigr)^2+\Bigl({y(u)-y(y)\over u-t}\Bigr)^2}\cr
+		s'(t)&=\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigr(y'(t)\Bigr)^2}\cr}$$
+This $s'(t)$ is the speed at which we are travelling.
+
+\vskip 1mm
+Now we can see that
+
+$$\eqalign{\int_a^b\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)}dt&=\Bigl[s(t)\Bigr]_a^b\cr
+		&=s(b)-s(a)\cr
+		&=s(b)-0\cr}$$
+
+and the total distance travelled is
+
+$$\int_1^b\sqrt{\Bigl(x'(t)\Bigr)^2+\bigl(y'(t)\Bigr)^2}dt$$
+
+\filbreak
+\vskip 1cm
+{\bf Area of a Surface of Revolution}
+
+\vskip 1mm
+We shall assume that we are looking at a curve that takes the value $\Bigl(x(t),y(t)\Bigr)$ for $a\leq t\leq b$ and that $y)t_\geq 0$ for each $t$. When the curve is rotated around the $x$-axis, it generates a surface and our objective is to find a formula for the area of this surface.
+
+\vskip 1mm
+To motivate a formula for this surface area, we look at two points
+
+$$P=\Bigl(x(t),y(t)\Bigr)$$
+
+and
+
+$$Q=\Bigl(x(u),y(u)\Bigr)$$
+
+on the curve where $u$ is a little more than $t$. As long as $u$ is close enough to $t$, we can assume that the curve running from $P$ to $Q$ is approximately straight.
+
+\vskip 1mm
+When the curve is rotated around the $x$-axis, the portion between $P$ and $Q$ traces the strip shown in yellow. When this strip is cut and unrolled, it appears as follows.
+
+\vskip 1mm
+and the length of the strip is approximately the length of the circle traced by the point $P$. Since this circle has radius $y(t)$, the length of the strip is about $2\pi y(t)$.
+
+\vskip 1mm
+Therefore the area of the strip is approximately
+
+$$2\pi y(t)\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigl(y(u)-y(t)\Bigr)^2}$$
+
+\vskip 1mm
+If we express the area of the part of the surface up to the given number $t$ as $A(t)$
+
+$$\eqalign{A(u)-A(t)&\approx 2\pi u(t)\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigl(y(u)-y(t)\Bigr)^2}\cr
+		{A(u)-A(t)\over u-t}&\approx {2\pi y(t)\sqrt{\Bigl(x(u)-x(t)\Bigr)^2+\Bigl(y(u)-y(t)\Bigr)^2}\over u-t}\cr
+		&=2\pi y(t)\sqrt{{\Bigl(x(u)-x(t)\Bigr)^2\over (u-t)^2}+{\Bigl(y(u)-y(t)\Bigr)^2\over (u-t)^2}}\cr
+		&=2\pi y(y)\sqrt{\Biggl({x(u)-x(t)\over u-t}\Biggr)^2+\Biggl({y(u)-y(t)\over u-t}\Biggr)^2}\cr}$$
+
+now we take the limit as $u\to t$
+
+$$\lim_{u\to t}{A(u)-A(t)\over u-t}=2\pi y(t)\sqrt{\Biggl(\lim_{u\to t}{x(u)-x(t)\over u-t}\Biggr)^2+\Biggl(\lim_{u\to t}{y(u)-y(t)\over u-t}\Biggr)^2}$$
+
+and so
+
+$$A'(t)=2\pi y(t)\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2}$$
+
+and so
+
+$$\eqalign{\int_a^b2\pi y(t)\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2}dt&=\Bigl[A(t)\Bigr]_a^b\cr
+		&=A(b)-A(a)\cr
+		&=A(b)\cr}$$
+
+and this is the area that the curve traces as it is rotated around the $x$-axis.
+
+\filbreak
+\vskip 1cm
+{\bf Polar Coordinates}
+
+\vskip 1mm
+{\bf Introduction to Polar Coordinates}
+
+\vskip 1mm
+If $r$ and $\theta$ are given numbers, then the pair $(r,\theta)$ is said to be a pair of {\bf polr coordinates} of a given point $(x,y)$ in the plane when
+
+$$x=r\cos(\theta)$$
+
+and
+
+$$y=r\sin(\theta)$$
+
+\filbreak
+\vskip 1cm
+{\bf Length of a Polar Graph}
+
+\vskip 1mm
+Since a graph $r=f(\theta)$ for $a\leq \theta\leq b$  is just the parametric curve
+
+$$\eqalign{x&=f(\theta)\cos(\theta)\cr
+		y&=f(\theta)\sin(\theta)\cr
+		x'(\theta)&=f'(\theta)\cos(\theta)-f(\theta)\sin(\theta)\cr
+		y'(\theta)&=f'(\theta)\sin(\theta)+f(\theta)\cos(\theta)\cr}$$
+
+for $a\leq\theta\leq b$, the length of the curve is
+
+$$\int_a^b\sqrt{\Bigl(f'(\theta)\cos(\theta)-f(\theta)\sin(\theta)\Bigr)^2+f'(\theta)\sin(\theta)+f(\theta)\cos(\theta)}d\theta=\int_a^b\sqrt{\Bigl(f'(\theta)\Bigr)^2+\Bigl(f(\theta)\Bigr)^2}d\theta$$
+
+for $a\leq\theta\leq b$, the length of the curve is
+
+\filbreak
+\vskip 1cm
+{\bf Area Bounded by a Polar Graph}
+
+\vskip 1mm
+We suppose that $f$ is a positive continuous function on the interval $[\alpha,\beta]$ where $\alpha<\beta\leq\alpha+2\pi$ and we want to find a formula for the area of the region that contains all points whose polar coordinates $(r,\theta)$ satisfy the inequalities $0\leq r\leq f(\theta)$ and $\alpha\leq\theta\leq\beta$.
+
+\vskip 1mm
+To find a formula for this area, we define $g(\theta)$ to be the area of the region shown in green for any given $\theta$ in the inteval $[\alpha,\beta]$. Given a number $t$ that is slightly more than $\theta$, we see that $g(t)$ is the area of the region shown in green and yellow. This $g(t)-g(\theta)$ is the area of the yellow region and, if $t$ is close to $\theta$, then the yellow region is approximaely a circular sector with radius $f(\theta)$ and opening angle $t-\theta$. Thus
+
+$$g(t)-g(\theta)\approx {1\over 2}\Bigl(f(\theta)\Bigr)^2(t-\theta)$$
+
+\filbreak
+\vfill\eject
+\bye

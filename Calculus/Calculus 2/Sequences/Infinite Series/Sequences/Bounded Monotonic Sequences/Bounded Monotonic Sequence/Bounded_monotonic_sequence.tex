@@ -1,0 +1,10 @@
+\nopagenumbers
+{\bf Theorem: Bounded Monotonic Sequences}
+\vskip 6pt
+If a sequence $(a_n)$ is bounded and monotonic, then it converges.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Assume that the sequence $(a_n)$ is non-decreasing, and each term is positive. Because the sequence is bounded, there must exists an upper bound $M$ such that $$a_1 \leq a_2 \leq a_3 \leq \ldots \leq a_n \leq \ldots \leq M$$. From the completeness axiom, there is a least upper bound $L$ such that $$a_1 \leq a_2 \leq a_3 \leq \ldots \leq a_n \leq \ldots \leq L$$ For $\varepsilon >0$, it follows that $L-\varepsilon<L$, and therefore $L-\varepsilon$ cannot be an upper bound for the sequence. Consequently, at least one term of $(a_n)$ is greater than $L-\varepsilon$. That is, $L-\varepsilon<a_N$ for some positive $N$. Hence, $a_N \leq a_n$ for $n>N$. Finally, for $n>N$ $L-\varepsilon < a_N \leq a_n \leq L <L+\varepsilon$ $\Rightarrow$ $|a_n-L|< \varepsilon$ for $n>N$.
+
+\vfill\eject

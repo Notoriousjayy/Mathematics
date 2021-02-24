@@ -1,0 +1,23 @@
+\nopagenumbers
+{\bf Example 3}: Solve
+
+$${dy\over dx}-5y=-{5\over 2}xy^3$$
+
+\vskip 6pt
+{\bf Solution}
+This is a Bernoulli equation with $n=3,P(x)=-5$ and $Q(x)=-{5\over 2}$. To transform ${dy\over dx}-5y=-{5\over 2}xy^3$ into a linear equation, we first divide by $y^3$ to obtain
+
+$$y^{-3}{dy\over dx}-5y^{-2}=-{5\over 2}x$$
+
+Next we make the substitution $v=y^{-2}$. Since ${dv\over dx}=-2y^{-3}{dy\over dx}$, the transformed equation is
+
+$$\eqalign{-{1\over 2}{dv\over dx}-5v&=-{5\over 2}x\cr
+		{dv\over dx}+10v&=5x\cr}$$
+
+${dv\over dx}+10v=5x$ is linear, so we can solve it for $v$. It turns out
+
+$$v={x\over 2}-{1\over 20 +Ce^{-1x}}$$
+
+Not included in the last equation is the solution $y\equiv 0$ that was lost in the process of ${dy\over dx}-5y=-{5\over 2}xy^3$ by $y^3$
+\vfill\eject
+\bye

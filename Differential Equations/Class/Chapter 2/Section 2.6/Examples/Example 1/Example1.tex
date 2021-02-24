@@ -1,0 +1,32 @@
+\nopagenumbers
+{\bf Example 1}: Solve
+
+$$(xy+y^2+x^2)dx-x^2dy=0$$
+
+\vskip 6pt
+A check will show that $(xy+y^2+x^2)dx-x^2dy=0$ is not separable, exact or linear. If we express $(xy+y^2+x^2)dx-x^2dy=0$ in the derivative form
+
+$${dy\over dx}={xy+y^2+x^2\over x^2}={y\over x}+\Biggl({y\over x}\Biggr)^2+1$$
+
+then we see that the right-hand side of ${dy\over dx}={xy+y^2+x^2\over x^2}={y\over x}+\Bigl({y\over x}\Bigr)^2+1$ is a function of just $\Bigl({y\over x}\Bigr)$. Thus, $(xy+y^2+x^2)dx-x^2dy=0$ is homogeneous.
+
+\vskip 1mm
+Now let $v={y\over x}$  and recall that ${dy\over dx}=v+x({dv\over dx})$. With these substitutions, ${dy\over dx}={xy+y^2+x^2\over x^2}={y\over x}+\Bigl({y\over x}\Bigr)^2+1$ becomes
+
+$$v+x{dv\over dx}=v+v^2+1$$
+
+The above equation is separable, and, on separating the variables and integrating, we obtain
+
+$$\eqalign{\int{1\over v^2+1}dv&=\int{1\over x}dx\cr
+	\arctan(x)&=\ln|x|+C}$$
+
+Hence,
+
+$$v=\tan(\ln|x|+C)$$
+
+Finally, we substitute ${y\over x}$ for $v$ and solve for $y$ to get
+
+$$y=x\tan(\ln|x|+C)$$
+
+\vfill\eject
+\bye

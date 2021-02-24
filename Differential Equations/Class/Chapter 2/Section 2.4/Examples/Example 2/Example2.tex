@@ -1,0 +1,27 @@
+\nopagenumbers
+{\bf Example 2}:  Solve
+
+$$(2xy-\sec^2(x))dx+(x^2+2y)dy=0$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Here $M(x,y)=2xy-\sec^2(x)$ and $N(x,y)=x^2+2y$. Because
+
+$${\partial M\over\partial y}=2x={\partial N\over\partial x}$$
+
+$(2xy-\sec^2(x))dx+(x^2+2y)dy=0$ is exact. To find $F(x,y)$, we begin by intergrating $M$ with respect to $x$:
+
+$$\eqalign{F(x,y)&=\int(2xy-\sec^2(x))dx+g(y)\cr
+	&=x^2y-\tan(x)+g(y)\cr}$$
+
+Next we take the partial derivative of $F(x,y)=\int(2xy-\sec^2(x))dx+g(y)$ with respect to $y$ and substitute $x^2+2y$ for $N$:
+
+$$\eqalign{{\partial F\over\partial y}(x,y)&=N(x,y)\cr
+	x^2+g'(y)&=x^2+2y\cr}$$
+
+Thus $g'(y)=2y$, and since the choice of the constant of integration is not important, we can take $g'(y)=y^2$. Hence from $F(x,y)=\int(2xy-\sec^2(x))dx+g(y)$, we have $x^2y-\tan(x)+y^2$, and the solution to $(2xy-\sec^2(x))dx+(x^2+2y)dy=0$  is given implicitly by $x^2y-\tan(x)+y^2=C$
+
+\vfill\eject
+\bye

@@ -1,0 +1,29 @@
+\nopagenumbers
+{\bf Number of Solutions of a Linear System}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+For a system of linear equations, precisely one of the statements below is true.
+
+\vskip 6pt
+(1) The system has exactly one solution.
+
+\vskip 6pt
+(2) The system has infinitely many solutions.
+
+\vskip 6pt
+(3) The system has no solution
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+Represent the system by the matrix operation $Ax=b$. If the system has exactly one solution or no solution, then there is nothing to prove. So, assume that the system has at least two distinct solutions $x_1$ and $x_2$. If you show that this assumption implies that the system has infinitely man solutions, then the proof is complete. When $x_1$ and $x_2$ are solutions, you have $Ax_1=Ax_2=b$ and $A(x_1-x_2)=0$. This implies that the (nonzero) column matrix $x_h=x_1-x_2$ is a solution of the homogeneous system of linear equations $Ax=0$. So, for any scalar $c$,
+
+$$A(x_1+cx_h)=Ax_1+A(cx_h)=b+c(Ax_h)=b+c0=b$$
+
+Then $x_1+cx_h$ is a solution of $Ax=b$ for any scalar at $c$. There are infineitely many possible values of $c$ and each va;ue produces a different solution, so the system has infinitely many solutions.
+
+\vfill\eject
+\bye

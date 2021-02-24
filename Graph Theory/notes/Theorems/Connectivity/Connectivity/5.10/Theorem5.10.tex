@@ -1,0 +1,10 @@
+\nopagenumbers
+{\bf Theorem 5.10}
+\vskip 6pt
+For every positive integer $n$, $\lambda (K_n)=n-1$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+By definition, $\lambda (K_1)=0$. Let $G=K_n$ for $n \geq 2$. Since every vertex of $G$ has degree $n-1$, if we remove the $n-1$ edges incident with a vertex, then a disconnected graph results. Thus $ \lambda (G) \leq n-1$. Now let $X$ be a minimum edge-cut of $G$. So $|X|= \lambda (G)$. Then $G-X$ has exactly two components of $G_1$ and $G_2$, where $G_1$ has order $k$, and $G_2$ has order $n-k$. Since (1) $X$ consists of all edges joining $G_1$ and $G_2$ and (2) $G$ is complete, it follows that $|X|=k(n-k)$. Because $k \geq 1$ and $n-k \geq 1$, we have $(k-1)(n-k-1) \geq 0$ and so $$(k-1)(n-k-1)=k(n-k)-n+1 \geq 0$$ Hence $\lambda (G)=|X|=k(n-k) \geq n-1$. Therefore, $\lambda (K_n)=n-1$.
+
+\vfill\eject

@@ -1,0 +1,30 @@
+\nopagenumbers
+{\bf Elementary Row Operations and Determinants}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+Let $A$ and $B$ be square matrices.
+
+(1) When $B$ is obtained from $A$ by interchanging two rows of $A$, $det(B)=-det(A)$.
+
+\vskip 6pt
+(2) When $B$ is obtained from $A$ by adding a multiple of a row of $A$ to another row of $A$, $det(B)=det(A)$.
+
+\vskip 6pt
+(3) When $B$ is obtained from $A$ by multiplying a row of $A$ by a nonzero constant $c$, $det(B)=c\;det(A)$.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+Assume that $A$ and $B$ are $2\times 2$ matrices
+
+$$A=\left\lbrack\matrix{a_{11}&a_{12}\cr
+			a_{21}&a_{22}}\right\rbrack\quad\hbox{and}\quad B=\left\lbrack\matrix{a_{21}&a_{22}\cr
+			a_{11}&a_{12}}\right\rbrack$$
+
+Then, you have $|A|=a_{11}a_{22}-a_{21}a_{12}$ and $|B|=a_{21}a_{12}-a_{11}a_{22}$. So $|B|=-|A|$. Using mathematical induction, assume the property is true for matrices of order $(n-1)$. Let $A$ be an $n\times n$ matrix such that $B$ is obtained from $A$ by interchanging two rows of $A$. Then, to find $|A|$ and $|B|$, expand in a row other than the two interchanged rows. By the induction assumption, the cofactors of $B$ will be the negatives of the cofactors of $A$ because the corresponding $(n-1)\times (n-1)$ matrices have two rows interchanged. Finally, $|B|=-|A|$ and the proof is complete.
+
+\vfill\eject
+\bye

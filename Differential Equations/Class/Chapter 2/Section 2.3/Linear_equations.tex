@@ -1,0 +1,38 @@
+\nopagenumbers
+{\bf Linear Equations}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf Method for Solving Linear Equations}:
+
+\vskip 6pt
+(a) Write the equation in the standard form
+
+$${dy\over dx}P(x)y=Q(x)$$
+
+(b) Calculate the integrating factor $\mu(x)$ by the formula
+
+$$\mu(x)=\hbox{exp}\biggl\lbrack\int P(x)dx\biggr\rbrack$$
+
+(c) Multiply the equation in standard form by $\mu(x)$ and, recalling that the left-hand side is just ${d\over dx}\lbrack\mu(x)y\rbrack$, obtain
+
+$$\eqalign{\underbrace{\mu(x){dy\over dx}+P(x)\mu(x)y}&=\mu(x)Q(x)\cr
+			{d\over dx}\lbrace\mu(x)y\rbrace&=\mu(x)Q(x)\cr}$$
+
+(d) Integrate the last equation and solve for $y$ by dividing by $\mu(x)$ to obtain
+
+$$y(x)={1\over\mu(x)}\biggl\lbrack\int\mu(x)Q(x)dx+C\biggr\rbrack$$
+
+\vskip 6pt
+{\bf Existence and Uniquenes of Solution}
+
+\vskip 6pt
+Suppose $P(x)$ and $Q(x)$ are continuous on an interval $(a,b)$ that contains the point $x_0$. Then for any choice of initial value $y_0$, there exists a unique solution $y(x)$ on $(a,b)$ to the initial value problem
+
+$${dy\over dx}+P(x)y=Q(x), \quad y(x_0)=y_0$$
+
+In fact the solution is given by $y(x)={1\over\mu(x)}\bigl\lbrack\int\mu(x)Q(x)dx+C\bigr\rbrack$ for a suitable value of $C$.
+
+\vfill\eject
+\bye

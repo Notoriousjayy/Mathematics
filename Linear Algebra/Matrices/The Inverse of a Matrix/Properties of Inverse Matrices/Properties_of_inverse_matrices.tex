@@ -1,0 +1,39 @@
+\nopagenumbers
+{\bf Theorem: Properties of Inverse Matrices}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If $A$ is an invertible matric, $k$ is a positive integer, and $c$ is a nonzero scalar, then $A^{-1},A^k,cA$, and $A^T$ are invertible and the statements below are true.
+
+\vskip 6pt
+1. $(A^{-1})^{-1}=A$
+
+\vskip 6pt
+2. $(A^k)^{-1}=\underbrace{A^{-1}A^{-1}\cdots A^{-1}}_{k\rm\;factors}=(A^{-1})^k $
+
+\vskip 6pt
+3. $(cA)^{-1}={1\over c}A^{-1}$
+
+\vskip 6pt
+4. $(A^T)^{-1}=(A^{-1})^T$
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+The key to the proofs of Properties 1,3, and 4 is the fact that the inverse of a matrix is unique. That is, if $BC=CB=I$, then $C$ is the inverse of $B$.
+
+\vskip 1mm
+Property 1 states that the inverse of $A^{-1}$ is $A$ itself. To prove this, observe that $A^{-1}A=AA^{-1}=I$, which means that $A$ is the inverse of $A^{-1}$. Thus $A=(A^{-1})^{-1}$.
+
+\vskip 1mm
+Similarily, Property 3 states that ${1\over c}A^{-1}$ is the inverse of $cA$, $c\neq 0$. To prove this, use the properties of scalar multiplication.
+
+$$\eqalign{(cA)\Biggl({1\over c}A^{-1}\Biggr)&=\Biggl(c{1\over c}AA^{-1}\Biggr)=(1)I=I\cr
+	\Biggl({1\over c}A^{-1}\Biggr)(cA)&=\Biggl(c{1\over c}AA^{-1}\Biggr)A^{-1}A=(1)I=I\cr}$$
+
+So ${1\over c}A^{-1}$ is the inverse of $(cA)$, which implies that $(cA)^{-1}={1\over c}A^{-1}$.
+
+\vfill\eject
+\bye

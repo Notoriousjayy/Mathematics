@@ -1,0 +1,20 @@
+\nopagenumbers
+{\bf Theorem 8.4}
+\vskip 6pt
+A collection $ \lbrace S_1,S_2, \ldots S_n \rbrace$ of non-empty finite sets has a system of distinct representatives {\it if and only if}  for each integer $k$ with $1 \leq k \leq n$, the union of any $k$
+of these sets contains at least $k$ elements.
+\vskip 10pt
+{\bf Symbolically:}
+A collection $ \lbrace S_1,S_2, \ldots S_n \rbrace$ of non-empty finite sets has a system of distinct representatives $\Leftrightarrow$  for each integer $k$ with $1 \leq k \leq n$, the union of any $k$
+of these sets contains at least $k$ elements.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Suppose that $ \lbrace S_1,S_2, \ldots S_n \rbrace$ has a system of distinct representatives. Then, necessarily, for each integer $k$ with $1 \leq k \leq n$, the union of any $k$ of these sets contains at least $k$ elements. So only the converse needs to be verified.
+\vskip 1mm
+Let $ \lbrace S_1,S_2, \ldots S_n \rbrace$ be a collection of $n$ sets such that for each integer $k$ with $1 \leq k \leq n$, the union of any $k$ of these sets contains at least $k$ elements. We construct a
+bipartite sets $U= \lbrace S_1,S_2, \ldots S_n \rbrace$ and $W=S_1 \cup S_2 \cup \ldots \cup S_n$, where a vertex $S_i(1 \leq i \leq n)$ in $U$ is adjacent to a vertex $w$ in $W$ if $w \in S_i$. Let $X$ be any
+subset of $U$, where $|X|=k$ with $1 \leq k \leq n$. Since the union of any $k$ sets contains at least $k$ elements, $|N(X) \geq |X|$. Therefore, $G$ satisfies Hall's condition. By Theorem 8.3, $G$ contains
+a matching of cardinality $n$, which pairs off the sets $S_1,S_2, \ldots S_n$ with $n$ distinct elements in $ S_1 \cup S_2 \cup \ldots \cup S_n$, producing a system of distinct representatives for these sets.
+
+\vfill\eject

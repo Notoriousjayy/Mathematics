@@ -1,0 +1,19 @@
+\nopagenumbers
+{\bf Theorem 8.7}
+\vskip 6pt
+For every graph $G$ of order $n$ containing no isolated vertices, $$ \alpha '(G)+ \beta '(G)=n$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+First, suppose that $ \alpha '(G)=k$. Then a maximum matching of $G$ consists of $k$ edges, which then cover $2k$ vertices. The remaining $n-2k$ vertices of $G$ can be covered by $n-2k$ edges. Thus $ \beta '(G)
+\leq k+(n-2k)=n$. Hence $$ \alpha '(G)+ \beta ' \leq k+(n - k)=n$$ It remains only to show that $ \alpha '(G)+ \beta '(G) \geq n$.
+\vskip 1mm
+Let $X$ be a minimum edge cover of $G$. Hence $|X|= \ell = \beta '(G)$.Consider the subgraph $F=G[X]$ induced by $X$. We begin with an observation: $F$ contains no trail $T$ of length $3$. If $F$ did contain a
+trail $T$ of length $3$ and $e$ is the middle edge of $T$, then $X- \lbrace e \rbrace $ also covers all vertices of $G$, which is impossible. Therefore, $F$ contains no cycles and no paths of length $3$ or more,
+implying that every component of $F$ is a star.
+\vskip 1mm
+Since a forest of order $n$ and size $n-k$ contains $k$ components and the size of $F$ is $ \ell =n-(n- \ell )$, it follows that $F$ contains $n- \ell $ non-trivial components. Selecting one edge from each
+of these $n- \ell $ components produces a matching of cardinality $n- \ell $, that is $ \alpha '(G) \geq n- \ell $.Therefore, $$ \alpha '(G)+ \beta '(G) \geq (n - \ell ) + \ell = n$$ Consequently,
+$ \alpha '(G)+ \beta '(G)=n$.
+
+\vfill\eject

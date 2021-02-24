@@ -1,0 +1,28 @@
+\nopagenumbers
+{\bf Example 4:} Show that
+
+$$x+y+e^{xy}=0$$
+
+is an implicit solution to the nonlinear equation
+
+$$\bigl(1+xe^{xy}\bigr){dy\over dx}+1+ye^{xy}=0$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+First, we observe that we are unable to solve $x+y+e^{xy}=0$ directly for $y$ in terms of $x$ alone. However, for $x+y+e^{xy}=0$ to hold, we realize that any change in $x$ requires a change in $y$,so we expect the relation $x+y+e^{xy}=0$ to define implicitly at least one function $y(x)$. This is difficult to show directly but can be rigorously verified using the {\bf implicit function theorem} of advanced calculus, which guarantes that such a function $y(x)$ exists that is also differentiable.
+
+\vskip 1mm
+Once we know that $y$ is a differentiable function of $x$, we can use te technique of implicit differentiation. Indeed, from $x+y+e^{xy}=0$ we obtain on differentiating with respect to $x$ and applying the product and chain rules,
+
+$${d\over dx}(x+y+e^{xy})=1+{dy\over dx}+e^{xy}\Biggl(y+x{dy\over dx}\Biggr)=0$$
+
+or
+
+$$(1+xe^{xy}){dy\over dx}+1+ye^{xy}=0$$
+
+which is identical to the differential equation $\bigl(1+xe^{xy}\bigr){dy\over dx}+1+ye^{xy}=0$. Thus, relation $x+y+e^{xy}=0$ is an implicit solution on some interval guaranteed by the implicit function theorem.
+
+\vfill\eject
+\bye

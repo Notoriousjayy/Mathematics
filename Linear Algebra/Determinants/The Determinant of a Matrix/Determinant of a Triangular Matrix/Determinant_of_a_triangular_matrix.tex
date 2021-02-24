@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Determinant of a Triangular Matrix}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If  $A$ is a triangular matrix of order $n$, then its determinant is the product of the entries on the main diagonal. That is
+
+$$det(A)=|A|=a_{11}a_{22}a_{33}\cdots a_{nn}$$
+
+\vskip 10pt
+{\bf Proof(By induction)}
+
+\vskip 6pt
+The proof of the case in which $A$ is lower triangular is similar. If $A$ has order $1$, then $A=\bigl\lbrack a_{11}\bigr\rbrack$ and the determinant is $|A|=a_{11}$. Assuming the theorem is true for any upper triangular matrix of order $k-1$, consider an upper triangular matrix $A$ of order $k$. Expanding in the $k^{th}$ row, you obtain
+
+$$|A|=0C_{k1}+0C_{k2}+\cdots+0C_{k(k-1)}+a_{kk}C_{kk}=a_{kk}C_{kk}$$
+
+Now, note that $C_{kk}=(-1)^{2k}M_{kk}=M_{kk}$ is the determinant of the upper triangular matrix found by deleting the $k^{th}$ row and $k^{th}$ column of $A$. This matrix is of order $k-1$, so apply the induction assumption to write
+
+$$|A|=a_{kk}M_{kk}=a_{kk}(a_{11}a_{22}a_{33}\cdots a_{k-1,k-1}=a_{11}a_{22}a_{33}\cdots a_{kk}$$
+
+\vfill\eject
+\bye

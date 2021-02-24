@@ -1,0 +1,27 @@
+\nopagenumbers
+{\bf Example 4}: Show that
+
+$$\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$$
+
+is {\it not} exact but that multiplying this equation by the factor $x^{-1}$ yields an exact equation. Use this fact to solve $\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+In $\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$, $M=x+3x^3\sin(y)$ and $N=x^4\cos(y)$. Because
+
+$${\partial M\over\partial y}=3x^3\cos(y)\neq 4x^3\cos(y)={\partial N\over\partial x}$$
+
+$\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$ is not exact. When we multiply $\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$ by the factor $x^{-1}$, we obtain
+
+$$\Bigl(1+3x^2\sin(y)\Bigr)dx+\Bigl(x^3\cos(y)\Bigr)dy=0$$
+
+For this new equation, $M=1+3x^2\sin(y)$ and $N=x^3\cos(y)$. If we test for exactness, we now find that
+
+$${\partial M\over\partial y}=3x^2\cos(y)={\partial N\over\partial x}$$
+
+and hence $\Bigl(1+3x^2\sin(y)\Bigr)dx+\Bigl(x^3\cos(y)\Bigr)dy=0$ is exact. Upon solving $\Bigl(1+3x^2\sin(y)\Bigr)dx+\Bigl(x^3\cos(y)\Bigr)dy=0$, we find that the solution is given implicitly by $x+x^3\sin(y)=C$. Since equations $\Bigl(x+3x^3\sin(y)\Bigr)dx+\Bigl(x^4\cos(y)\Bigr)=0$ is given implicitly by $x+x^3\sin(y)=C$.
+
+\vfill\eject
+\bye

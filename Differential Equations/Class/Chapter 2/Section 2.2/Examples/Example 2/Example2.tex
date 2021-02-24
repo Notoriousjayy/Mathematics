@@ -1,0 +1,62 @@
+\nopagenumbers
+{\bf Example 2:} Solve the initial value problem
+
+$${dy\over dx}={y-1\over x+3},\quad y(-1)=0$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Separating the variables and integrating gives
+
+$$\eqalign{{dy\over y-1}&={dx\over x+3}\cr
+	\int {dy\over y-1}&=\int {dx\over x+3}\cr
+	\ln|y-1|&=\ln|x+3|+C\cr}$$
+
+At this point, we can either solve for $y$ explicitly (retaining the constant $C$) or use the initial condition to determine $C$ and then solve explicitly for $y$. Let's try the first approach.
+
+\vskip 1mm
+Exponentiating $\ln|y-1|=\ln|x+3|+C$, we have
+
+$$\eqalign{e^{\ln|y-1|}&=e^{\ln|x+3|+C}=e^Ce^{\ln|x+3|}\cr
+	|y-1|&=e^C|x+3|=C_1|x+3|\cr}$$
+
+where $C_1:=e^C$. Now depending on the values of $y$, we have $|y-1|=\pm(y-1)$; and similarly, $|x+3|=\pm(x+3)$. Thus $|y-1|=e^C|x+3|=C_1|x+3|$ can be written as
+
+$$y-1=\pm C_1(x+3)\quad\hbox{or}\quad y=1\pm C_1(x+3)$$
+
+where the choice of sign depends on the values of $x$ and $y$. because $C_1$ is a {it positive} constant (recall that $C_1=e^C>0$), we can replace $\pm C_1$ by $C$, where $C$ now represents an {\it arbitrary} nonzero constant. We then obtain
+
+$$y=1+C(x+3)$$
+
+Finally, we determine $C$ such that the initial condition $y(-1)=0$ is satisfied. Putting $x=-1$ and $y=0$ in equation $y=1+C(x+3)$ gives
+
+$$0=1+C(-1+3)=1+2C$$
+
+and so $C=-{1\over 2}$. Thus the solution to the initial value problem is
+
+$$y=1-{1\over 2}(x+3)=-{1\over 2}(x+1)$$
+
+\vskip 190bp
+{\bf Alternative Approach}
+
+\vskip 6pt
+The second appraoch is to first set $x=-1$ and $y=0$ in $\ln|y-1|=\ln|x+3|+C$ and solve for $C$. In this case, we obtain
+
+$$\eqalign{\ln|0-1|&=\ln|-1+3|+C\cr
+		0=\ln(1)&=\ln(2)+C\cr}$$
+
+and so $C=-\ln(2)$. Thus from $\ln|y-1|=\ln|x+3|+C$, the solution is given implicitly by
+
+$$\ln(1-y)=\ln(x+3)-\ln(2)$$
+
+Here we have replaced $|y-1|$ by $1-y$ and $|x+3|$ by $x+3$, since we are interested in $x$ and $y$ near the initial values $x=-1$, $y=0$ (for such values, $y-1<0$ and $x+3>0$). Solving for $y$, we find
+
+$$\eqalign{\ln(1-y)&=\ln(x+3)-\ln(2)=\ln\biggl({x+3\over 2}\biggr)\cr
+	1-y&={x+3 \over 2}\cr
+	y&=1-{1\over 2}(x+3)=-{1\over 2}(x+1)}$$
+
+which agrees with the solution $y=1-{1\over 2}(x+3)=-{1\over 2}(x+1)$ found by the first method.
+
+\vfill\eject
+\bye

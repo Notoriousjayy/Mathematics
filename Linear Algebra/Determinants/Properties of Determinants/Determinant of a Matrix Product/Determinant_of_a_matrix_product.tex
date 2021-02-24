@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Determinant of a Matrix Product}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If $A$ and $B$ are square matrices of order $n$, then $det(AB)=det(A)\;det(B)$
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+To begin, observe that if $E$ is an elementary matrix, then by the Theorem of Elementary Row Operations and Determinants, the next three statements are true. If you obtain $E$ from $I$ by interchanging two rows, then $|E|=-1$. If you obtain $E$ by multiplying a row of $I$ by a nonzero constant $c$, then $|E|=c$. If you obtain $E$ by adding a multiple of one row of $I$ to another row of $I$, the $|E|=1$. Additionaly by Theorem of Representing Elementary Row Operations, if $E$ results from performing an elementary row operation on $I$ and the same elementary row operations is performed on $B$, then the matrix $EB$ results. It follows that $|EB|=|E||B|$.
+\vskip 1mm
+This can be generalized to conclude that $|E_k\cdots E_2E_1B|=|E_k|\cdots |E_2||E_1||B|$, where $E_i$ is an elementary matrix. Now consider the matrix $AB$ If $A$ is {\it nonsingular}, then, by Theorem Property of Invertible Matrices, it can be written as the product $A=E_k\cdots E_2E_1$, and
+
+$$\eqalign{|AB|&=|E_k\cdots E_2E_1B|\cr
+		&=|E_k|\cdots |E_2||E_1||B|\cr
+		&=|E_k\cdots E_2E_1||B|\cr
+		&=|A||B|\cr}$$
+
+If $A$ is {\it singular}, then $A$ is row-equivalent to a matrix with an entire row of zeros. From Theorem Conditions That Yield a Zero Determinant, $|A|=0$. Moreover, it follows that $AB$ is also singular. (If $AB$ were nonsingular, then $A\bigl\lbrack B(AB)^{-1}\bigr\rbrack=I$ would imply that $A$ is nonsingular.) So, $|AB|=0$, and you can conclude that $|AB|=|A||B|$.
+\vfill\eject
+\bye

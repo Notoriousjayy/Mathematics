@@ -1,0 +1,41 @@
+\nopagenumbers
+{\bf Example 4}: Solve
+
+$$(-3x+y+6)dx+(x+y+2)dy=0$$
+
+{\bf Solution}
+
+\vskip 6pt
+Since $a_1b_2=(-3)(1)\neq(1)(1)=a_2b_1$, we will use the translation of axes $x=u+h, y=v+k$, where $h$ and $k$ satisfy the system
+
+$$\eqalign{-3h+k+6&=0\cr
+	h+k+2&=0\cr}$$
+
+Solving the above system for $h$ and $k$ gives $h=1,k=-3$. Hence, we let $x=u+1$ and $y=v-3$. Because $dy=dv$ and $dx=du$, substituting in $(-3x+y+6)dx+(x+y+2)dy=0$ for $x$ and $y$ yields
+
+$$\eqalign{(-3u+v)du+(u+v)dv&=0\cr
+	{dv\over du}&={3-\Bigl({u\over v}\Bigr)}\over 1+\Bigl({v\over u}\Bigr)\cr}$$
+
+The last equation is homogeneous, so we let $z={v\over u}$. Then ${dv\over du}=z+u(dz\over du)$, and substituting for ${v\over u}$, we obtain
+
+$$z+u{dz\over du}={3-z\over 1+z}$$
+
+Separating variables gives
+
+$$\eqalign{\int{z+1\over z^2+2z-3}dz&=-\int{1\over u}du\cr
+	{1\over 2}\ln|z^2+2z-3|&=-\ln|u|+C_1\cr}$$
+
+for which it follows that
+
+$$z^2+2z-3=Cu^{-2}$$
+
+When we substitute back in for $z,u$, and $v$, we find
+
+$$\eqalign{\Bigl({v\over u}\Bigr)^2+2\Bigl({v\over u}\Bigr)-3&=Cu^{-2}\cr
+		v^2+2uv-3u^2&=C\cr
+		(y+3)^2+2(x-1)(y+3)-3(x-1)^2&=C\cr}$$
+
+This last equation gives an implicit solution to $(-3x+y+6)dx+(x+y+2)dy=0$
+
+\vfill\eject
+\bye

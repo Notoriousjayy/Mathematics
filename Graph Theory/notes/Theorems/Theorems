@@ -1,0 +1,136 @@
+Theorems
+
+	If a graph G contains a u-v walk of length l, then G contains a u-v
+	path of length at most l.
+
+	Let G be a graph of order 3 or more. If G contains two distinct
+	vertices u and v such that G-u and G-v are connected, then G itself
+	is connected.
+
+	If G is a connected graph of order 3 or more, then G contains two
+	distinct vertices u and v such that G-u and G-v are connected.
+
+	Let G be a graph of order 3 or more. Then G is connected if and only if
+	G contains two distinct vertices u and v such that G-u and G-v are
+	connected.
+
+	If G is a disconnected graph, then ~G is connected.
+
+	A nontrivial graph G is a bipartite graph if and only if G contains
+	no odd cycles.
+
+	If G is a graph of size m, then deg(v) = 2m.
+		Corollary: Every graph has an even number of odd vertices.
+
+	Let G be a graph of order n. If deg(u) + deg(v) >= n - 1 for every two
+	non-adjacent vertices u and v of G, then G is connected and diam(G) <= 2
+
+	Let r and n be integers with 0 <= r <= n - 1. There exists an r-regular
+	graph of order n if and only if at least one of r and n is even.
+
+	For every graph G and every integer r >= max. degree of G, there exists
+	an r-regular graph H containing G as an induced subgraph.
+
+	A non-increasing sequence s: d1, d2, ..., dn (n .= 2) of non-negative
+	integers, where d1 >= 1, is graphical if and only if the sequence is
+	graphical.
+
+	Two graphs G and H are isomorphic if and only if their complements are
+	isomorphic.
+
+	If G and H are isomorphic graphs, then the degrees of the vertices of G
+	are the same as the degrees of the vertices of H.
+
+	Let G and H be isomorphic graphs. Then
+		(a) G is bipartite if anf only if H is bipartite and
+
+		(b) G is connected if and only if H is connected
+
+	An edge of a graph G is a bridge if and only if e lies on no cycle of G
+
+	A graph G is a tree if and only if two vertices of G are connected by a
+	unique path.
+
+	Every nontrivial tree has at least two end-vertices.
+
+	Every tree of order n has size n-1.
+
+	Every forest of order n with k components has n-k.
+
+	The size of every connected graph of order n is at least n-1.
+
+	Let G be a graph of order n and size m. If G satisfies any two of the
+	properties:
+
+		(1) G is connected,
+
+		(2) G is acyclic,
+
+		(3) m = n-1
+
+	then G is a tree.
+
+	Let T be a tree of order k. If G is a graph with delta(G) >= k - 1,
+	then T is isomorphic to some subgraph of G.
+
+	Let v be a vertex incident with a bridge in a connected graph G.
+	Then v is a cut-vertex of G if and only if deg v >= 2.
+
+	Let G be a connected graph of order 3 or more. If G contains a bridge,
+	then G containts a cut-vertex.
+
+	Let v be a cut-vertex in a connected graph G and let u and w be
+	vertices in distinct components of G-v. Then v lies on every u-w path
+	in G.
+
+	A vertex v of a connected graph Gis a cut-vertex of G if and only if
+	there exist u and w distinct from v such that v lies on every u-w path
+	of G.
+
+	Let G be a nontrivial connected graph and let u be a memeber of the
+	vertex set of G. If v is a vertex that is farthest from u in G, then v
+	is not a cut-vertex of G.
+
+	Every nontrivial connected graph contains at least two vertices that
+	are not cut-vertices.
+
+	For every positive integer n, lambda(Kn) = n-1
+
+	For every graph G,
+		kappa(G) <= lambda(G) <= delta(G).
+
+	If G is a cubic graph, then kappa(G) = lambda(G).
+
+	If G is a graph of order n and size m >= n - 1, then
+
+		kappa(G) <= floor( (2m/2) )
+
+	If G is a connected graph of order at least 3, tehn its square G^2
+	is 2-connected.
+
+	Menger's Theorem: Let u and v be nonadjacent vertices in a graph G.
+			  The minimum number of vertices in a u-v separating
+			  set equals the maximum number of internally disjoint
+			  u-v paths in G.
+
+	A non trivial graph G is k-connected for some integer k >= 2 if and
+	only if for each pair u,v of distinct vertices of G there are at least
+	k internally disjoint u-v paths in G.
+
+	Let G be a k-connected graph and let S be any set of k vertices. If a
+	graph H is obtained from G by adding a new vertex w and joining w to
+	the vertices of S, then H is also k-connected.
+
+	If G is a k-connected graph, k >= 2, then every k vertices of G lie on
+	a common cycle of G.
+
+	For distinct vertices u and v in a graph G, the minimum number of edges
+	of G that separate u and v equals the maximum number of pairwise
+	edge-disjoint  u-v paths in G.
+
+	A nontrivial graph G is k-edge-connected if and only if G contains k
+	pairwise edge-disjoint u-v paths for each pair u,v of distinct vertices
+	of G.
+
+	Let T be a tree of order k. If G is a graph with
+	Kronecker_Delta(G) >= k-1, then T is isomorphic to some subgraph of G.

@@ -1,0 +1,16 @@
+\nopagenumbers
+{\bf Theorem 5.20}
+\vskip 6pt
+If $G$ is a $k$-connected graph, $k \geq 2$, then every $k$ vertices of $G$ lie on a common cycle of $G$.
+
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+
+Let $S= \lbrace v_1,v_2, \ldots ,v_k \rbrace$ be a set of $k$ vertices of $G$. We show that there exists a cycle in $G$ containing every vertex of $S$. Among all cycles in $G$, let $C$ be one containing a maximum number $\ell$ of vertices of $S$ We claim that $\ell =k$. Assume, to the contrary, that $\ell < k$. Since $G$ is $k$-connected, $k \geq 2$ it follows that $G$ is $2$-connected and so $2 \leq \ell < k$ by Theorem 5.7. We may assume that $C$ contains the vertices $v_1,v-2, \ldots v_{\ell}$ of $S$ and that the vertices of $S$ on $C$ appear in the order $v_1,v-2, \ldots v_{\ell}$ as we proceed cyclically about $C$.
+\vskip 1mm
+Since $\ell < k$, there is a vertex $u \in S$ that does not belong to $C$. Furthermore, since $2 \leq \ell < k$, the graph $G$ is $\ell$-connected as well. Suppose first that the order of $C$ is $\ell$. Applying Corollary 5.19 to the vertices $u,v_1,v_2, \ldots ,v_{\ell}$, we see that $G$ contains internally disjoint $u$---$v_i$ paths $P_i(1 \leq i \leq \ell)$. Replacing the edge $v_1,v_2$ by $P_1$ and $P_2$ produces a cycle containing the vertices $u,v_1,v_2, \ldots ,v_{\ell}$, which gives a contradiction.
+\vskip 1mm
+Hence we may assume that $C$ contains a vertex $v_0 \not\in S$. Since $2 \leq \ell +1 \leq k$, the graph $G$ is $(\ell +1$-connected. Applying Corollary 5.19 to the vertices $u,v_0,v_1,v_2, \ldots ,v_{\ell}$, we see that $G$ contains internally disjoint $u$---$v_i$ paths $P_i$ $(0 \leq i \leq \ell)$. Let $v'_i(0 \leq i \leq \ell)$ be the first vertex of $P_i$ that belongs to $C$ (possibly $v'_i=v_i$ abd ket $P'_i$ be the $u$---$v'_i$ subpath of $P_i$. Since there are $\ell +1$ paths $P'_i$ and $\ell$ vertices $C$ that belong to $S$, there are distinct vertices $v'_r$ and vertices belonging to $S$. Deleting the interior vertices of $P'$ from $C$ and adding the paths $P'_r$ and $P'_t$ produces a cycle containing the vertices $u,v_1,v_2, \ldots ,v_{\ell}$, which is a contradiction.
+
+\vfill\eject

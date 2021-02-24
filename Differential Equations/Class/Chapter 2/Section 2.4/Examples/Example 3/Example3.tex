@@ -1,0 +1,26 @@
+\nopagenumbers
+{\bf Example 3}: Solve
+
+$$(1+e^xy+xe^xy)dx+(xe^x+2)dy=0$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Here $M=1+e^xy+xe^xy$ and $N=xe^x+2$. Because
+
+$${\partial M\over\partial y}=e^x+xe^xy={\partial N\over\partial x}$$
+
+$(1+e^xy+xe^xy)dx+(xe^x+2)dy=0$ is exact. If we now integrate $N(x,y)$ with respect to $y$, we obtain
+
+$$F(x,y)=\int(xe^x+2)dy+h(x)=xe^xy+2y+h(x)$$
+
+When we take the partial derivative with respect to $x$ and substitute for $M$, we get
+
+$$\eqalign{{\partial F\over\partial x}(x,y)&=M(x,y)\cr
+		e^xy+xe^xy+h'(x)&=1+e^xy+xe^xy\cr}$$
+
+Thus, $h'(x)=1$, so we take $h(x)=x$. Hence, $F(x,y)=xe^xy+2y+x$, and the solution to $(1+e^xy+xe^xy)dx+(xe^x+2)dy=0$ is given implicitly by $xe^xy+2y+x=C$. In this case we can solve explicitly for $y$ to obtain $y={(C-x)\over 2+xe^x}$
+
+\vfill\eject
+\bye

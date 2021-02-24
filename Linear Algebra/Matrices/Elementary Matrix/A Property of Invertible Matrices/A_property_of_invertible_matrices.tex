@@ -1,0 +1,18 @@
+\nopagenumbers
+{\bf A Property of Invertible Matrices}
+\vskip 1mm
+
+\vskip 6pt
+A square matrix $A$ is invertible if and only if it can be written as the product of elementary matrices.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+To prove the theorem in one direction, assume $A$ is invertible. We know that the system of linear equations represented by $Ax=0$ has only the trivial solution. But this implies that the augmented matrix $\bigl\lbrack A\quad 0\bigr\rbrack$ can be rewritten in the form $\bigl\lbrack I\quad 0\bigr\rbrack$(using elementary row operations corresponding to $E_1,E_2,\ldots,E_k$). So, $E_k\cdots E_2E_1A=I$ and it follows that $A=E^{-1}_1E^{-1}_2\cdots E^{-1}_k$. A can be rewritten as the product of elementary matrices.
+
+\vskip 1mm
+To prove the theorem in the other direction, assume $A$ is the product of elementary matrices. Every elementary matrix is invertible and the product of invertible matrices is invertible, so it follows that $A$ is invertible. This proof is complete.
+
+\vfill\eject
+\bye

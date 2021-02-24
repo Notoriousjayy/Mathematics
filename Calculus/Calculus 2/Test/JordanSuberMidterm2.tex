@@ -1,0 +1,99 @@
+Name: {\bf Jordan Suber}
+
+\centerline {Mid-Term 2}
+\vskip 2pc
+
+$(1a)$ The symbol $\sum a_n$ means the sequence of numbers.
+\vskip 1pc
+
+$(1b)$ The expression $\sum^\infty_{n=1}a_n$ is a number and the limit $$\lim_{n\to\infty}\sum^n_{i=1}a_j$$
+\vskip 1pc
+
+$(1c)$ We say$\sum a_n$ is {\bf convergent} if the limit exists and is finite.
+
+\vskip 2pc
+
+$(2)$ {\bf nth term criterion for Divergence}
+\vskip 6pt
+{\bf Definitions}
+\vskip 1pt
+
+$(S_n)$ --- $n^{th}$ partial sum
+\vskip 1pt
+
+$L$ --- The limit of a sequence $(a_n)$. $L$ is a real number $\{ L \in \Re\}$
+\vskip 1pt
+
+$(a_n)$ --- A sequence of real numbers
+\vskip 6pt
+
+{\bf Proof}
+\vskip 1pt
+$$\lim_{n\to\infty}=0$$
+\vskip 1pt
+Assume that $\sum^\infty_{n=1}a_n=\lim_{n\to\infty}S_n=L$. The $n^{th}$ term in a recursively defined sequence is equal to $$S_n=S_{n-1}+a_n$$ \centerline {and} $$\lim_{n\to\infty}S_n=\lim_{n\to\infty}S_{n-1}=L$$ it follows that $$\eqalign{L&=\lim_{n\to\infty}S_n\cr
+				&=\lim_{n\to\infty}(S_{n-1}+a_n)\cr
+				&=\lim_{n\to\infty}S_{n-1}+\lim_{n\to\infty}a_n\cr
+				&=L+\lim_{n\to\infty}a_n}$$
+Which implies that $(a_n)$ converges to $0$.
+\vskip 2pc
+
+$(3a)$ $a_n$ {\bf converges}.
+\vskip 1pt
+
+$(3b)$ No conclusion can be made about $b_n$.
+\vskip 1pt
+
+$(3c)$ No conclusion can be made about $a_n$.
+\vskip 1pt
+
+$(3d)$ $b_n$ {\bf diverges}.
+\vskip 1.5in
+
+$(5a)$ $$\eqalign{	\lim_{n\to\infty}{n^2+2\over n^4-4n^3}&=0\cr
+			\lim_{n\to\infty}{{n^2/n^4+2/n^4}\over{n^4/n^4-4n^3/n^4}}	&=lim_{n\to\infty}{{1/n^2+2/n^4}\over{1-4n/n}}\cr
+											&={0+0\over 1-0}\cr
+											&={0\over 1}\cr
+											&=0\cr}$$
+\vskip 1pc
+$(5b)$ $$\eqalign{	\lim_{n\to\infty}{n^2\over 3^n}&=0\cr
+			\lim_{n\to\infty}{{{(n+1)}^2/ 3^{n+1}}\over {n^2/ 3^n}}  &= \lim_{n\to\infty}{{{(n+1)}^2 3^n\over 3^{n+1}{n^2}}}\cr
+									&= \lim_{n\to\infty}{(n+1)^2\over 3n^2} \cr
+									&= {1\over 3}\cr}$$
+\vskip 1pt
+$\lim_{n\to\infty}{n^2\over 3^n}$ converges to $1\over 3$.
+
+\vskip 1pc
+$(5c)$ $$\eqalign{	\lim_{n\to\infty}{ {3^n} {((n))}^2\over {(2n)!}} &= {\lim_{n\to\infty}{ {3^{n+1}} {(({n+1}))}^2 / {(2({n})!} \over {3^n} {((n))}^2/ {(2({n+1})!} }}\cr
+									&=	\lim_{n\to\infty}{ {3^{n+1}} {(({n+1})!)}^2 {(2n)!}\over {3^n} {((n))}^2 {2({n+1})!} }\cr
+	  								&=	\lim_{n\to\infty}{ {3{(n+1)}{(n+1)}} \over 2{(n+1)}{(n+1)} }\cr
+									&= {{3\over 2} > 1}\cr}$$
+
+\vskip 1pt
+The limit of $\lim_{n\to\infty}{ {3^n} {((n))}^2\over {(2n)!}}$, diverges
+
+\vskip 1pc
+$(5d)$ From the conclusion of above equation we can make the conclusion that  $$\lim_{n\to\infty}{ {4^n} {((n))}^2\over {(2n)!}}$$ diverges, We use the direct comparision test.
+
+\vskip 1mm
+$(6)$ $$\eqalign{	{x^n\over n!} &=   {{x^{(n+1)}/ {(n+1)}!} \over {x^n/ n!}}   \cr
+					&= {x\over {n+1} } \cr
+					&= {x\over \infty}\cr
+					&= {0<1} \cr} $$
+\vskip 1mm
+Interval of convergence  is $$-\infty < x < \infty$$
+
+\vskip 1mm
+$(8a)$ 
+$$ {{x^n}\over {n!}} =1+{{x^1}\over {1!}}+{{x^2}\over {2!}}+{{x^3}\over {3!}}+\cdots $$
+\vskip 1mm
+$f(0)=1$
+
+\vskip 2pc
+$(8b)$  $$\eqalign{ f'(x)	&={d\over dx}{\Bigl(1+{{x^1}\over {1!}}+{{x^2}\over {2!}}+{{x^3}\over {3!}}+\cdots\Bigr)}\cr	
+				&={0+{{1x^0}\over {1!}}+{{2x^1}\over {2!}}+{{3x^2}\over {3!} }+\cdots}		\cr
+				&= 1+{{x^1}\over {1!}}+{{x^2}\over {2!}}+{{x^3}\over {3!}}+\cdots\cr
+				&= f(x)\cr}$$
+
+
+\vfill\eject

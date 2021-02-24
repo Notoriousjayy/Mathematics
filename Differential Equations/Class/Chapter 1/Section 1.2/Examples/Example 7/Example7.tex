@@ -1,0 +1,28 @@
+\nopagenumbers
+{\bf Example 7:} As shown in Example 2, the function $\phi(x)=c_1e^{-x}+c_2e^{2x}$ is a solution to
+
+$${d^2y\over dx^2}-{dy\over dx}-2y=0$$
+
+for any choice of the constants $c_1$ and $c_2$. Determine $c_1$ and $c_2$ so that the initial conditions
+
+$$y(0)=2\quad\hbox{and}\quad {dy\over dx}(0)=-3$$
+
+are satisfied.
+
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+To determine the constants $c_1$ and $c_2$, we first compute $d\phi\over dx$ to get ${d\phi\over dx}=-c_1e^{-x}+2c_2e^{2x}$. Substituting in our initial conditions gives the following systems of equations:
+
+$$\cases{\eqalign{\phi(0)&=c_1e^0+c_2e^0=2\cr
+	{d\phi\over dx}(0)&=-c_1e^0+2c_2e^0=-3}}\quad\hbox{or}\quad\cases{\eqalign{c_1+c_2&=2\cr
+									-c_1+2c_2&=-3}}$$
+
+Adding the last two equations yields $3c_2=-1$, so $c_2=-{1\over 3}$. Since $c_1+c_2=2$, we find $c_1={7\over 3}$. Hence, the solution to the initial value problem is $\phi(x)=({7\over 3})e^{-x}-({1\over 3})e^{2x}$.
+
+
+
+\vfill\eject
+\bye

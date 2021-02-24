@@ -1,0 +1,31 @@
+\nopagenumbers
+{\bf Theorem: 1.4-1}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If $A$ and $B$ are independent events, then the followin pairs of events are also independent:
+
+\vskip 6pt
+(a) $A$ and $B'$
+
+\vskip 6pt
+(b) $A'$ and $B$
+
+\vskip 6pt
+(c) $A'$ and $B'$
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+We know that conditional probability satisfies the axioms for a probability function. Hence, if $P(A)>0$, then $P(B'|A)=1-P(B|A)$. Thus
+
+$$\eqalign{P(A\cap B')&=P(A)P(B'|A)=P(A)\bigl[1-P(B|A)\bigr]\cr
+		&=P(A)\bigl[1-P(B)\bigr]\cr
+		&=P(A)P(B')\cr}$$
+
+because $P(B|A)=P(B)$ by hypothesis. If $P(A)=0$, then $P(A\cap B')=0$, so in this case we also have $P(A\cap B')=P(A)P(B')$. Consequently, $A$ and $B'$ are independent events.
+
+\vfill\eject
+\bye

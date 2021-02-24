@@ -1,0 +1,16 @@
+\nopagenumbers
+{\bf Theorem 5.12}
+\vskip 6pt
+If $G$ is a cubic graph, the $\kappa (G)= \lambda (G)$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+For a cubic graph $G$, it follows that $\kappa (G)= \lambda (G) = 0$ if and only if $G$ is disconnected. If $\kappa (G)=3$, then $\lambda (G)=3$ by Theorem 5.11. So two cases remain, namely $\kappa (G)=1$ or $\kappa (G)=2$. Let $U$ be a minimum vertex-cut of $G$. Then $|U|=1$ or $|U|=2$. So $G-U$ is disconnected. Let $G_1$ and $G_2$ be two components of $G-U$. Since $G$ is cubic, for each $u \in U$, at least one of $G_1$ and $G_2$ contains exactly one neighbor of $u$.
+\vskip 1mm
+{\bf Case 1.} $\kappa (G)=|U|=1$. Thus $U$ consists of a cut-vertex $u$ of $G$. Since some component of $G-U$ contains exactly one neighbor $w$ of $u$, the edge $uw$ is a bridge of $G$ and so $\lambda (G)= \kappa (G)=1$.
+\vskip 1mm
+{\bf Case 2.} $\kappa (G)=|U|=2$ Let $U= \lbrace u,v \rbrace $. Assume that each of $u$ and $v$ has exactly one neighbor, say $u'$ and $v'$, respectively, in the same component of $G-U$. (This is the case that holds if $uv \in E(G)$.). Then $X= \lbrace uu',vv' \rbrace$ is an edge-cut of $G$ and $\lambda (G)= \kappa (G)=2$.
+\vskip 1mm
+Hence we may assume that $u$ has one neighbor $u'$ in $G_1$ and two neighbors in $G_2$; while $v$ has two neighbors in $G_1$ and one neighbor $v'$ in $G_2$. Therefore, $uv \not\in E(G)$ and $X= \lbrace uu',vv' \rbrace$ is an edge-cut of $G$; so $\lambda (G)= \kappa(G)=2$.
+
+\vfill\eject

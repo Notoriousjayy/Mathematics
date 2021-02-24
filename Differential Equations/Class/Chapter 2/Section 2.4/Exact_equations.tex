@@ -1,0 +1,57 @@
+\nopagenumbers
+{\bf Exact Equations}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf Exact Differential Form}: The differential form $M(x,y)dx+N(x,y)dy$ is said to be {\bf exact} in a rectangle $R$ if there is a function $F(x,y)$ such that
+
+$${\partial F\over\partial x}(x,y)=M(x,y)\quad\hbox{and}\quad {\partial F\over\partial y}(x,y)=N(x,y)$$
+
+for all $(x,y)$ in $R$. That is, the total differential of $F(x,y)$ satisfies
+
+$$dF(x,y)=M(x,ydx+N(x,y)dy$$
+
+If $M(x,y)dx+N(x,y)dy$ is an exact differential form, then the equation
+
+$$M(x,y)dx+N(x,y)dy=0$$
+
+is called an {\bf exact equation}.
+
+\vskip 6pt
+{\bf Theorem: Test for Exactness}: Suppose the first partial derivatives of $M(x,y)$ and $N(x,y)$ are continuous in a rectangle $R$. Then
+
+$$M(x,y)dx+N(x,y)dy=0$$
+
+is an exact equation in $R$ if and only if the compatibility condition
+
+$${\partial M\over\partial y}(x,y)={\partial N\over\partial x}(x,y)$$
+
+holds for all $(x,y)$ in $R$.
+
+\vskip 6pt
+{\bf Method for Solving Exact Equations}
+
+\vskip 6pt
+{\bf (a)} If $M\, dx+N\, dy=0$ is exact, then $\partial F/\partial x=M$. Integrate this last equation with respect to $x$ to get
+
+$$F(x,y)=\int M(x,y)dx+g(y)$$
+
+\vskip 6pt
+{\bf (b)} To determine $g(y)$, take the partial derivative with respect to $y$ of both sides of equation $F(x,y)=\int M(x,y)dx+g(y)$ and substitute $N$ for $\partial F/\partial y$. We can now solve for $g'(y)$.
+
+\vskip 10pt
+{\bf (c)} Integrate $g'(y)$ to obtain $g(y)$ up to a numerical constant. Substituting $g(y)$ into $F(x,y)=\int M(x,y)dx+g(y)$ gives $F(x,y)$.
+
+\vskip 10pt
+{\bf (d)} The solution to $M\, dx+N\,dy=0$ is given implicitly by
+
+$$F(x,y)=C$$
+
+\vskip 6pt
+(Alternativelt, starting with $\partial F/\partial y=N$, the implicit solution can be found by first integrating with respect to $y$.
+
+
+
+\vfill\eject
+\bye

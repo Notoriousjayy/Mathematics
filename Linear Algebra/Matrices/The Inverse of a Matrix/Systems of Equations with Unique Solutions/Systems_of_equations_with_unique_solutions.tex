@@ -1,0 +1,22 @@
+\nopagenumbers
+{\bf Theorem: Systems of Equations with Unique Solutions}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+If $A$ is an invertible matrix, then the system of linear equations $Ax=b$ has a unique solution $x=A^{-1}b$.
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+The matrix $A$ is nonsingular, so the steps shown are valid.
+
+$$\eqalign{Ax&=b\cr
+	A^{-1}Ax&= A^{-1}b\cr
+	Ix&=A^{-1}b\cr
+	x&=A^{-1}b}$$
+
+This solution is unique because if $x_1$ and $x_2$ were two solutions, then you could apply the cancellation property to the equation $Ax_1=b=Ax_2$ to conclude that $x_1=x_2$
+\vfill\eject
+\bye

@@ -1,0 +1,11 @@
+\nopagenumbers
+{\bf Theorem: The Integral Test}
+\vskip 6pt
+If $f$ is positive, continuous, and decreasing for $x \geq 1$ and $a_n=f(n)$, then $$\sum_{n=1}^\infty a_n \; and \; \int_1^\infty f(x)dx$$ either both converge or both diverge.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Partition the interval $[1,n]$ into $(n-1)$ unit intervals. The total areas of the inscribed rectangles and the circumscribed rectangles are $$\sum_{i=2}^n f(i)=f(2)+f(3)+\ldots+f(n) \;\;\; {\bf Inscribed\;area}$$ and
+$$\sum_{i=1}^{n-1}f(i)=f(1)+f(2)+\ldots+f(n-1) \;\;\; {\bf Circumscribed\;area}$$ The exact area under the graph of $f$ from $x=1$ to $x=n$ lies between the inscribed and circumscribed areas. $$\sum_{i=2}^n f(i) \leq \int_1^n f(x)dx \leq \sum_{i=1}^{n-1} f(i)$$ Using the $n^{th}$ partial sum, $S_n=f(1)+f(2)+\ldots+f(n)$, you can write the inequality as $$S_n-f(1) \leq \int_1^nf(x)dx \leq S_{n-1}$$ Now, assuming that $\int_1^\infty f(x)dx$ converges to $L$, it follows that for $n \geq 1$, $$S_n-f(1) \leq L \Longrightarrow S_n \leq L+f(1)$$ Consequently, $(S_n)$ is bounded and monotonic, and by Theorem 9.5 it converges. So, $\sum a_n$ converges. For the other direction of the proof, assume that the improper integral diverges. Then $\int_1^nf(x)dx$ approaches infinity as $n\to\infty$, and the inequality $S_{n-1} \geq \int_1^nf(x)dx$ implies that $(S_n)$ diverges. So, $\sum a_n$ diverges.
+
+\vfill\eject

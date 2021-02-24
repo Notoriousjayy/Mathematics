@@ -1,0 +1,55 @@
+\nopagenumbers
+{\bf Solutions and Initial Value Problems}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf Explicit Solution}: A function $\phi(x)$ that when substituted for $y$ satisfies the equation for all $x$ in the interval $I$ is called the {\bf explicit solution} to the equation $I$.
+
+\vskip 6pt
+{\bf Implicit Solution}: A relation $G(x,y)=0$ is said to be an {\bf implicit solution} on the interval $I$ if it defines one or more explicit solutions on $I$.
+
+\vskip 6pt
+The general for of an $n^{th}$-order equation with $x$ independent, $y$ dependent, can be expressed as
+
+$$F\Biggl(x,y,{dy\over dx},\ldots, {d^ny\over dx^n}\Biggr)=0$$
+
+\vskip 6pt
+Where $F$ is a function that depends on $x,y,$ and the other derivatives of $y$ up to order $n$. We assume that the equation holds for all $x$ in an open Interval $I(a<x<b)$. In many cases we can isolate the highest-order term $d^ny/dx^n$ and write the equation as
+
+$${d^ny\over dx^n}=f\biggl(x,y,{dy\over dx},\ldots,{d^{n-1}y\over dx^{n-1}}\Biggr)$$
+
+\vskip 6pt
+Which is often preferable for theoretical and computational purposes.
+
+\vskip 6pt
+{\bf Initial Value Problem}: By an {\bf initial value problem} for an $n^{th}$-order differential equation
+
+$$F\Biggl(x,y,{dy\over dx},\ldots, {d^ny\over dx^n}\Biggr)=0$$
+
+we mean: Find a solution to the differential equation on an interval $I$ that satisfies at $x_0$ the $n$ initial conditions
+
+$$\eqalign{y(x_0)&= y_0,\cr
+	{dy\over dx}(x_0)&=y_1, \cr
+	\vdots\cr
+	{d^{n-1}y\over dx^{n-1}}(x_0)&=y_{n-1}\cr}$$
+
+where $x_0 \in I$ and $y_0, y_1,\ldots, y_{n-1}$ are given constants.
+
+\vskip 6pt
+{\bf Theorem: Existence and Uniqueness of Solution}
+
+\vskip 6pt
+Consider the inital value problem
+
+$${dy\over dx}=f(x,y),\quad y(x_0)=y_0$$
+
+If $f$ and $\partial f/ \partial y$ are continuous in some rectangle
+
+$$R=\lbrace(x,y): a<x<b,\;c<y<d\rbrace$$
+
+that contains the point $(x_0,y_0)$, then the initial value problem has aunique solution $\phi(x)$ in some interval $x_0-\delta<x<x_0+\delta$ is a positive number.
+
+
+\vfill\eject
+\bye

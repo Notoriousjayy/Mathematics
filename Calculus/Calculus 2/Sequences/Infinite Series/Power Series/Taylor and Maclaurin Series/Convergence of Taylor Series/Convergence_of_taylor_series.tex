@@ -1,0 +1,15 @@
+\nopagenumbers
+{\bf Theorem: Convergence of Taylor Series}
+\vskip 6pt
+If $\lim_{n\to\infty} R_n=0$ for all $x$ in the interval$I$, then the Taylor Series for $f$ converges and equals $f(x)$, $$f(x)=\sum_{n=0}^\infty{f^{(n)}(c)\over n!}(x-c)^n$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+For a Taylor series, the $n^{th}$ partial sum coincides with the $n^{th}$ Taylor polynomial. That is, $S_n(x)=P_n(x)$. Because $$P_n(x)-R_n(x)$$ if follows that
+$$\lim_{n\to\infty}S_n(x)=\lim_{n\to\infty}P_n(x)$$
+$$=\lim_{n\to\infty}[f(x)-R_n(x)]$$
+$$=f(x)-\lim_{n\to\infty}R_n(x)$$
+So, for a given $x$, the Taylor series (the sequence of partial sums) converges to $f(x)$ if and only if $R_n(x)\to 0$ as $n\to\infty$.
+
+
+\vfill\eject

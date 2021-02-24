@@ -1,0 +1,1050 @@
+{\bf Parametric Curves in $R^3$}
+
+\vskip 1mm
+In {\bf Section 8.3.1} we motivated the idea of a parametric curve in $R^2$ by thinking of a particle that moves in the plane, arriving at each time $t$ at the point $\Bigl(x(t),y(t)\Bigr)$. So, for example, if we are discussing the motion of the earth around the sun then the path (the {\bf orbit}) in which the earth moves is an ellipse and, at each time $t$, the earth is located at a point $\Bigl(x(t),y(t)\Bigr)$ that can be specified using the scientific principles.
+
+\vskip 1mm
+In the same way, we can think of a parametric curve in $R^3$ as describing the motion of a particle that moves in space, arriving at each time $t$ at the point $\Bigl(x(t),y(t),z(t)\Bigr)$. While the parametric curve tells us exactly where the particle is at each time $t$, the orbit of the curve is the track on which the particle runs.
+
+\filbreak
+\vskip 1cm
+{\bf Definition of a Parametric Curve in $R^3$}
+
+\vskip 1mm
+By analogy the idea of a parametric curve in $R^2$ that we saw in {\bf Section 8.3.1}, is a {\bf parametric curve in $R^3$} is a function whose value at each number $t$ in an interval is a point $\Bigl(x(t),y(t),z(t)\Bigr)$ in $R^3$. The set of all points $\Bigl(x(t),y(t),z(t)\Bigr)$ obtained as $t$ runs through the interval is called the {\bf orbit} of the curve and is also known as the {\bf range} of the curve.
+
+\filbreak
+\vskip 1cm
+{\bf The Calculus of Curves}
+\vskip 1mm
+{\bf Limits and Continuity of Curves}
+
+\vskip 1mm
+We are talking about {\bf parametric curves}. We are looking at equations like
+
+$$\eqalign{x&=x(t)\cr
+		y&=y(t)\cr
+		z&=z(t)\cr}$$
+
+If we want to call a given curve $P$ then we could say that, for each $t$ in the domain
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+\filbreak
+\vskip 1cm
+{\bf Limit of a Curve}
+
+\vskip 1mm
+What should it mean to say that, given
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $t$ in some domain, that $P(t)\to A=(x_1,y_1,z_1)$ as $t\to t_1$
+
+\vskip 1mm
+It means that
+
+$$\lim_{t\to t_1}||P(t)-A||=0$$
+
+This says that
+
+$$\eqalign{\lim_{t\to t_1}||\Bigl(x(t),y(t),z(t)\Bigr)-(x_1,y_1.z_1)||&=0\cr
+		\lim_{t\to t_1}||\Bigl(x(t)-x_1,y(t)-y_1,z(t)-z_1\Bigr)||&=0\cr
+		\lim_{t\to t_1}\sqrt{\Bigl(x(t)-x_1\Bigr)^2+\Bigl(y(t)-y_1\Bigr)^2+\Bigl(z(t)-z_1\Bigr)^2}&=0\cr}$$
+
+This happens when
+
+$$\lim_{t\to t_1}\Bigl((x(t)-x_1)\Bigr)^2+\Bigl((y(t)-y_1)\Bigr)^2+\Bigl((z(t)-z_1)\Bigr)^2=0$$
+
+This happens when
+
+$$\eqalign{\lim_{t\to t_1}x(t)&=x_1\cr
+		\lim_{t\to t_1}y(t)&=y_1\cr
+		\lim_{t\to t_1}z(t)&=z_1\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Derivative of a Curve (Also called the velocity of the curve)}
+
+\vskip 1mm
+Again we take the curve
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for each $t$. Given any $t$, the {\bf derivative} of $P$ at $t$ means
+
+$$\eqalign{P'(t)&=\lim_{u\to t}{P(u)-P(t)\over u-t}\cr
+		&=\Biggl({\Bigl(x(u),y(u),z(u)\Bigr)-\Bigl(x(t),y(t),z(t)\Bigr)}\Biggr)\cr
+		&=\lim_{u\to t}\Biggl({\Bigl(x(u)-x(t),y(u)-y(t),z(u)-z(t)\Bigr)\over u-t}\Biggr)\cr
+		&=lim_{u\to t}\Biggl({x(u)-x(t)\over u-t},{y(u)-y(t)\over u-t},{z(u)-z(t)\over u-t}\Biggr)\cr
+		&=\Bigl(x'(t),y'(t),z'(t)\Bigr)\cr}$$
+
+The derivative of a curve is also called the {\bf velocity} of the curve.
+
+\vskip 1mm
+We can also say that
+
+$$P'(t)={d\over dt}P(t)={d\over dt}\Bigl(x(t),y(t),z(t)\Bigr)=\Bigl(x'(t),y'(t),z'(t)\Bigr)$$
+
+\filbreak
+\vskip 1cm
+{\bf Acceleration of a Curve}
+
+\vskip 1mm
+Again we take the curve
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+and remember that
+
+$$P'(t)=\Bigl(x'(t),y'(t),z'(t)\Bigr)$$
+
+The {\bf acceleration} of the curve $P$ is
+
+$$\eqalign{P''(t)&=\Bigl(x''(t),y''(t),z''(t)\Bigr)\cr
+		&={d\over dt}\Bigl(x'(t),y'(t),z'(t)\Bigr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Speed of a Curve}
+
+\vskip 1mm
+Again we take the curve
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+The {\bf speed} of the curve $P$ at each $t$ is defined to be $||P'(t)||$
+
+\vskip 1mm
+The speed is
+
+$$\eqalign{||P'(t)||&=||\Bigl(x'(t),y'(t),z'(t)\Bigr)||\cr
+		&=\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}\cr}$$
+
+\vskip 1mm
+The distance travelled along the curve from $t=a$ to $t=b$ is
+
+$$\int_a^b\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}dt$$
+
+This is the integrl of the speed.
+
+\filbreak
+\vskip 1cm
+{\bf Geometric Interpretation of Velocity and Speed}
+
+\vskip 1mm
+{\bf The Direction of the Velocity of a Curve}
+
+\vskip 1mm
+We suppose that $t$ is in the domain of a given curve $P$ and we select a number $u$ tha is a little greater than $t$.
+
+\vskip 1mm
+The line segment running from $P(t)$ to $P(u)$ will have a direction that approximates the direction of a particle moving along the curve when the particle is at $P(t)$. The direction of this line segment is the direction of the vector $P(u)-P(t)$ and this direction is also the direction of the vector
+
+$${P(u)-P(t)\over u-t}$$
+
+When we take the limit of ${P(u)-P(t)\over u-t}$ as $u\to t$, we obtain the actual direction of travel along the curve when the particle is located at $P(t)$. This tells us that the direction of $P'(t)$ is the direction of travel along the curve at $P$. The line segment running from $P(t)$ to $P(t)+P'(t)$ is tangent to the curve and points in the direction of travel.
+
+\filbreak
+\vskip 1cm
+{\bf Length of a Curve}
+
+\vskip 1mm
+We suppose that $P$ is a curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for each $t$ in its domain, that $a$ is a number in the domain of $P$ and that, for each $t\geq a$, the distance travelled along the curve from "time" $t$ is called $s(t)$.
+
+\vskip 1mm
+We look at the numbr $u$ a bit more than $t$
+
+$$s(u)-s(t)\approx ||P(u)-P(t)||$$
+
+and so
+
+$${s(u)-s(t)\over u-t}\approx {||P(u)-P(t)||\over u-t}$$
+
+$$\eqalign{{s(u)-s(t)\over u-t}&\approx \Biggl|\Biggl|{P(u)-P(t)\over u-t}\Biggr|\Biggr|\cr
+		&=\Biggl|\Biggl|{x(u)-x(t)\over u-t},{y(u)-y(t)\over u-t},{z(u)-z(t)\over u-t}\Biggr|\Biggr|\cr
+		&=\sqrt{\Biggl({x(u)-x(t)\over u-t}\Biggr)^2+\Biggl({y(u)-y(t)\over u-t}\Biggr)^2+\Biggl({z(u)-z(t)\over u-t}\Biggr)^2}\cr}$$
+
+Now take the limit as $u\to t$ and we see that
+
+$$\eqalign{\lim_{u\to t}{s(u)-s(t)\over u-t}&=\lim_{u\to t}\sqrt{\Biggl({x(u)-x(t)\over u-t}\Biggr)^2+\Biggl({y(u)-y(t)\over u-t}\Biggr)^2+\Biggl({z(u)-z(t)\over u-t}\Biggr)^2}\cr
+			&=\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}\cr}$$
+
+we have shown that
+
+$$s'(t)=||P'(t)||$$
+
+The speed $||P'(t)||$ of the curve is the rate at which $s(t)$ is increasing.
+
+\vskip 1mm
+We see also that the length of the curve from any time $a$ to time $b$ is
+
+$$\eqalign{s(b)-s(a)&=\Bigl[s(t)\Bigr]_a^b\cr
+		\int_a^b||P'(t)||dt&=\int_a^b\sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Curvature, Principal Normal, and Binormal of a Curve}
+
+\vskip 1mm
+{\bf Velocity of a Curve Whose Norm is Constant}
+
+\vskip 1mm
+If the norm $||P||$ of a given curve $P$ is constant then, since $P\cdot P=||P||^2$ is constant, we have
+
+$${d\over dt}P(t)\cdot P(t)=0$$
+
+Therefore, whenever the norm of a curve is constant, the curve is perpendicular to its velocity.
+
+\vskip 1mm
+{\bf Proof}
+
+$$P'(t)\cdot P(t)+P(t)\cdot P'(t)=0$$
+
+and so
+
+$$2P(t)\cdot P'(t)=0$$
+
+and so
+
+$$P(t)\cdot P'(t)=0$$
+
+If the norm $||P||$ of a given curve $P$ is constant then, since $P$ runs on a sphere with center $O$ it must be orthogonal to its velocity. In other words
+
+$$P(t)\cdot P'(t)=0$$
+
+We also saw how to obtain this important fact in an analytical way. Since $P\cdot P=||P||^2$ is constant, we have
+
+$$\eqalign{{d\over dt}P(t)\cdot P(t)&=0\cr
+		P'(t)\cdot+P(t)+P(t)\cdot P'(t)&=0\cr}$$
+
+which gives us
+
+$$2P(t)\cdot P'(t)=0$$
+
+and finally
+
+$$P(t)\cdot P'(t)=0$$
+
+\filbreak
+\vskip 1cm
+{\bf Unit Tangent Vector of a Parametric Curve}
+
+\vskip 1mm
+We suppose that $P$ is a parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $t$ in some interval. As we know, the line segment that runs from any point $P(t)$ on the curve to the point $P(t)+P'(t)$ is tangent to the curve and points in the direction of travel.
+
+\vskip 1mm
+We define the {\bf unit tangent vector} $T(t)$ of the curve at each time $t$ to be the velocity of the curve at $t$ divided by its speed. Thus
+
+$$\eqalign{T(t)&={1\over ||P'(t)||}P'(t)\cr
+		&={1\over \sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}}\Bigl(x'(t),y'(t),z'(t)\Bigr)\cr}$$
+
+$$={x'(t)\over \sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}},{y'(t)\over \sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}},{z'(t)\over \sqrt{\Bigl(x'(t)\Bigr)^2+\Bigl(y'(t)\Bigr)^2+\Bigl(z'(t)\Bigr)^2}}$$
+
+Since $||T(t)||=1$, the vector $T(t)$ is a unit vector that points in the direction of travel along the curve from the point $P$
+
+Note that
+
+$$||T(t)||=\Biggl|\Biggl|{1\over ||P'(t)||}P'(t)\Biggr|\Biggr|={1\over ||P'(t)||}||P'(t)||=1$$
+
+\filbreak
+\vskip 1cm
+{\bf Principal Normal of a Parametric Curve}
+
+\vskip 1mm
+We define the {\bf principal normal} $N(t)$ of a given parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+by the equation
+
+$$N(t)={1\over ||T'(t)||}T'(t)$$
+
+Note that, because $||T(t)||$ is constant, we must have
+
+$$T(t)\cdot T'(t)=0$$
+
+and we therefore have
+
+$$\eqalign{T(t)\cdot N(t)&=T\cdot{1\over ||T'(t)||}T'(t)\cr
+		&={1\over ||T'(t)||}T(t)\cdot T'(t)\cr
+		&=0\cr}$$
+
+This equation tells us that the principal normal $N(t)$ is perpendicular to the unit tangent vector.
+
+\filbreak
+\vskip 1cm
+{\bf The Curvature of a Parametric Curve}
+
+\vskip 1mm
+We suppose that $P$ is a parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+Since the norm of the unit tangent vector $T(t)$ never changes, the only way $T(t)$ changes as $t$ varies is by changing its direction. In the event that $||T'(t)||$ is large, the unit tangent vector is changing its direction rapidly as $t$ increases and this tells us that a particle moving along the curve is changing its direction rapidly. At first sight, the fact that the particle is changing its direction rapidly may give the appearance that the curve bends sharply at the time $t$ but another possible reason for a rapid change in direction is that the particle may be moving very rapidly. To obtain an estimate of how sharply the curve bends, we therefore divide $||T'(t)||$ by the speed. With this thought in mind, we define the {\bf curvature} $k(t)$ of the curve at each time $t$ by the equation
+
+$$k(t)={||T'(t)||\over ||P'(y)||}$$
+
+Alternatively, we can say that
+
+$$k(t)={||T'(t)||\over ||P'(y)||}={||T'(t)||\over s'(t)}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Equation} $T'(t)=s'(t)k(t)N(t)$
+
+\vskip 1mm
+We suppose that $P$ is a parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+The definition of the principal normal $N(t)$ say that
+
+$$N(t)={1\over ||T'(t)||}T'(t)$$
+
+and the definition of $k(t)$ gives us
+
+$$k(t)={||T'(t)||\over s'(t)}$$
+
+which says that
+
+$$||T'(t)||=k(t)s'(t)$$
+
+we have
+
+$$N(t)={1\over s'(t)k(t)}T'(t)$$
+
+and we conclude that
+
+$$T'(t)=s'(t)k(t)N(t)$$
+
+\filbreak
+\vskip 1cm
+{\bf The Curvature of a Circle is the Reciprocal of Its Radius}
+
+\vskip 1mm
+To find the curvature of a circle, we suppose that $a$ and $b$ are any numbers and that $r>0$, and we define
+
+$$P(t)=(a+r\cos(t),b+r\sin(t),0)$$
+
+for each $t$
+
+$$\eqalign{P'(t)&=(-r\sin(t),r\cos(t),0)\cr
+		s'(t)&=||P'(t)||=\sqrt{\Bigl(-r\sin(t)\Bigr)^2+\Bigl(r\cos(t)\Bigr)^2+0^2}=r\cr
+		T(t)&={1\over r}(-r\sin(t),r\cos(t),0)=(-\sin(t),\cos(t),0)\cr
+		T'(t)&=\Bigl(-\cos(t),-\sin(t),0\Bigr)^2\cr
+		||T'(t)||&=\sqrt{\Bigl(-\cos(t)\Bigr)^2+\Bigl(-\sin(t)\Bigr)^2+0^2=1}\cr
+		k(t)&={||T'(t)||\over s'(t)}={1\over r}\cr}$$
+
+$$\eqalign{N(t)&={1\over ||T'(t)||}T'(t)\cr
+		&={1\over 1}\Bigl(-\cos(t),-\sin(t),0\Bigr)}$$
+
+\filbreak
+\vskip 1cm
+{\bf Radius and Center of Curvature and Evolute of a Parametric Curve}
+
+\vskip 1mm
+We now return to a general parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+To motivate the idea of center of curvature, we consider that, if the curve happens to run in a circle, then the radius of this circle at each time $t$ must be ${1\over k(t)}$ and the center of this circle must be $P(t)+{1\over k(t)}N(t)$.
+
+\vskip 1mm
+With that in mind, we call the number ${1\over k(t)}$ the {\bf radius of curvature} of the curve $P$ at time $t$ and we define the {\bf center of curvature} $C(t)$ of the curve at time $t$ by the equation
+
+$$C(t)=P(t)+{1\over k(t)}N(t)$$
+
+The distance from $P(t)$ to the center of curvature $C(t)$ is ${1\over k(t)}$ and this quantity is, as we have said, the {\bf radius of curvature} at time $t$ of the given curve. The function $C$ is also a parametric curve that is called the {\bf evolute} of the curve $P$.
+
+\filbreak
+\vskip 1cm
+{\bf The Binormal of a Parametric Curve}
+
+\vskip 1mm
+The {\bf binormal} $B(t)$ at time $t$ of a parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+is defined by the equation
+
+$$B(t)=T(t)\times N(t)$$
+
+Since $T(t)$ and $N(t)$ are perpendicular to one another, we see that
+
+$$||B(t)||=||T(t)||\;||N(t)||\sin(90^\circ)=1$$
+
+and so, like $T(t)$ and $N(t)$, the binormal $B(t)$ is a unit vector.
+
+\filbreak
+\vskip 1cm
+{\bf The Orthonormal Triple} $\Bigl\{T(t),N(t),B(t)\Bigr\}$
+
+\vskip 1mm
+The definition of $B(t)$ tells us that $B(t)$ is perpendicular to $T(t)$ and to $N(t)$. Since all three of the vectors $T(t),N(t),$ and $B(t)$ are unit vectors and any two of these are perpendicular to one another, we conclude that $\Bigl\{T(t),N(t),B(t)\Bigr\}$ is a orthonormal triple in $R^3$.
+
+\vskip 1mm
+It is also worth nothing from the formula for expanding the vector triple product that
+
+$$\eqalign{N(t)\times B(t)&=N(t)\times \Bigl(T(t)\times N(t)\Bigr)\cr
+		&=\Bigl(N(t)\cdot N(t)\Bigr)T(t)-\Bigl(N(t)\cdot T(t)\Bigr)N(t)\cr
+		&=1T(t)-0N(t)\cr
+		&=T(t)\cr}$$
+
+and in the same way, we can see that
+
+$$\eqalign{B(t)\times T(t)&= \Bigl(T(t)\times N(t)\Bigr)\times T(t)\cr
+		&=\Bigl(T(t)\cdot T(t)\Bigr)N(t)-\Bigl(N(t)\cdot T(t)\Bigr)T(t)\cr
+		&=N(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Acceleration of a Parametric Curve}
+
+\vskip 1mm
+{\bf Definition of Acceleration of a Parametric Curve}
+
+\vskip 1mm
+The {\bf acceleration} at time $t$ of a given parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+is defined to be $P''(t)$
+
+$$\eqalign{P''(t)&={d\over dt}P'(t)\cr
+		&={d\over dt}\Bigl(x'(t),y'(t),z'(t)\Bigr)\cr
+		&=\Bigl(x''(t),y''(t),z''(t)\Bigr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Relationship Between Acceleration, Curvature and Principal Normal}
+
+\vskip 1mm
+For a given parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+we see that, at each time $t$,
+
+$$P''(t)={d\over dt}P'(t)$$
+
+\vskip 1mm
+$$\eqalign{P''(t)&={d\over dt}P'(t)\cr
+		&={d\over dt}s'(t)T(t)\cr
+		&=s''(t)T(t)+s'(t)T'(t)\cr
+		&=s''(t)T(t)+s'(t)s'(t)k(t)N(t)\cr
+		&=s''(t)T(t)+\Bigl(s'(t)\Bigr)^2k(t)N(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Product $P'(t)\times P''(t)$ and a Useful Formula for $k(t)$}
+
+\vskip 1mm
+For a given parametric curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+we can calculate $P'(t)\times P''(t)$ at any given time $t$ and we can find $||P'(t)\times P''(t)||$.
+
+\vskip 1mm
+We can use what we have found to show that
+
+$$k(t)={||P'(t)\times P''(t)||\over \Bigl(s'(t)\Bigr)^3}$$
+
+$$\eqalign{P'(t)\times P'(t)&=s'(t)T(t)\times\Bigl(s''(t)T(t)+\Bigl(s'(t)\Bigr)^2k(t)N(t)\Bigr)\cr
+			&=s'(t)T(t)\times s''(t)T(t)+s'(t)T(t)\times\Bigl(s'(t)\Bigr)^2k(t)N(t)\cr
+			&=s'(t)s''(t)O+s'(t)\Bigl(s'(t)\Bigr)^2k(t)\Bigl(T(t)\times N(t)\Bigr)\cr
+			&=O+\Bigl(s'(t)\Bigr)^3k(t)B(t)\cr}$$
+
+When you take the norm you see that
+
+$$||P'(t)\times P''(t)=\Bigl(s'(t)\Bigr)^3k(t)1$$
+
+and we get a nice formula for $k(t)$
+
+$$k(t)={||P'(t)\times P''(t)||\over \Bigl(s'(t)\Bigr)^3}$$
+
+\filbreak
+\vskip 1cm
+{\bf Motion of a Particle in Space: Newton's Law}
+
+\vskip 1mm
+We suppose that a particle has mass $m(t)$ at each time $t$ and arrives at the point
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+at each time $t$.
+
+\vskip 1mm
+The {\bf momentum} of the particle is defined at each time $t$ to be $m(t)P'(t)$.
+
+\vskip 1mm
+{\bf Newton's law} states that, if the force acting on the particle is called $F(t)$, then
+
+$$F(t)={d\over dt}m(t)P'(t)$$
+
+\vskip 1mm
+If $m(t)$ happens to be a constant $m$, then Newton's law gives us
+
+$$F(t)=mP''(t)$$
+
+but $m(t)$ is not usually constant.
+
+\vskip 1mm
+
+$$\eqalign{F(t)&={d\over dt}m(t)P'(t)\cr
+		&=m'(t)P'(t)+m(t)P''(t)\cr
+		&=m'(t)s(t)T(t)+m(t)\Bigl(s''(t)T(t)+\Bigl(s'(t)\Bigr)^2k(t)N(t)\Bigr)\cr
+		&=m'(t)s'(t)T(t)+m(t)s''(t)T(t)+m(t)\Bigl(s'(t)\Bigr)^2k(t)N(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Real Valued Functions}
+
+\vskip 1mm
+{\bf Example of a Real Function}
+
+\vskip 1mm
+If we define
+
+$$f(x,y,z)={\sin(yz)\over 1+x^2+2y^2+3z^2}$$
+
+for every point $(x,y,z)$ in $R^3$
+
+\filbreak
+\vskip 1cm
+{\bf Limit of a function of Two or Three Variables}
+
+\vskip 1mm
+Suppose that $f(x,y)$ is defined on a region of points $(x,y)$ in $R^2$ that contains points as close as we like to a given point $(a,b)$.
+
+\vskip 1mm
+The condition
+
+$$f(x,y)\to\lambda$$
+
+as $(x,y)\to(a,b)$ means that we can make $f(x,y)$ as close as we like to $\lambda$ by making $(x,y)$ close enough to $(a,b)$ and unequal to $(a,b)$.
+
+\vskip 1mm
+This condition is also written
+
+$$\lim_{(x,y)\to (a,b)}f(x,y)=\lambda$$
+
+How do we make $(x,y)$ come close to $(a,b)$?
+
+\vskip 1mm
+We make
+
+$$||(x,y)-(a,b)||=\sqrt{(x-a)^2+(y-b)^2}$$
+
+small.
+
+\vskip 1mm
+We could also make $x$ close to $a$ and $y$ close to $b$.
+
+\filbreak
+\vskip 1cm
+{\bf Continuity}
+
+\vskip 1mm
+We say that a function $f$ defined on a region of points $(x,y,z)$ in space is continuous at a point $A=(a,b,c)$ if
+
+$$\lim_{(x,y,z)\to(a,b,c)}f(x,y,z)=f(a,b,c)$$
+
+\filbreak
+\vskip 1cm
+{\bf Partial Derivatives}
+
+\vskip 1mm
+If $f$ is a function defined on a region of points $(x,y)$ in $R^2$ then, given any point $(x,y)$ in the domain we define
+
+$$D_1f(x,y)=\lim_{t\to x}{f(t,y)-f(x,y)\over t-x}$$
+
+We are holding $y$ fixed and differentiating with respect to $x$.
+
+\vskip 1mm
+An alternative notation for this derivative with respect to $x$ is
+
+$${\partial\over\partial x}f(x,y)$$
+
+In the same way we define
+
+$$\eqalign{D_2f(x,y)&=\lim_{t\to y}{f(x,y)-f(x,y)\over t-y}\cr
+		&={\partial\over\partial y}f(x,y)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Example}
+
+\vskip 1mm
+We take
+
+$$f(x,y)=x\sin(x+xy^2)$$
+
+for each point $(x,y)$ in $R^2$.
+
+$$\eqalign{{\partial\over\partial x}f(x,y)&={\partial\over\partial x}x\sin(x+xy^2)\cr
+				&=1\sin(x+xy^2)+x\Bigl(\cos(x+xy^2)\Bigr)(1+1y^2)\cr
+				&=\sin(x+xy^2)+x(1+y^2)\cos(x+xy^2)\cr}$$
+
+$$\eqalign{{\partial\over\partial x}{\partial\over\partial x}f(x,y)&={\partial\over\partial x}\Bigl(\sin(x+xy^2)+x(1+y^2)\cos(x+xy^2)\Bigr)\cr
+								&=\Bigl(\cos(x+xy^2)\Bigr)(1+y^2)+\Bigl(1(1+y^2)\cos(x+xy^2)\Bigr)+x(1+y^2)(-1)\Bigl(\sin(x+xy^2)\Bigr)(1+y^2)\cr}$$
+
+$$\eqalign{{\partial\over\partial y}{\partial\over\partial x}f(x,y)&=\Biggl(\Bigl(\cos(x+xy^2)\Bigr)(1+y^2)\Biggr)+\Bigl(\cos(x+xy^2)\Bigr)+x(1+y^2)(-1)\Bigl(\sin(x+xy^2)\Bigr)(1+y^2)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Second Derivative}
+
+\vskip 1mm
+We can differentiate again. We can talk about
+
+$${\partial\over\partial x}{\partial\over\partial x}f(x,y)={\partial^2\over\partial x\partial x}f(x,y)={\partial^2\over\partial x^2}f(x,y)$$
+
+and
+
+$${\partial\over\partial y}{\partial\over\partial x}f(x,y)={\partial^2\over\partial y\partial x}f(x,y)={\partial^2\over\partial y\partial x}f(x,y)$$
+
+and
+
+$${\partial\over\partial y}{\partial\over\partial y}f(x,y)={\partial^2\over\partial y\partial y}f(x,y)={\partial^2\over\partial y^2}f(x,y)$$
+
+\filbreak
+\vskip 1cm
+{\bf Equality of Mixed Partial Derivatives}
+
+\vskip 1cm
+For nice functions $f$ we have
+
+$${\partial\over\partial y}{\partial\over\partial x}f(x,y)={\partial^2\over\partial x\partial y}f(x,y)$$
+
+\filbreak
+\vskip 1cm
+{\bf The Chain Rule for Functions of Two Variables}
+
+\vskip 1mm
+We suppose that $f$ is a function with continuous partial derivatives ${\partial f\over\partial x}$ and ${\partial f\over\partial y}$ on a region $\Omega$ in $R^2$ and that $P$ is a curve of the form
+
+$$P(t)=\Bigl(x(t),y(t)\Bigr)$$
+
+in $\Omega$ and that the velocity
+
+$$P'(t)=\Bigl(x'(t),y'(t)\Bigr)$$
+
+of $P$ exists at each $t$.
+
+\vskip 1mm
+Given any $t$ in the domain of the curve $P$ we can talk about
+
+$$f\Bigl(P(t)\Bigr)=f\Biggl(\Bigl(x(t),y(t)\Bigr)\Biggr)$$
+
+Then we have
+
+$${d\over dt}f\Bigl(P(t)\Bigr)={\partial f\over\partial x}{dx\over dt}+{\partial f\over\partial y}{dy\over dt}$$
+
+\vskip 1mm
+Alternatively, if we express ${d\over dt}f\Bigl(P(t)\Bigr)$ as ${df\over dt}$ then we can interpret the chain rule as telling us that
+
+$$\eqalign{{df\over dt}&={\partial f\over\partial x}{dx\over dt}+{\partial f\over\partial y}{dyx\over dt}\cr
+			{d\over dt}f\Bigl(P(t)\Bigr)&=\Biggl({\partial f\over\partial x},{\partial f\over\partial y}\Biggr)\cdot\Bigl(x'(t),y'(t)\Bigr)\cr
+						&=\Biggl({\partial f\over\partial x},{\partial f\over\partial y}\Biggr)\cdot P'(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Symbol $\nabla$ (Nabla)}
+
+\vskip 1mm
+It is traditional to express $\Bigl({\partial f\over\partial x},{\partial f\over\partial y}\Bigr)$ as $\nabla f(x,y)$
+
+\vskip 1mm
+The symbol $\nabla$ is sometimes called {\bf nabla} and we express
+
+$$\nabla=\Bigl({\partial f\over\partial x},{\partial f\over\partial y}\Bigr)$$
+
+This is an operator that turns $f$ into $$\nabla f(x,y)=\Biggl({\partial \over\partial x},{\partial \over\partial y}\Biggr)f(x,y)=\Biggl({\partial f\over\partial x},{\partial f\over\partial y}\Biggr)$$
+
+\vskip 1mm
+for a function $f$ defined on a region in space, we define
+
+$$\nabla f(x,y,z)=\Biggl({\partial \over\partial x},{\partial \over\partial y},{\partial \over\partial z}\Biggr)f(x,y,z)=\Biggl({\partial f\over\partial x},{\partial f\over\partial y},{\partial f\over\partial z}\Biggr)$$
+
+\vskip 1mm
+The function $\nabla f$ is known as the {\bf gradient} of the function $f$ and the form of nabla of nabla is
+
+$$\nabla=\Biggl({\partial f\over\partial x},{\partial f\over\partial y},{\partial f\over\partial z}\Biggr)$$
+
+\filbreak
+\vskip 1cm
+{\bf Example}
+
+\vskip 1mm
+
+$$\eqalign{\nabla\Bigl(x^2\cos(xy)\Bigr)&={\partial \over\partial x}x^2\cos(xy),\Bigl({\partial x\over\partial y}x^2\cos(xy)\Bigr)\cr
+					&=\Bigl(2x\cos(xy)-x^2y\sin(xy),-x^3\sin(xy)\Bigr)}$$
+
+\filbreak
+\vskip 1cm
+{\bf Example}
+
+$$\eqalign{\nabla\sqrt{x^2+y^2+z^2}&=\Bigl({\partial\over\partial x}\sqrt{x^2+y^2+z^2}\Bigr),{\partial\over\partial y}\sqrt{x^2+y^2+z^2}\Bigr),{\partial\over\partial z}\sqrt{x^2+y^2+z^2}\Bigr)\cr
+				&=\Bigl({1\over 2}(x^2+y^2+z^2)^{-1\over 2}(2x),{\partial\over\partial y}\sqrt{x^2+y^2+z^2}\Bigr),{\partial\over\partial z}\sqrt{x^2+y^2+z^2}\Bigr)\cr
+				&={1\over\sqrt{x^2+y^2+z^2}}(x,y,z)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Chain Rule for Functions of Three Variables}
+
+\vskip 1mm
+We suppose that $f$ is a function with continuous partial derivatives  ${\partial f\over\partial x}$ and ${\partial f\over\partial y}$ and ${\partial f\over\partial z}$ on a region $\Omega$ in $R^3$ and that $P$ is a curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+and $\Omega$ and that the velocity
+
+$$P'(t)=\Bigl(x'(t),y'(t),z'(t)\Bigr)$$
+
+of $P$ exists at each $t$. Then we have
+
+$${d\over dt}f\Bigl(P(t)\Bigr)={\partial f\over\partial x}{dx\over dt}+{\partial f\over\partial y}{dy\over dt}+{\partial f\over\partial z}{dz\over dt}$$
+
+Alternatively, if we express ${d\over dt}f\Bigl(P(t)\Bigr)$ as ${df\over dt}$ then we can interpret the chain rule as telling us that
+
+$$\eqalign{{d\over dt}f\Bigl(P(t)\Bigr)&={\partial f\over\partial x}{dx\over dt}+{\partial f\over\partial y}{dy\over dt}+{\partial f\over\partial z}{dz\over dt}\cr
+					&=\Bigl({\partial f\over\partial x},{\partial f\over\partial y},{\partial f\over\partial z}\Bigr)\cdot\Bigl({dx\over dt},{dy\over dt},{dz\over dt}\Bigr)\cr
+					&=\Bigl({\partial f\over\partial x},{\partial f\over\partial y},{\partial f\over\partial z}\Bigr)\cdot P'(t)\cr
+					&=(\nabla f)\cdot P'(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Chain Rule for Function of $n$ Variables}
+
+\vskip 1mm
+For any given positive integer $n$, we suppose that $f$ is a function with continuous partial derivatives ${\partial f\over\partial x_1},{\partial f\over\partial x_2},\cdots,{\partial f\over\partial x_n}$ on a region $\Omega$ in $R^n$ and that $P$ is a curve of the form
+
+$$P(t)=\Bigl(x_1(t),x_2(t),\cdots x_n(t)\Bigr)$$
+
+in $\Omega$ and that the velocity
+
+$$P'(t)=\Bigl(x'_1(t),x'_2(t),\cdots x'_n(t)\Bigr)$$
+
+of $P$ exists at each $t$. Then we have
+
+$${d\over dt}f\Bigl(P(t)\Bigr)={\partial f\over\partial x_1}+{\partial f\over\partial x_2}+\cdots+{\partial f\over\partial x_n}$$
+
+Alternatively, if we express ${d\over dt}f\Bigl(P(t)\Bigr)$ as ${df\over dt}$ then we can interpret the chain rule as telling us that
+
+$$\eqalign{{d\over dt}f\Bigl(P(t)\Bigr)={\partial f\over\partial x_1}+{\partial f\over\partial x_2}+\cdots+{\partial f\over\partial x_n}\cr
+			{d\over dt}f\Bigl(P(t)\Bigr)\Bigl({\partial f\over\partial x_1},\cdots,{\partial f\over\partial x_n}\Bigr)\cdot P'(t)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Vector Fields}
+
+\vskip 1mm
+{\bf Definition of a Vector Field}
+
+\vskip 1mm
+A {\bf vector field} in $R^3$ is a function $F$ that is defined on a region of points $(x,y,z)$ in $R^3$ and whose value at each point $(x,y,z)$ in this region is also a point in $R^3$. At each point $(x,y,z)$ in its domain, the value $F(x,y,z)$ of the field at $(x,y,z)$ has the form
+
+$$\Bigl(f(x,y,z),g(x,y,z),h(x,y,z)\Bigr)$$
+
+where $f,g$ and $h$ are real functions and so, at each point $(x,y,z)$, the value $F(x,y,z)$ has a direction
+
+\vskip 1mm
+Which means the direction of the line segment from $O$ to $F(x,y,z)$
+
+\vskip 1mm
+and a norm which is
+
+$$\sqrt{\Bigl(f(x,y,z)\Bigr)+\Bigl(g(x,y,z)\Bigr)+\Bigl(h(x,y,z)\Bigr)}$$
+
+\filbreak
+\vskip 1cm
+{\bf Example}
+
+\vskip 1mm
+we define
+
+$$F(x,y,z)=(xy,y\sin(x+3z),x^2+2y^2+7z^4)$$
+
+for each point $(x,y,z)\in R^3$
+
+\filbreak
+\vskip 1cm
+{\bf Scalar Fields}
+
+\vskip 1mm
+A {\bf scalar field} on a region in space is just a real function defined on that region.
+
+\vskip 1mm
+For instance we could have
+
+$$f(x,y,z)={1\over x^2+y^2+z^2}$$
+
+\filbreak
+\vskip 1cm
+{\bf Some Examples of Vector Fields}
+
+\vskip 1mm
+{\bf Force of Gravity}
+
+\vskip 1mm
+In out first example, we shall consider the force of gravity that is exerted by a heavenly body such as the earth. We shall ignore the size of this heavenly body and think of it as a point is located at the origin.
+
+\vskip 1mm
+According to Newton's law of gravitation, if the distance from a given mass $m$ to the origin is $\rho$, then the magnitude of the force of gravity that the heavenly body exerts on a mass $m$ has the form $km\over\rho^2$ for some constant $k$ that depends on the physical units we are using to measure mass, length, and tiem. This, if the mass $m$ is located at the point $P=(x,y,z)$ then the magnitude of the force of gravity exerted by the body on this mass has the form
+
+$${km\over x^2+y^2+z^2}$$
+
+$${\vec{PO}\over||\vec{PO}||}={O-P\over\sqrt{x^2+y^2+z^2}}={-P\over\sqrt{x^2+y^2+z^2}}={-(x,y,z)\over\sqrt{x^2+y^2+z^2}}$$
+
+\vskip 1mm
+Since Newton's law also stipulates that the force of gravity exerted on the mass $m$ is directed from the point $P$ to the origin, we can express this force as
+
+$$\eqalign{F(x,y,z)&={km\over x^2+y^2+z^2}{(x,y,z)\over||(x,y,z)||}\cr
+			&=-{km\over (x^2+y^2+z^2)^{3\over 2}}(x,y,z)\cr
+			&=\Biggl(-{kmx\over (x^2+y^2+z^2)^{3\over 2}},-{kmy\over (x^2+y^2+z^2)^{3\over 2}},-{kmz\over (x^2+y^2+z^2)^{3\over 2}}\Biggr)\cr}$$
+
+In this sense, the force of gravity is defined at every point $(x,y,z)$ except the origin and the value of the force at each point $(x,y,z)$ is also a point in $R^3$. Thus the force of gravity is a function $F$ defined on a domain of points $(x,y,z)$ in $R^3$ and whose value $F(x,y,z)$ at each $(x,y,z)$ is also a point in $R^3$.
+
+\filbreak
+\vskip 1cm
+{\bf Gradient, Divergence, Laplacian, and Curl}
+
+\vskip 1mm
+{\bf Gradient of a Real Function}
+
+\vskip 1mm
+If $f$ is a real function defined on a region of points $(x,y,z)$ in $R^3$, then the value of the $\bf gradient$ written as $grad\;f=\nabla f$ of the function $f$ at any given point $(x,y,z)$ is the value at $(x,y,z)$ of ${\partial f\over\partial x},{\partial f\over\partial y},{\partial f\over\partial z}$
+
+$$\eqalign{grad\Bigl(x^2\sin(y+3z)\Bigr)&=\Bigl({\partial \over\partial x}x^2\sin(y+3z),{\partial \over\partial y}x^2\sin(y+3z),{\partial \over\partial z}\sin(y+3z)\Bigr)\cr
+				&=\Bigl(2x\sin(y+3z),x^2\cos(y+3z),3x^2\cos(y+3z)\Bigr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Divergence of a Vector Field}
+
+\vskip 1mm
+If $F=(f,g,h)$ is a vector field defined on a region of points $(x,y,z)$ in $R^3$ then the {\bf divergence} written as $div\; F$ of $F$ at any given point $(x,y,z)$ is defined to be the value at $(x,y,z)$ of
+
+$$\nabla\cdot(f,g,h)=\Bigl({\partial\over\partial x},{\partial\over\partial y},{\partial\over\partial z}\Bigr)\cdot(f,g,h)={\partial f\over\partial x}+{\partial f\over\partial y}+{\partial f\over\partial z}$$
+
+We note that the divergence of a vector field is a real function.
+
+\filbreak
+\vskip 1cm
+{\bf The Laplacian}
+
+\vskip 1mm
+If $f$ is a real function defined on a region of points $(x,y,z)$ in $R^3$, then the value of the {\bf Laplacian} of $f$ at any point $(x,y,z)$ is
+
+$${\partial^2 f\over\partial x^2}+{\partial^2 f\over\partial y^2}+{\partial^2 f\over\partial z^2}$$
+
+A function whose Laplacian is zero is called a {\bf harmonic function}.
+
+\filbreak
+\vskip 1cm
+{\bf The Curl of a Vector Field}
+
+\vskip 1mm
+The curl of a vector field is defined only for vector fields in $R^3$. If $F=(f,g,h)$ is a vector field in $R^3$. then the value of its {\bf curl} written as $curl\;F$ at any point $(x,y,z)$ is
+
+$$\eqalign{\nabla\times(f,g,h)&=\Biggl({\partial\over\partial x},{\partial\over\partial y},{\partial\over\partial z}\Biggr)\times(f,g,h)=curl\;(f,g,h)\cr
+				&=\Biggl({\partial h\over\partial y}-{\partial g\over\partial z},{\partial f\over\partial z}-{\partial h\over\partial x},{\partial g\over\partial x}-{\partial f\over\partial y}\Biggr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Conservative Vecrtor Fields and Potential of a Field}
+
+\vskip 1mm
+If $F$ is a given vector field of the form
+
+$$F=(f_1,f_2,f_3)$$
+
+defined on a region of points $(x,y,z)$ in space, then it may or may not happen that $F$ is the gradient of some scalar field $v$. In order for $F$ to be the gradient of $v$ we must have
+
+$$\Biggl({\partial\over\partial x},{\partial\over\partial y},{\partial\over\partial z}\Biggr)=(f_1,f_2,f_3)$$
+
+which means
+
+$$\eqalign{{\partial\over\partial x}&=f_1\cr
+		{\partial\over\partial y}&=f_2\cr
+		{\partial\over\partial z}&=f_3\cr}$$
+
+and any such function $v$ is said to be a {\bf potential} of $F$.
+
+\filbreak
+\vskip 1cm
+{\bf Definition of a Conservative Vector Field}
+
+\vskip 1mm
+A vector field $F$ is {\bf conservative} if there exists a real functions whose gradient is $F$.
+
+\filbreak
+\vskip 1cm
+{\bf A Necessary Condition a Vector Field to be Conserative}
+
+\vskip 1mm
+The important message of this section is that, if a given vector field $F$ is conservative then $curl\; F$ must be equal to $(0,0,0)$ at every point $(x,y,z)$ in the domain of $F$.
+
+
+\filbreak
+\vskip 1cm
+{\bf Definition of the Directional Derivative of a Scalar Field}
+
+\vskip 1mm
+We suppose that $f$ is a scalar field defined on a region of points $(x,y,z)$ in $R^3$ and that $U=(a,b,c)$ is a given vector unequal to $O$. The {\bf directional derivative of $f$ at a given point $A=(x_1,y_1,z_1)$ in the direction of $U$} is defined to be the limit
+
+$$\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over ||(x_1+at,y_1+bt,z_1+ct)-(x_1,y_1,z_1)||}$$
+
+
+\vskip 1mm
+This directional derivative is
+$$\eqalign{\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over ||(x_1+at,y_1+bt,z_1+ct)-(x_1,y_1,z_1)||}&=\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over ||\Bigl(t(a,b,c)\Bigr)||}\cr
+			&=\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over t||(a,b,c)||}\cr
+			&=\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over t\sqrt{a^2+b^2+c^2}}\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf A useful Formula for a Directional Derivative}
+
+If $f$ is a function defined on a region in $R^3$, then at any given point $(x_1,y_1,z_1)$, the directional derivative of $f$ in direction (a,b,c) is
+
+$${1\over\sqrt{a^2+b^2+c^2}}\nabla f(x_1,y_1,z_1)\cdot(a,b,c)$$
+
+\filbreak
+\vskip 1cm
+{\bf Why does This Formula Work?}
+
+\vskip 1mm
+To see a nice way of writing this limit we write
+
+$$h(t)=f(x_1+at,y_1+bt,z_1+ct)$$
+
+and notice that the limit
+
+$$\lim_{t\to 0^+}{f(x_1+at,y_1+bt,z_1+ct)-f(x_1,y_1,z_1)\over t\sqrt{a^2+b^2+c^2}}$$
+
+is actually
+
+$${1\over\sqrt{a^2+b^2+c^2}}\lim_{t\to 0^+}{h(t)-h{0}\over t-0}={1\over\sqrt{a^2+b^2+c^2}}h'(0)$$
+
+Now, for each $t$ we can see that
+
+$h(t)=f(x,y,z)$
+
+with
+
+$$\eqalign{x&=x_1+at\cr
+	y&=y_1+bt\cr
+	z&=z_1+ct\cr}$$
+
+and so
+
+$$\eqalign{h'(t)&={\partial f\over\partial x}(x,y,z)a+{\partial f\over\partial y}(x,y,z)b+{\partial f\over\partial z}(x,y,z)c\cr
+				&=\nabla f(x,y,z)\cdot(a,b,c)\cr}$$
+
+and we conclude that the directional derivative of $f$ at $A$ in the direction of $(a,b,c)$ is
+
+$${1\over\sqrt{a^2+b^2+c^2}}\nabla f(x_1,y_1,z_1)\cdot(a,b,c)$$
+
+\filbreak
+\vskip 1cm
+{\bf Choosing the Direction to Maximize the Directional Derivative}
+
+\vskip 1mm
+If $f$ is a given scalar field and if $\theta$ is the angle between a given vector $U=(a,b,c)$ and the gradient of $f$ at a given point $A=(x_1,y_1,z_1)$, then the directional derivative of $f$ at $A$ is $||(\nabla f)(x_1.y_1,z_1)||\cos(\theta)$.
+
+\vskip 1mm
+If $\theta$ is the angle between the line segment running from $A$ to $A+U$ and the line segment running from $A$ to $A+\nabla f(A)$ then the directional derivative of $f$ at $A$ in the direction of $U$ is
+
+$$\eqalign{{1\over\sqrt{a^2+b^2+c^2}}\nabla f(A)\cdot(a,b,c)&={1\over\sqrt{a^2+b^2+c^2}}\nabla ||f(A)||\;||(a,b,c)||\cos(\theta)\cr
+				&=||\nabla f(A)||\cos(\theta)\cr}$$
+
+We can make this directional derivative a much as possible by making $\cos=1$ and this greatest value that occurs when $\theta=0$ will be $|||\nabla f(A)|$
+
+\vskip 1mm
+If we move from $A$ perpendicular to $\nabla f(A)$ the directional derivative of $f$ at $A$ will be $0$
+
+\vskip 1mm
+If we move in the direction opposite to $\nabla f(A)$ then $\theta=180^\circ$ and the directional derivative is $-||\nabla f(A)||$
+
+\filbreak
+\vskip 1cm
+{\bf Applying Implicit Differentiation to a Single Equation in Three Unknowns}
+
+\vskip 1mm
+We shall suppose that the equation
+
+$$f(x,y,z)=0$$
+
+has been used to solve for $z$ in terms of $x$ and $y$. We want to find a formula for ${\partial z\over\partial x}$ with $y$ held constant.
+
+\vskip 1mm
+We can look at $f(x,y,z)$ as a composition function in the two variables $x$ and $y$ only
+
+\filbreak
+\vskip 1cm
+{\bf Applying Implicit Differentiation to Two Equations in Three Unknowns: A Special Case}
+
+\vskip 1mm
+In this example of implicit differentiation we shall suppose that the pair of equations
+
+$$\eqalign{f_1(x,y,t)&=0\cr
+		f_2(x,y,t)&=0\cr}$$
+
+has been used to solve for $x$ and $y$ in terms of $t$. We can therefore consider the two given equations as defining a parametric curve in $R^2$ and we can talk about the derivatives ${dx\over dt}$ and ${dy\over dt}$.
+
+\vskip 1mm
+Applying the chain rule to each of the two equations
+
+$$\eqalign{f_1(x,y,t)&=0\cr
+		f_2(x,y,t)&=0\cr}$$
+
+we obtain
+
+$$\eqalign{{\partial f_1\over\partial x}{dx\over dt}+{\partial f_1\over\partial y}{dy\over dt}+{\partial f_1\over\partial t}&=0\cr
+	{\partial f_2\over\partial x}{dx\over dt}+{\partial f_2\over\partial y}{dy\over dt}+{\partial f_2\over\partial t}&=0\cr}$$
+
+and we can express the two equations as a single matrix equation
+
+$$\left\lbrack\matrix{{\partial f_1\over\partial x}&{\partial f_1\over\partial y}\cr
+		{\partial f_2\over\partial x}&{\partial f_2\over\partial y}\cr}\right\rbrack
+		\left\lbrack\matrix{{dx\over dt}\cr
+		{dy\over dt}\cr}\right\rbrack=-\left\lbrack\matrix{{\partial f_1\over\partial t}\cr
+		{\partial f_2\over\partial t}\cr}\right\rbrack$$
+
+that leads to
+
+$$\left\lbrack\matrix{{dx\over dt}\cr
+		{dy\over dt}\cr}\right\rbrack=-\left\lbrack\matrix{{\partial f_1\over\partial x}&{\partial f_1\over\partial y}\cr
+		{\partial f_2\over\partial x}&{\partial f_2\over\partial y}\cr}\right\rbrack^{-1}
+		\left\lbrack\matrix{{\partial f_1\over\partial }\cr
+		{\partial f_2\over\partial t}\cr}\right\rbrack$$
+
+as long as the matric $\left\lbrack\matrix{{\partial f_1\over\partial x}&{\partial f_1\over\partial y}\cr
+		{\partial f_2\over\partial x}&{\partial f_2\over\partial y}\cr}\right\rbrack$ is invertible.
+
+\filbreak
+\vskip 1cm
+{\bf Applying Implicit Differentiation to Two Equations in Three Unknowns: The General Case}
+
+\vskip 1mm
+In this example of implicit differentation we shall suppose that the pair of equations
+
+$$\eqalign{f_1(x,y,t)&=0\cr
+	f_1(x,y,t)&=0\cr}$$
+
+has been used to solve for $x$ and $y$ in terms of $t$. We can therefore consider the two given equations as defining a parametric curve in $R^2$ and we can talk about the derivatives ${dx\over dt}$ and ${dy\over dt}$.
+
+\filbreak
+\vfill\eject
+\bye

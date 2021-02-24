@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Theorem 8.10}
+\vskip 6pt
+A graph $G$ contains a $1$-factor {\it if and only if} $k_o(G-S) \leq |S|$ for every proper subset $S$ of $V(G)$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+Assume first that $G$ contains a $1$-factor $F$. Let $S$ be a proper subset of $V(G)$. If $G-S$ has odd components, then $k_o(G-S)=0$ and certainly $k_o(G-S) \leq |S|$. Suppose that $k_o(G-S)=k \geq 1$ and let $G_1,G_2, \ldots,G_k$ be the odd components of $G-S$ (There may also be even components of $G-S$.) Since $G$ contains the $1$-factor $F$ and the order of each subgraph of $G_i(1 \leq i \leq k)$ is odd, some edge of $F$ must be incident to both a vertex of $G_i$ and a vertex of $S$ and so $k_o(G-s) \leq |S|$.
+\vskip 1mm
+For the converse, assume that $k_o(G-S) \leq |S|$ for every proper subset $S$ of $V(G)$. In particular, for $S= \emptyset$, er have $k_o(G-S)=k_o(G)=0$, that is, every component of $G$ is even and so $G$ has even order. We now show by induction that every graph $G$ of even order with this property has a $1$-factor. There is only one grap of order $2$ having only even components, namely $K_2$, which of course, has a $1$-factor. Assume, for an even integer $n \geq 4$, that all graphs $H$ of even order less than $n$ for which $k_o(H-S) \leq |S|$ for every proper subset $S$ of $V(H)$ have a $1$-factor. Let $G$ be a graph of order $n$ satisfying $k_o(G-S) \leq |S|$ for every proper subset $S$ of $V(G)$. Thus every component of $G$ has even order.
+\vskip 1mm
+First, we make an observation. Since every non-trivial component of $G$ contains a vertex that is not a cut-vertex (Corollary 5.6), there are subsets $R$ of $V(G)$ for which $k_o(G-R)=|R|$. (For example, we coulse choose $R= \lbrace v \rbrace$, where $v$ is not a cut-vertex of $G$.) Among all such sets, let $S$ be one of maximum cardinality and let $G_1,G_2, \ldots , G_k$ be the $k$ odd components of $G-S$. Thus $k=|S| \geq 1$.
+\vskip 1mm
+Observe that $G_1,G_2, \ldots , G_k$ are the only components of $G-S$, for otherwise $G-S$ has an even component $G_0$ containing a vertex $u_0$ that is not a cut-vertex. Then for the set $S_0=S \cup \lbrace u \rbrace$ of cardinality $k+1$, $$k_o(G-S)=|S_0|=k+1$$ which is impossible. Therefore, as claimed, the odd components $G_1,G_2, \ldots , G_k$ are, in fact, the only components of $G-S$.
+\vskip 1mm
+Now, for each integer $i$ with $1 \leq i \leq k$, let $S_i$ be the set of vertices of $S$ that are adjacent to at least one vertex in $G_i$. Since $G$ has only even components, each set $S_i$ is non-empty. We claim next that each integer $\ell$ with $1 \leq \ell \leq k$, the union of any $\ell$ of the sets $S_1,S_2, \ldots S_k$ contains at least $\ell$ vertices. Assume, to the contrary, that there exists an integer $j$ such that the union $T$ of $j$ of the sets $S_1,S_2, \ldots ,S_k$ has fewer than $j$ elements. Without loss of generality, we may assume that $T=S_1 \cup S_2 \cup \ldots \cup S_j$ and $|T|<j$. Then $$k_o(G-T \geq j > |T|$$ which is impossible. Thus as claimed, for each integer $\ell$ with $1 \leq \ell \leq k$, the union of any $\ell$ of the sets $S_1,S_2, \ldots , S_k$ contains at least $\ell$ vertices.
+\vskip 1mm
+By Theorem 8.4, there exists a set $\lbrace v_1,v_2, \ldots ,v_k \rbrace$ of $k$ distinct vertices such that $v_i \in S_i$ for $1 \leq i \leq k$. Since every graph $G_i(1 \leq i \leq k)$ contains a vertex $u_i$ for which $u_iv_i \in E(G)$, it follows that $\lbrace u_iv_i:1 \leq i \leq k \rbrace$ is a matching of $G$.
+\vskip 1mm
+Next, we show that if $G_i(1 \leq i \leq k$ is non-trivial, then $G_i-u_i$ has a $1$-factor. Let $W$ be a proper subset of $V(G_i-u_i)$. We claim that $$k_o(G_i-u_i-W) \leq |W|$$ Assume, to the contrary that $k_o(G_i-u_i-W) > |W|$. Since $G_i-u_i$ has even order, $k_o(G_i-u_i-W)$ and $|W|$ are either both even or both odd. Hence $k_o(G_i-u_i-W) \geq |W|+2$. Let $S'=S \cup W \cup \lbrace u_i \rbrace$. Then.$$|S'| \geq k_o(G-S')=k_o(G-S)+k_o(G_i-u_i-W)-1 \geq |S|+(|W|+2)-1=|S|+|W|+1=|S'|$$ which implies that $k_o(G-S')=|S'|$, contradicting our choice of $S$. Therefore, $k_o(G_i-u_i-W) \leq |W|$, as claimed.
+\vskip 1mm
+By the induction hypothesis, if $G_i(1 \leq i \leq k)$ is non-trivial, then $G_i-u_i$ has a $1$-factor. The collection of $1$-factors of $G_i-u_i$ for all non-trivial graphs $G_i(1 \leq i \leq k)$ and the edges in $\lbrace u_iv_i: 1 \leq i \leq k \rbrace$ produce a $1$-factor of $G$.
+
+\vfill\eject

@@ -1,0 +1,809 @@
+{\bf Vectors in Space}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf What Do We Mean by $R^n$?}
+
+\vskip 6pt
+$R^n$ for a given integer $n$ stands for the collection of all possible strings
+
+$$(a_1,a_2,a_3,\cdots,a_n)$$
+
+Such a string is called $n$-tuple of nummbes.
+
+\vskip 1mm
+When $n=1$ all we have is a real number.
+
+\filbreak
+\vskip 1cm
+{\bf Addition, Subtraction, and Scalar Multiplication in $R^n$}
+
+\vskip 6pt
+We suppose that $n$ is a given positive integer and that $A=(a_1,a_2,a_3,\cdots,a_n)$ and $B=(b_1,b_2,b_3,\cdots,b_n)$ are points in $R^n$.
+
+\vskip 1mm
+We define
+
+$$A+B=(a_1,a_2,a_3,\cdots,a_n)+(b_1,b_2,b_3,\cdots,b_n)=(a_1+b_1,a_2+b_2,\cdots a_n+b_n)$$
+
+and
+
+$$A-B=(a_1,a_2,a_3,\cdots,a_n)-(b_1,b_2,b_3,\cdots,b_n)=(a_1-b_1,a_2-b_2,\cdots a_n-b_n)$$
+
+We suppose that $n$ is a given integer, that $A=(a_1,a_2,a_3,\cdots,a_n)$, and that $t$ is any given number. The product $tA$ is defined by the equation
+
+$$tA=t(a_1,a_2,a_3,\cdots,a_n)=(ta_1,ta_2,ta_3,\cdots,ta_n)$$
+
+\filbreak
+\vskip 1cm
+{\bf The Norm $||A||$ of a point $A$ in $R^n$}
+
+If $A=(a_1,a_2,a_3,\cdots,a_n)$ then we define
+
+$$||A||=\sqrt{a{}_1^2,a{}_2^2,a{}_3^2,\cdots,a{}_n^2}$$
+
+\filbreak
+\vskip 1cm
+{\bf Special Case: The Norm $||A||$ of a point $A$ in $R^n$}
+
+\vskip 1mm
+The norm $||(x,y)||$ of a point $(x,y)$ in $R^2$ is $\sqrt{x^2+y^2}$
+
+\filbreak
+\vskip 1cm
+{\bf The Norm of a Point $P$ in $R^3$}
+
+\vskip 1mm
+In $R^3$ the number $||P||$ is the distance from $P$ to $O$.
+
+\vskip 1mm
+Applying the theorem of Pythagoras to $\triangle OQP$ we see that
+
+$$\eqalign{(OP)^2&=(OQ)^2+(QP)^2\cr
+		&= (\sqrt{x^2+y^2})^2+z^2\cr
+		&=x^2+y^2+z^2\cr
+		OP&=\sqrt{x^2+y^2+z^2}=||P||\cr}$$
+
+The norm of a point is its distance to the point $O=(0,0,0)$.
+
+\filbreak
+\
+\vskip 1cm
+{\bf Some Properties of the Arithmetic in $R^n$}
+
+\vskip 1mm
+Assume that $A=(a_1,a_2,a_3,\cdots,a_n)$ and $B=(b_1,b_2,b_3,\cdots,b_n)$ and $C=(c_1,c_2,c_3,\cdots,c_n)$ and that $s$ and $t$ are numbers.
+
+\vskip 1cm
+{\bf The Commutative Law $A+B=B+A$}
+
+\vskip 1mm
+{\bf Proof}
+
+$$\eqalign{A+B&=(a_1+b_1,a_2+b_2,\cdots,a_n+b_2)\cr
+		&=(b_1+a_1,b_2+a_2,\cdots,b_n+a_n)\cr
+		&=B+A\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Associative Law $(A+B)+C=A+(B+C)$}
+
+\vskip 1mm
+{\bf Proof}
+
+\vskip 1mm
+The left side is
+
+$$\eqalign{a_1+b_1,a_2+b_2,\cdots,a_n+b_n+(c_1,c_2,c_3,\cdots,c_n)&=((a_1+b_1)+c_1,(a_2+b_2)+c_2,\cdots,(a_n+b_n)+c_n)\cr
+									&=(a_1+b_1+c_1,a_2+b_2+c_2,\cdots,a_n+b_n+c_2)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Point $O$}
+
+\vskip 1mm
+This is the point $(0,0,0)$
+
+\vskip 1mm
+The Equation $A+O=A$
+
+\vskip 1mm
+The Equation $A-A=0$
+
+\vskip 1mm
+The Equation $1A=A$
+
+\vskip 1mm
+The Equation $0A=O$
+
+\vskip 1mm
+The Equation $(s+t)A=sA+tA$
+
+\vskip 1mm
+The Equation $t(A+B)=tA+tB$
+
+\vskip 1mm
+The Equation $||tA||=|t|\,||A||$
+
+\vskip 1mm
+{\bf Proof}
+
+\vskip 1mm
+I want to point out that, if $t$ is any real number, then $\sqrt{t^2}=|t|$
+
+$$\eqalign{||tA||&=||t(a_1,a_2,a_3,\cdots,a_n)||\cr
+		&=(ta_1,ta_2,ta_3,\cdots,ta_n)||\cr
+		&=\sqrt{(ta_1)^2+(ta_2)^2+(ta_3)^2+\cdots+(ta_n)^2}\cr
+		&=\sqrt{t^2(a{}_1^2+a{}_2^2+\cdots a{}_n^2)}\cr
+		&=|t|=\sqrt{a{}_1^2+a{}_2^2+\cdots a{}_n^2}\cr
+		&=|t|\,||A||\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Standard Basis in $R^n$}
+
+\vskip 1mm
+The {\bf standard basis} in $R^3$ is the set $\{(1,0,0),(0,1,0),(0,0,1)\}$ and we can extend this to $R^n$
+
+\vskip 1mm
+We write $(1,0,0)=I$ and $(0,1,0)=J$ and $(0,0,1)=K$
+
+\vskip 1mm
+In $R^n$ we define
+
+$$\eqalign{I_1&=(1,0,0,\cdots,0)\cr
+	I_2&=(0,1,0,\cdots,0)\cr
+	I_3&=(0,0,1,0,\cdots,0)\cr
+	\vdots\cr
+	I_n&=(0,0,0,\cdots,1)\cr}$$
+
+and the set $\{I_1,I_2,I_3,\cdots,I_n\}$ is called the {\bf standad basis} in $R^n$.
+
+\filbreak
+\vskip 1cm
+{\bf Linear Combinations}
+
+\vskip 1mm
+A {\bf linear combination} of points $A$ and $B$ and $C$ is any point of the form
+
+$$rA+sB+tC$$
+
+where $r$ and $s$ and $t$ can be any numbers. In the same way, we can have a linear combination of many points.
+
+\vskip 1mm
+We can extend this idea to larger sets. For example, since
+
+$$(3,-2,5,0,7)=3(1,0,0,0,0)-2(0,1,0,0,0)+(0,0,1,0,0)+0(0,0,0,1,0)+7(0,0,0,0,1)$$
+
+we see that $(3,-2,5,0,7)$ is a linear combination of the set $\{I_1,I_2,I_3,I_4,I_5\}$
+
+\filbreak
+\vskip 1cm
+{\bf Linear Independence}
+
+\vskip 1mm
+A set of points in $R^n$ is said to be {\bf linearly independent} if it is impossible to make linear combination of these points equal to $O$ unless all the coeffiencients are zero.
+
+\vskip 1mm
+For example, since
+
+$$a(1,0,0,0)+b(0,1,0,0)+c(0,0,1,0)+d(0,0,0,1)=(a,b,c,d)$$
+
+the only way we can make a linear combination
+
+$$a(1,0,0,0)+b(0,1,0,0)+c(0,0,1,0)+d(0,0,0,1)$$
+
+equal to $O$ is by making $a=b=c=d$
+
+\filbreak
+\vskip 1cm
+{\bf An Important Principle Studied in a First Course in Linear Algebra}
+
+\vskip 1mm
+If a set $\{A,B,C\}$ of points in $R^3$ is linearly independent, then {\it every} point in $R^3$ can be expressed as a linear combination of $A,B,$ and $C$.
+
+\vskip 1mm
+In other words, if $W$ is any given point in $R^3$, then the equation
+
+$$xA+yB+zC=W$$
+
+can be solved for $x,y,$ and $z$
+
+\vskip 1mm
+So, for example, if $A=(a_1,a_2,a_3)$ and $B=(b_1,b_2,b_3)$ and $C=(c_1,c_2,c_3)$ and $W=(w_1,w_2,w_3)$, then the equation says that
+
+$$x(a_1,a_2,a_3)+y(b_1,b_2,b_3)+z(c_1,c_2,c_3)=(w_1,w_2,w_3)$$
+
+and this says that
+
+$$\eqalign{a_1x+b_1y+c_1z&=w_1\cr
+		a_2x+b_2y+c_2z&=w_2\cr
+		a_3x+b_3y+c_3z&=w_3\cr}$$
+
+and we are saying that this system of three equations in the three unknowns $x,y,$ and $z$ can be solved. We can make a similiar statement for $R^n$ for each $n$.
+
+\filbreak
+\vskip 1cm
+{\bf Geometric Interpretation of the Arithmetic in $R^2$ and $R^3$}
+
+\vskip 1cm
+{\bf Line Segments with the Same Length and Direction}
+
+\vskip 1mm
+We suppose that we have four points
+
+$$\eqalign{A&=(x_1,y_1,z_1)\cr
+		B&=(x_2,y_2,z_2)\cr
+		C&=(x_3,y_3,z_3)\cr
+		D&=(x_4,y_4,z_4)\cr}$$
+
+in $R^3$ and we look at the two line segments $AB$ and $CD$.
+
+\vskip 1mm
+The conditions for these two line segments to have the same length and also point in the same direction is that the equations
+
+$$\eqalign{x_2-x_1&=x_4-x_3\cr
+	y_2-y_1&=7y_4-y_3\cr
+	z_2-z_1&=z_4-z_3\cr}$$
+
+hold. Thus the two line segments $AB$ and $CD$ will have the same length and direction if and only if
+
+$$\eqalign{(x_2-x_1,y_2-y_1,z_2-z_1)&=(x_4-x_3,y_4-y_3,z_4-z_3)\cr
+		B-A&=D-C\cr}$$
+
+because this says that 
+
+$$(x_2-x_1,y_2-y_1,z_2-z_1)=(x_4-x_3,y_4-y_3,z_4-z_3)$$
+
+We can, of course, make the same observation about points in $R^2$.
+
+\filbreak
+\vskip 1cm
+{\bf The Notation $\vec{AB}$}
+
+\vskip 1mm
+Given any two points $A$ and $B$ in $R^n$ we define
+
+$$\vec{AB}=B-A$$
+
+Given points $A$ and $B$ and $C$ and $D$ in space, the condition
+
+$$\vec{AB}=\vec{CD}$$
+
+says that
+
+$$B-A=D-C$$
+
+and this is the condition $AB$ and $CD$ are line segments with the same length and the same direction.
+
+\filbreak
+\vskip 1cm
+{\bf We need a name for $\vec{AB}$}
+
+\vskip 1mm
+The symbol $\vec{AB}$ is given the name $AB$
+
+\vskip 1mm
+Note that, if $A$ and $B$ are points in space then the symbol $AB$ stands for the line segment between $A$ and $B$ and, sometimes, we use the symbol $AB$ for the {\it length} of the line segment $AB$.
+
+\vskip 1mm
+On the other hand, vector $AB$, which is written as $\vec{AB}$, means a {\bf point} in space. In fact, $\vec{AB}$ is the point $B-A$.
+
+\vskip 1mm
+So, for example, if $A=(2,4,-3)$ and $B=(5,1,-8)$, then
+
+$$\eqalign{\vec{AB}&=B-1\cr
+	&=(5,1,-8)-(2,4,-3)\cr
+	&=(3,-3,-5)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Using the Norm to Find the Length of a Line Segment in $R^3$}
+
+\vskip 1mm
+If $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ are any points in $R^3$, then the distance formula tells us that the distance from $A$ to $B$ is
+
+$$\eqalign{\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}&=||(x_2-x_1,y_2-y_1,z_2-z_1)||\cr
+							&=||B-A||\cr
+							&=||\vec{AB}||\cr}$$
+
+Another way of looking at this topic is to define $P=B-A$. From the equation
+
+$$P-O=P=B-A$$
+
+ we see that the line segments $OP$ and $AB$ have the same length (and direction) and so
+
+$$dis(AB)=dist(OP)=||P||=||B-A||=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$$
+
+\filbreak
+\vskip 1cm
+{\bf Line Segments with the Same Length}
+
+\vskip 1mm
+Two line segments $AB$ and $CD$ have the same length if and only if $||\vec{AB}||=||\vec{CD}||$
+
+$$||B-A||=||D-C||$$
+
+\filbreak
+\vskip 1cm
+{\bf Two Line Segments with the Same Direction}
+
+\vskip 1cm
+{\bf We begin by looking at a special case}
+
+\vskip 1mm
+Suppose that $AB$ and $CD$ have the same direction but that $AB$ is twice as long as $CD$ and that
+
+$$\eqalign{A&=(x_1,y_1,z_1)\cr
+	B&=(x_2,y_2,z_2)\cr
+	C&=(x_3,y_3,z_3)\cr
+	D&=(x_4,y_4,z_4)\cr}$$
+
+In this case
+
+$$\eqalign{x_2-x_1&=2(x_4-x_3)\cr
+	y_2-y_1&=2(y_4-y_3)\cr
+	z_2-z_1&=2(z_4-z_3)\cr}$$
+
+Un this case we see that
+
+$$B-A=2(D-C)$$
+
+and this says that
+
+$$\vec{AB}=2\vec{CD}$$
+
+\vskip 1mm
+{\bf Now we extend the idea}
+
+\vskip 1mm
+Suppose that $t$ is a positive number. The condition
+
+$$B-A=t(D-C)$$
+
+which is 
+
+$$\vec{AB}=t\vec{CD}$$
+
+says that the line segments $AB$ and $CD$ have the same direction but that $AB$ is $t$ times as long as $CD$
+
+\filbreak
+\vskip 1cm
+{\bf Line Segments with Opposite Directions}
+
+\vskip 1mm
+1. Given points $A$ and $B$ we can see that
+
+$$\vec{BA}=A-B=-(B-A)=-\vec{AB}$$
+
+and we can see, the directions of the line segments $AB$ and $BA$ are opposite to one another.
+
+\vskip 1mm
+2. Now suppose that $A,B,C,$ and $D$ are points in space and that $\vec{AB}=-\vec{CD}$. This tells us that
+
+$$\vec{AB}=B-A=-(D-C)=C-D=\vec{DC}$$
+
+and so the line segments $AB$ and $CD$ have the same length but opposite directions.
+
+\vskip 1mm
+3. Now suppose that $A,B,C,$ and $D$ are point in space ad that $t$ is a negative number and that 
+
+$$\vec{AB}=t(\vec{CD})$$
+
+This gives us
+
+$$\eqalign{\vec{AB}&=t(D-C)\cr
+		&=-t(C_D)\cr
+		&=(-t)(\vec{DC}\cr}$$
+
+The number $it$ is positive. The line segment $AB$ is $-t$ times as long as the line segment $CD$ and the directions of the line segments $AB$ and $CD$ are opposite to one another.
+
+\filbreak
+\vskip 1cm
+{\bf The Inner Product (Dot Product)}
+
+\vskip 1mm
+{\bf Definition of the Inner Product (Good in $R^n$ for any positive integer $n$)}
+
+\vskip 1mm
+Given two points $A=(a_1,a_2,a_3,\cdots,a_n)$ and $B=(b_1,b_2,b_3,\cdots,b_n)$ in $R^n$, we define
+
+$$A\cdot B=a_1b_1+a_2b_2+a_3b_3+\cdots a_nb_n$$
+
+Note that $A\cdot B$ is a number.
+
+\vskip 1mm
+{\bf When We Are in $R^3$}
+
+\vskip 1mm
+If $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ then
+
+$$A\cdot B=x_1x_2+y_1y_2+z_1z_2$$
+
+\filbreak
+\vskip 1cm
+{\bf Simple Facts About the Dot Product}
+
+\vskip 1mm
+We suppose that $A=(a_1,a_2,a_3,\cdots,a_n)$ and $B=(b_1,b_2,b_3,\cdots,b_n)$ and $C=(c_1,c_2,c_3,\cdots,c_n)$ and that $s$ and $t$ are numbers
+
+\vskip 1mm
+The Equation $A\cdot A=||A||^2$
+
+\vskip 1mm
+The reason for this is
+
+$$\eqalign{A\cdot A&=(a_1,a_2,a_3,\cdots,a_n)\cdot(a_1,a_2,a_3,\cdots,a_n)\cr
+		&=a{}_1^2+a{}_2^2+a{}_3^2+\cdots a{}_n^2\cr
+		&=||A||^2\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Commutative Law $A\cdot B=B\cdot A$}
+
+$$A\cdot(B+C)=A\cdot B+A\cdot C$$
+
+\filbreak
+\vskip 1cm
+{\bf The Distributive Law $A\cdot(B+C)=A\cdot B+A\cdot C$}
+
+\filbreak
+\vskip 1cm
+The equation $t(A\cdot B)=(tA)\cdot B= A\cdot (tB)$
+
+$$\eqalign{t(A\cdot B)&=t(a_1b_1+a_2b_2+\cdots+a_nb_n)\cr
+		&=ta_1b_1+ta_2b_2+\cdots+ta_nb_n\cr
+		&=a_1tb_1+a_2tb_2+\cdots+a_ntb_n\cr
+		&=A\cdot(tB)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Cauchy-Schwarz Inequality $|A\cdot B|\leq||A||||B||$}
+
+\vskip 1mm
+If $\angle AOB=\theta$, then
+
+$$A\cdot B=(OA)(OB)\cos(\theta)=||A||\;||B||\cos(\theta)$$
+
+and so
+
+$$\eqalign{|A\cdot B|&=||A||\;||B|||\cos(\theta)|\cr
+			&\leq ||A||\;||B||1\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Minkoski Inequality $||A+B||\leq||A||+||B||$}
+
+$$||A+B||=||C|$$
+
+which is the distance from $O$ to $C$ and this can't be more than the distance from $O$ to $A$ plus the distance from $O$ to $B$.
+
+\filbreak
+\vskip 1cm
+{\bf The Triangle Inequality $||A-C||\leq||A-B||+||B-C||$}
+
+\vskip 1mm
+Given the points $A$ and $B$ and $C$ we have
+
+$$||A-C||\leq||A-B||+||B-C||$$
+
+\filbreak
+\vskip 1cm
+{\bf Review of the Law of Cosines}
+
+\vskip 1mm
+Explain why
+
+$$\eqalign{a^2&=b^2+c^2-2bc\cos\angle A\cr
+	b^2&=a^2+c^2-2ac\cos\angle B\cr
+	c^2&=a^2+b^2-2ab\cos\angle C\cr}$$
+
+We suppose that $\triangle ABC$ is any triangle and we move $\triangle ABC$ into a coordinate system as follows.
+
+\vskip 1mm
+1. we slide $\triangle ABC$ until $A$ is at $O$.
+
+\vskip 1mm
+2. we roate $\triangle ABC$ until $B$ is on the right side of the $x$-axis.
+
+\vskip 1mm
+3. If necessary, we flip $\triangle ABC$ to make $C$ sit above the $x$-axis.
+
+\vskip 1mm
+$$\eqalign{A&=(0,0)\cr
+		B&=(c,0)\cr}$$
+
+The point $C$ is a bit harder.
+
+\vskip 1mm
+The angle $\angle A$ is drawn in standard position. The angle winds to the terminal line $OC=AC$ whose length is $b$ and so, if we write $C$ as $(x,y)$ just for the moment, then we have
+
+$$\eqalign{\cos\angle A&={x\over n}\cr
+	\sin\angle A&={y\over b}\cr}$$
+
+and so
+
+$$\eqalign{C&=(b\cos\angle A, b\sin\angle A)\cr
+		A&=(0,0)\cr
+		B&=(c,0)\cr
+		C&=(b\cos\angle A,b\sin\angle A)\cr}$$
+
+From the distance formula we can see that
+
+$$(BC)^2=(b\cos\angle A-c)^2+(b\sin\angle A-0)^2$$
+
+and so
+
+$$\eqalign{a^2&=b^2\cos^2\angle A-2bc\cos\angle A+c^2+b^2\sin^2\angle A\cr
+		a^2&=b^2\cos^2\angle A+b^2\sin^2\angle -2bc\cos\angle A+c^2\cr
+		a^2&=b^2(\cos^2\angle A+\sin^2\angle A)-2bc\cos\angle A+c^2\cr
+		a^2&=b^2(1)-2bc\cos\angle A+c^2\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf A Geometric Interpretation of the Inner Product in $R^2$ and $R^3$}
+
+\vskip 1mm
+If $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ are points in $R^3$ (or $R^2$) that are unequal to the origin $O$ and $\theta=\angle AOB$. Then
+
+$$A\cdot B=||A||\;||B||\cos(\theta)$$
+
+\vskip 1mm
+{\bf Proof}
+
+\vskip 1mm
+We apply the law of cosines to $\triangle AOB$ and get
+
+$$\eqalign{(AB)^2&=(OA)^2+(OB)^2-2(OA)(OB)\cos(\theta)\cr
+	(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2&=x{}_1^2+y{}_1^2+z{}_1^2+x{}_2^2+y{}_2^2+z{}_2^2-2||A||\;||B||\cos(\theta)\cr
+	x{}_1^2-2x_1x_2+x{}_2^2+y{}_1^2-2y_1y_2+y{}_2^2+z{}_1^2-2z_1z_2+z{}_2^2&=x{}_1^2+y{}_1^2+z{}_1^2+x{}_2^2+y{}_2^2+z{}_2^2-2||A||\;||B||\cos(\theta)\cr
+	-2x_1x_2-2y_1y_2-2z_1z_2&=-2||A||\;||B||\cos(\theta)\cr
+	x_1x_2+y_1y_2+z_1z_2&=||A||\;||B||\cos(\theta)\cr
+	A\cdot B &=||A||\;||B||\cos(\theta)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Points Orthogonal to One Another}
+
+\vskip 1mm
+We say that $A$ and $B$ are {\bf orthogonal} to each other when $A\cdot B=0$
+
+\filbreak
+\vskip 1cm
+{\bf Orthogonality in $R^2$ or $R^3$}
+
+Saying that $A\cdot B=0$ is saying that
+
+$$||A||\;||B||\cos\angle AOB=0$$
+
+and this gives us
+
+$$\cos\angle AOB=0$$
+
+and this holds when $\angle AOB=90^\circ$ and this says that $OA\perp OB$
+
+\filbreak
+\vskip 1cm
+{\bf A condition for Two Line Segments to be Perpendicular to One Another}
+
+\vskip 1mm
+We define $P=B-A=\vec{AB}$ and $Q=D-C=\vec{CD}$.
+
+\vskip 1mm
+The line segments $AB$ and $OP$ have length and the same direction.
+
+\vskip 1mm
+The line segments $CD$ and $OQ$ have the same length and the samwe direction.
+
+\vskip 1mm
+The condition for $CD$ to be perpendicular to $AB$ is that $OP\perp OQ$ and this says that $P\cdot Q=0$ and this says that
+
+$$(\vec{AB}\cdot(\vec{CD})=0$$
+
+\filbreak
+\vskip 1cm
+{\bf The Points $A+B$ and $A-B$ are Orthogonal to Each other if and only if $||A||=||B||$}
+
+\vskip 1mm
+To say that $A+B$ iw orthogonal to $A-B$ is to say that
+
+$$(A+B)\cdot(A-B)=0$$
+
+and this says that
+
+$$\eqalign{A\cdot A+B\cdot A-A\cdot B-B\cdot B&=0\cr
+		A\cdot A+A\cdot B-A\cdot B-B\cdot B&=0\cr}$$
+
+and this says that
+
+$$||A||^2-||B||^2=0$$
+
+and says that
+
+$$||A||=||B||$$
+
+\filbreak
+\vskip 1cm
+{\bf The Cross Product}
+
+\vskip 1mm
+{\bf The Definition of the $\times$ Product in $R^3$}
+
+\vskip 1mm
+Given $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ we define
+
+$$\eqalign{A\times B&=(x_1,y_1,z_1)\times(x_2,y_2,z_2)\cr
+		&=(y_1z_2-z_1y_2,z_1x_2-x_1z_2,x_1y_2-y_1x_2)\cr}$$
+
+Another way to get this is to work out
+
+$$det\left[\matrix{I&J&K\cr
+		x_1&y_1&z_1\cr
+		x_2&y_2&z_2\cr}\right]\eqalign{&=I(y_1z_2-y_2z_1)+J(x_2z_1-x_1z_2)+K(x_1y_2-x_2y_1)\cr
+	&=(y_1z_2-y_2z_1,x_2z_1-x_1z_2.x_1z_2,x_1y_2-x_2y_1)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Product $A\times A$}
+
+\vskip 1mm
+Given $A=(x,y,z)$ we have
+
+$$\eqalign{A\times A&=(x,y,z)\times(x,y,z)\cr
+	&=(yz-zy,zx-xz,xy-yx)\cr
+	&=(0,0,0)\cr
+	&=O\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Some Facts About the $\times$ Product}
+
+\vskip 1mm
+{\bf The Equation $B\times A=-A\times B$}
+
+\vskip 1mm
+We assume that $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$
+
+$$\eqalign{A\times B&=(x_1,y_1,z_1)\times(x_2,y_2,z_2)\cr
+		&=(y_1z_2-z_1y_2,z_1x_2-x_1z_2,x_1y_2-y_1x_2)\cr}$$
+
+On the other hand
+
+$$\eqalign{B\times A=(x_2,y_2,z_2)\times(x_1,y_1,z_1)\cr
+		&=(y_2z_1-z_2y_1,z_2x_1-x_2z_1,x_2y_1-y_2x_1)\cr}$$
+
+$$B\times A=-A\times B$$
+
+\vskip 1mm
+{\bf The Equation $A\times(B+C)=A\times B+A\times C$}
+
+\vskip 1mm
+We assume that $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ and $C=(x_3,y_3,z_3)$ and we see that
+
+$$\eqalign{A\times (B+C)&=(x_1,y_1,z_1)\times (x_2+x_3,y_2+y_3,z_2+z_3)\cr
+				&=\Bigl(y_1(z_2+z_3)-z_1(y_2+y_3),z_1(x_2+x_3)-x_1(z_2+z_3),x_1(y_2+y_3)-y_1(x_2+x_3)\Bigr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Equation $(tA)\times B=t(A\times B)$}
+
+\vskip 1mm
+{\bf Failure of the Law $A\times (B\times C)=(A\times B)\times C$}
+
+\filbreak
+\vskip 1cm
+{\bf The Norm of $A\times B$}
+
+\vskip 1mm
+Given $A$ and $B$ we have the following equation
+
+$$||A\times B||^2=||A||^2||B||^2-(A\cdot B)^2$$
+
+\vskip 1mm
+If $A=(x_1,y_1,z_1)$ and $B=(x_2,y_2,z_2)$ then
+
+$$\eqalign{||A\times B||^2&=||y_1z_2-z_1y_2,z_1x_2-x_1z_2,x_1y_2-y_1x_2||^2\cr
+		&=(y_1z_2-z_1y_2)^2+(z_1x_2-x_1z_2)^2+(x_1y_2-y_1x_2)^2\cr}$$
+
+\vskip 1mm
+We can make an important conclusion
+
+\vskip 1mm
+If $\theta=\angle AOB$ then we know that
+
+$$A\cdot B=||A||\;||B||\cos(\theta)$$
+
+Now we use the equation
+
+$$||A\times B||^2=||A||^2||B||^2-(A\cdot B)^2$$
+
+and we can see that
+
+$$\eqalign{||A\times B||^2&=||A||^2||B||^2-||A||^2||B||^2\cos^2(\theta)\cr
+		&=||A||^2||B||^2(1-\cos^2(\theta)\cr
+		&=||A||^2||B||^2\sin^2(\theta)\cr}$$
+
+and so
+
+$$||A\times B||=||A||\;||B|||\sin(\theta)|$$
+
+Our understanding of $\theta$ is that $0\leq\theta\leq180^\circ$ and so $\sin(\theta)$ can't be negative and so we can drop the absolute value sign
+
+$$||A\times B||=||A||\;||B||\sin(\theta)$$
+
+\filbreak
+\vskip 1cm
+{\bf The Direction of $A\times B$}
+
+\vskip 1mm
+We write $P=A\times B$ and I want to explain that $OP$ is perpendicular both to $OA$ and to $OB$ and so $OP$ is perpendicular to $\triangle OAB$
+
+\filbreak
+\vskip 1cm
+{\bf The Vector Triple Product}
+
+\vskip 1mm
+Given $A$ and $B$ and $C$
+
+$$A\times(B\times C)=(A\times C)B-(A\cdot B)C$$
+
+\filbreak
+\vskip 1cm
+{\bf Lines and Planes in $R^3$}
+
+\vskip 1mm
+{\bf Equation of a Plane}
+
+\vskip 1mm
+We can specify a plane in $R^3$ by giving a point $A=(x_1,y_1,z_1)$ in $R^3$ that will be in the plane and giving a vector $U=(a,b,c)\neq O$ that is perpendicular to the plane.
+
+\vskip 1mm
+When we say $U$ is perpendicular to the green plane we mean that the line segment $OU$ is perpendicular to the plane.
+
+\vskip 1mm
+Given any point $P=(x,y,z)$, the condition for $P$ to be in the green plane is that $AP\perp OU$ and this says that
+
+$$\vec{AP}\cdot\vec{OU}=0$$
+
+and this says that
+
+$$(x-x_1,y-y_1,z-z_1)\cdot(a,b,c)=0$$
+
+and we get
+
+$$a(x-x_1)+b(y-y_1)+c(z-z_1)=0$$
+
+\filbreak
+\vskip 1cm
+{\bf Parametric Equations of a Line}
+
+\vskip 1mm
+We can specify a line in $R^3$ by giving a point $A=(x_1,y_1,z_1)$ in the line and giving a vector $U=(a,b,c)\neq O$ that is parallel to the line.
+
+\vskip 1mm
+The condition for a point $P-(x,y,z)$ to be in the given line is that $AP$ is parallel to $OU$.
+
+This says that for some number $t$ we have
+
+$$\vec{AP}=t\vec{OU}$$
+
+and this says that
+
+$$(x-x_1,y-y_1,z-z_1)=t(abc)$$
+
+Maybe we might like to write this equation in this form
+
+$$\eqalign{x-x_1&=ta\cr
+		y-y_1&=tb\cr
+		z-z_1&=tc\cr}$$
+
+and this says that
+
+$$\eqalign{x&=x_1+at\cr
+		y&=y_1+bt\cr
+		z&=z_1+ct\cr}$$
+
+\filbreak
+\vfill\eject
+\bye

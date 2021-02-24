@@ -1,0 +1,36 @@
+\nopagenumbers
+{\bf Separable Equations}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+{\bf Separable Equation}: If the right-hand side of the equation
+
+$${dy\over dx}=f(x,y)$$
+
+can be expressed as a function $g(x)$ that depends only on $x$ times a function $p(y)$ that depends only on $y$, then the differential equation is called {\bf separable}. In other words, a first-order equation is separable if it can be written in the form
+
+$${dy\over dx}=g(x)p(y)$$
+
+\vskip 6pt
+{\bf Method for solving separable equations}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+To solve the equation
+$${dy\over dx}=g(x)p(y)$$
+
+multiply by $dx$ and by $h(y)\equiv 1/p(y)$ to obtain
+
+$$h(y)dy=g(x)dx$$
+
+Then integrate both sides:
+
+$$\eqalign{\int h(y)dy&=\int g(x)dx\cr
+		H(y)&=G(x)+C \cr}$$
+
+where we have merged the two constants of integration into a single symbol C. The last equation gives an implicit solution to the differential equation.
+
+\vfill\eject
+\bye

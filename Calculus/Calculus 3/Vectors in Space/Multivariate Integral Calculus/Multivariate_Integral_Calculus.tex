@@ -1,0 +1,924 @@
+\vskip 1cm
+{\bf Integration on Curves}
+
+\vskip 1mm
+{\bf Definition of a Smooth Curve}
+
+\vskip 1mm
+If $P$ is a curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $a\leq t \leq b$ then we say that $P$ is a {\bf smooth curve} in $R^3$ if its velocity $P'$ is continuous at every number $t$ in $[a,b]$. The same sort of definition can be given for smooth curves in the plane $R^2$.
+
+\filbreak
+\vskip 1cm
+{\bf Integrals of the Type} $\int_Pfdx,\int_Pfdy,$ and $\int_Pfdz$
+
+\vskip 1mm
+We suppose that $P$ is a smooth curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $a\leq t\leq b$ and this curve runs in a region of space on which a given function $f$ is continuous.
+
+\vskip 1mm
+We define the integral $\int_Pfdx$ by the equation
+$$\int_Pfdx=\int_a^bf\Bigl(x(t),y(t),z(t)\Bigr)x'(t)dt$$
+
+Thus
+
+$$\int_Pfdx=\int_a^bf\Bigl(x(t),y(t),z(t)\Bigr)x'(t)dt=\int_a^bf\Bigl(P(t)\Bigr)x'(t)dt$$
+
+and, in the same way, we define
+
+$$\int_Pfdy=\int_a^bf\Bigl(x(t),y(t),z(t)\Bigr)y'(t)dt=\int_a^bf\Bigl(P(t)\Bigr)y'(t)dt$$
+
+and
+
+$$\int_Pfdz=\int_a^bf\Bigl(x(t),y(t),z(t)\Bigr)z'(t)dt=\int_a^bf\Bigl(P(t)\Bigr)z'(t)dt$$
+
+\filbreak
+\vskip 1cm
+{\bf Example}
+
+\vskip 1mm
+We take $f(x,y,z)=xy+(xy+4z)^2$ and
+
+$$P(t)=(t,t^2,t^3)$$
+
+for $1\leq t \leq 7$
+
+$$\eqalign{\int_Pfdx&=\int_1^7\Bigl(tt^2(tt^2+4t^3)^2\Bigr)1dt={20,592,750\over 7}\cr
+	\int_Pfdy&=\int_1^7\Bigl(tt^2(tt^2+4t^3)^2\Bigr)2dt={180,183,612\over 5}\cr
+	\int_Pfdz&=\int_1^7\Bigl(tt^2(tt^2+4t^3)^2\Bigr)3dt\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Integrals of the Type} $\int_PF\cdot dP=\int_PF\cdot(dx,dy,dz)=\int_Pfdx+gdy+hdz$
+
+\vskip 1mm
+If $P$ is a smooth curve of the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $a\leq t\leq b$ and if this curve runs in a region of sace on which a given vector field $F=(f,g,h)$ is continuous, then we define
+
+$$\eqalign{\int_P\cdot dP&=\int_PF\cdot(dx,dy,dz)\cr
+			&=\int_P(f,g,h)\cdot(dx,dy,dz)\cr
+			&=\int_Pfdx+gdy+hdz\cr
+			&=\int_a^bf\Bigl(P(t)\Bigr)x'(t)dt+\int_a^bg\Bigl(P(t)\Bigr)y'(t)dt+\int_a^bh\Bigl(P(t)\Bigr)z'(t)dt\cr
+			&=\int_a^b\Biggl(f\Bigl(P(t)\Bigr)x'(t)+g\Bigl(P(t)\Bigr)y'(t)+h\Bigl(P(t)\Bigr)z'(t)\Biggr)dt\cr
+			&=\int_a^bF\Bigl(P(t)\Bigr)\cdot P'(t)dt\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Application to Work Done by a Force}
+
+\vskip 1mm
+Integrals of the type
+
+$$\int_PF\cdot dP$$
+
+are tailor-made for the description of work done by a force as it pushe a particle along a curve.
+
+\vskip 1mm
+We suppose that $F$ is a force.
+
+\vskip 1mm
+If the domain of $P$ runs from $t=a$ to $t=b$ then
+
+$$\eqalign{\int_PF\cdot dP&=\int_1^bF\Bigl(P(t)\Bigr)\cdot P'(t)dt\cr
+			&=\int_a^b\Bigl|\Bigl||F\Bigl(P(t)\Bigr)\Bigr|\Bigr|\Bigl|\Bigl|P'(t)\Bigr|\Bigr|\cos\theta(t)dt\cr}$$
+
+This is the amount of work that $F$ does as it pushes along the entire curve $P$.
+
+\filbreak
+\vskip 1cm
+{\bf Examples of Integrals on Smooth Curves}
+
+\vskip 1mm
+{\bf Example 1}
+
+\vskip 1mm
+In this example we consider the curve $P$ defined as
+
+$$P(t)=(t,3t,t^2)$$
+
+for $0\leq t \leq 1$
+
+\vskip 1mm
+So in this example we have
+
+$$\eqalign{x(t)=t\cr
+	y(t)=3t\cr
+	z(t)=t^2\cr}$$
+
+for each $t$
+
+\vskip 1mm
+If
+
+$$F(x,y,z)=(xy,yz,zx)$$
+
+then
+
+$$\eqalign{\int_PF\cdot dP&=\int_0^1(t3t,3tt^2,t^2t)\cdot(1,3,2t)dt\cr
+		&=\int_0^1\Bigl(3t^21+3t^33+t^32t\Bigr)dt\cr
+		&={73\over 20}}$$
+
+\filbreak
+\vskip 1cm
+{\bf Example 2}
+
+\vskip 1mm
+In this example, we want to work out the integral
+
+$$\int_PF\cdot dP$$
+
+given that
+
+$$F(x,y,z)=\Bigl({-y\over x^2+y^2},{-x\over x^2+y^2},0\Bigr)$$
+
+for each point $(x,y,z)$ that is not on the $z$-axis and given that
+
+$$P(t)=\Bigl(\cos(t),\sin(t),3\Bigr)$$
+
+for $0\leq t \leq 2\pi$
+
+$$\eqalign{\int_PF\cdot dP&=\int_0^{2\pi}\Biggl({-\sin(t)\over\cos^2(t)+\sin^2(t)},{\cos(t)\over\cos^2(t)+\sin^2(t)},0\Biggr)\Bigl(-\sin(t),\cos(t),-3\sin(3t)\Bigr)dt\cr
+		&=\int_0^{2\pi}\Biggl({-\sin(t)\over 1},{\cos(t)\over1},0\Biggr)\Bigl(-\sin(t),\cos(t),-3\sin(3t)\Bigr)dt\cr
+		&=\int_0^{2\pi}(-\sin(t),\cos(t),-3\sin(3t)dt\cr
+		&=2\pi}$$
+
+\filbreak
+\vskip 1cm
+{\bf Example 3}
+
+\vskip 1mm
+In this example we shall work out each of the two integrals $\int_PF\cdot dP$ and $\int_QF\cdot dQ$ given that
+
+$$F(x,y,z)=(xy,yz,zx)$$
+
+for each point $(x,y,z)$ and that
+
+$$P(t)=(t,t^2,t^3)$$
+
+and
+
+$$Q(t)=(t,t,t)$$
+
+for $0\leq t\leq 1$
+
+The message of this example is that an integral of the type $\int_PF\cdot dP$ depends on the actual formula for $P(t)$ and that it is not good enough to know only where the curve $P$ begins and where it ends.
+
+$$\eqalign{\int_PF\cdot dP&=\int_0^1(tt^2,t^2t^3,t^3t)\cdot(1,2t,3t^2)dt\cr
+			&=\int_0^1(5t^6+t^3)dt={27\over 28}\cr}$$
+
+$$\eqalign{\int_QF\cdot dQ&=\int_0^1(tt,tt,tt)\cdot(1,1,1)dt\cr
+			&=\int_0^13t^2dt=1\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Fundamental Theorem of Integrals of the Type} $\int_PF\cdot dP$
+
+\vskip 1mm
+We suppose that $F$ is a conservative vector fied of the form
+
+$$F(x,y,z)=\Bigl(f(x,y,z),g(x,y,z),h(x,y,z)\Bigr)$$
+
+on a set of points $(x,y,z)$ in a region in $R^3$ and we suppose that $P$ is a curve in this regionthat has the form
+
+$$P(t)=\Bigl(x(t),y(t),z(t)\Bigr)$$
+
+for $a\leq t\leq b$
+
+\vskip 1mm
+We are assuming that there is a real function $v$ whose gradient is $F$
+
+\vskip 1mm
+We are assuming that there is a function $v$ such that
+
+$$\eqalign{\Bigl({\partial v\over\partial x},{\partial v\over\partial y},{\partial v\over\partial z}\Bigr)&=F\cr
+	\Bigl({\partial v\over\partial x},{\partial v\over\partial y},{\partial v\over\partial z}\Bigr)&=(f,g,h)\cr}$$
+
+and this means that
+
+$$\eqalign{{\partial v\over\partial x}=f\cr
+		{\partial v\over\partial y}=g\cr
+		{\partial v\over\partial z}=h\cr}$$
+
+The fundamental theorem now tells us that, if we choose a potential $v$ for $F$, then
+
+$$\int_PF\cdot dP=v\Bigl(P(b)\Bigr)-v\Bigl(P(a)\Bigr)$$
+
+\vskip 1mm
+{\bf Proof}
+
+\vskip 1mm
+We define
+
+$$\varphi(t)=v\Bigl(P(t)\Bigr)=v\Bigl((x(t),y(t),z(t)\Bigr)$$
+
+for $a\leq t \leq b$ and we see from the chain rule that
+
+$$\varphi'(t)={\partial v\over\partial x}x'(t)+{\partial v\over\partial y}y'(t)+{\partial v\over\partial z}z'(t)$$
+
+In other words, $\varphi(t)$ is an antiderivative of
+
+$${\partial v\over\partial x}x'(t)+{\partial v\over\partial y}y'(t)+{\partial v\over\partial z}z'(t)$$
+
+and so
+
+$$\eqalign{\int_PF\cdot dP&=\int_a^b\Bigl({\partial v\over\partial x}x'(t)+{\partial v\over\partial y}y'(t)+{\partial v\over\partial z}z'(t)\Bigr)dt\cr
+			&=\Bigl[\varphi(t)\Bigr]_a^b\cr
+			&=\varphi(b)-\varphi(a)\cr
+			&=v\Bigl(P(b)\Bigr)-v\Bigl(P(a)\Bigr)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Path Independence of Integrals of Conservative Fields}
+
+\vskip 1mm
+{\bf Path Independence}
+
+\vskip 1mm
+We suppose that $F$ is conservative vector field on a region $\Omega$ in sace and that $P$ and $Q$ are both curves in $\Omega$ both running from a point $A$ to a point $B$. Choose a potential $v$ for $F$.
+
+$$\int_PF\cdot dP=v(B)-v(A)=\int_QF\cdot dQ$$
+
+\vskip 1mm
+{\bf What if the Curve is Closed?}
+
+\vskip 1mm
+We call a curve $P$ {\bf closed} if it begins and ends at the same point.
+
+\vskip 1mm
+We suupose that $F$ is conservative vector field on q region $\Omega$ in space and that $P$ is a {\bf closed} curve in $\Omega$
+
+\filbreak
+\vskip 1cm
+{\bf Integration of a Function of Two Variables}
+
+\vskip 1mm
+{\bf Iterated Integrals with Constant Limits of Integration}
+
+\vskip 1mm
+Suppose that we are given $a\leq b$ and $c\leq d$ and that $f(x,y)$ is defined whenever $a\leq x\leq b$ and $c\leq y \leq d$
+
+\filbreak
+\vskip 1cm
+{\bf Integrals of the Type} $\int_a^b\int_c^df(x,y)dydx$ and $\int_c^d\int_a^bf(x,y)dxdy$
+
+\vskip 1mm
+What should we mean by $\int_a^b\int_c^df(x,y)dydx$
+
+we mean
+
+$$\int_a^b\Biggl(\int_c^df(x,y)dy\Biggr)dx$$
+
+What should we mean by
+
+$$\int_c^d\int_a^bf(x,y)dxdy$$
+
+We mean
+
+$$\int_c^d\Biggl(\int_a^bf(x,y)dx\Biggr)dy$$
+
+\filbreak
+\vskip 1cm
+{\bf More General Iterated Integrals}
+
+\vskip 1mm
+We could have an iterated integral of the form
+
+$$\int_c^d\int_{a(y)}^{b(y)}f(x,y)dxdy$$
+
+\vskip 1mm
+We could also have an integral of the form
+
+$$\int_a^b\int_{c(y)}^{d(y)}f(x,y)dxdy$$
+
+The expression
+
+$$\int_{c(y)}^{d(y)\int_a^b}f(x,y)dxdy$$
+
+is meaningless.
+
+\filbreak
+\vskip 1cm
+{\bf The Fichtenholz Theorem}
+
+\vskip 1mm
+The Fichtenholz Theorem tells us that the equation
+
+$$\int_a^b\Biggl(\int_c^df(x,y)dy\Biggr)dx=\int_c^d\Biggl(\int_a^bf(x,y)dy\Biggr)dx$$
+
+will always hold when the limits of integration are constant and the integrals are ordinary Riemann integrals.
+
+\vskip 1mm
+In the event that the integrals may be improper, the equation
+
+$$\int_a^b\Biggl(\int_c^df(x,y)dy\Biggr)dx=\int_c^d\Biggl(\int_a^bf(x,y)dy\Biggr)dx$$
+
+still holds if the function $f$ is nonnegative and also holds if the integrals are absolutely convergent.
+
+\filbreak
+\vskip 1cm
+{\bf Integrals over Regions in} $R^1$
+
+\vskip 1mm
+{\bf Integrating on an Interval}
+
+\vskip 1mm
+We assume that $a$ and $b$ are real numbers and that $a\leq b$
+
+\vskip 1mm
+We suppose that $f$ is a function defined on $R$ and that $[a.b]$ is a given closed interval and we look at
+
+$$f_{[a,b]}(x)=\cases{f(x),& \hbox{if $a\leq x\leq b$}\cr
+		0& \hbox{if $x<a$ or $x>b$}\cr}$$
+
+Note that
+
+$$\int_{-\infty}^\infty f_{[a,b]}(x)dx=\int_{-\infty}^a0dx+\int_a^bf(x)dx+\int_b^\infty 0dx=\int_a^bf(x)dx$$
+
+\filbreak
+\vskip 1cm
+{\bf The General Case of a Region in} $R^1$
+
+\vskip 1mm
+If $S$ is a region of numbers $x$ in $R^1$ and $f$ is a given function defined on $S$ then we introduce a new fuction $f_S$, called {\bf truncate to $S$ of $f$} and which we define by the equation
+
+$$f_S=\cases{f(x)& \hbox{if $x\in S$}\cr
+		0& \hbox{if $x\not\in S$}}$$
+
+We now define
+
+$$\int_Sf(x)dx=\int_{-\infty}^\infty f_S(x)dx$$
+
+This integral looks improper but, as you will see from the examples that follow, it doesn't have to be improper.
+
+\vskip 1mm
+When $S=[a,b]$ we are saying that
+
+$$\int_{[a,b]}f(x)dx=\int_a^bf(x)dx=\int_{-\infty}^\infty f_S(x)dx$$
+
+\filbreak
+\vskip 1cm
+{\bf Another Example}
+
+\vskip 1mm
+We take
+
+$$S=[1,3]\cup[4,7]$$
+
+$$\eqalign{\int_Sf(x)dx&=\int_{-\infty}^1 0dx+\int_1^3f(x)dx+\int_3^4 0dx+\int_4^7f(x)dx+\int_7^\infty 0dx\cr
+		&=\int_1^3f(x)dx+\int_4^7f(x)dx}$$
+
+\filbreak
+\vskip 1cm
+{\bf Integrals over Regions in} $R^2$
+
+\vskip 1mm
+If $S$ is a region of numbers $x$ in $R^2$
+
+\vskip 1mm
+and $f$ is a given function defined on $S$ then we introduce a new function $f_S$, called {\bf truncate to $S$ of $f$} and which we define by the formula
+
+$$f_S(x,y)=\cases{f(x,y)&\hbox{if $(x,y)\in S$}\cr
+			0&\hbox{if $x\not\in S$}\cr}$$
+
+We now define the {\bf double integral} $\int\int_Sf(x,y)d(x,y)$ by the equation
+
+$$\int\int_Sf(x,y)d(x,y)=\int_{-\infty}^\infty\int_{-\infty}^\infty f_S(x,y)dxdy=\int_{-\infty}^\infty\int_{-\infty}^\infty f_S(x,y)dydx$$
+
+This integral looks improper but, as you will see from the exercises that follow, it doesn't have to be improper.
+
+\filbreak
+\vskip 1cm
+{\bf Approximating Double Integrals by Sums}
+
+\vskip 1mm
+The ability to approximate double integrals with sums that we are about to discuss plays an important role in the applications of these integrals in mathematics, science, economics and technology. The principla theorem that tells how to approximate a double integral with sums is known as {\bf Darboux's theorem} and this theorem is an analogue for double integrals of the Darboux theorem that appears in the optional Section 6.4.
+
+\vskip 1mm
+We shall not attempt to state Darboux's theorem precisely. We shall be content to say that, if $f$ is a continuous function on a region $S$ which is partitioned into non-overlapping subregions $S_1,S_2,S_3,\ldots,S_n$ and if we choose a point $(x_j,y_j)$ in each subregion $S_j$
+
+\vskip 1mm
+then we can make the sum
+
+$$\sum_{j=1}^nf(x_j,y_j)area(S_j)$$
+
+as close as we like to the integral
+
+$$\int\int_Sf(x,y)d(x,y)$$
+
+by taking a small enough number $r$ and requiring that every one of the sets $S_1,S_2,S_3,\ldots,S_n$ is small enough to fit inside a disk with radius $r$.
+
+\filbreak
+\vskip 1cm
+{\bf The Gamma and Beta Functions}
+
+\vskip 1mm
+{\bf Introducing the Gamma Function}
+
+\vskip 1mm
+{\bf Definition of the Gamma Function}
+
+\vskip 1mm
+If $a$ is any positive number then we define the value $\Gamma(a)$ of the {\bf gamma function} at $a$ to be improper integral
+
+$$\int_0^\infty a^{a-1}e^{-x}dx$$
+
+\filbreak
+\vskip 1cm
+{\bf Some Examples to Illustrate the Gamma Function}
+
+We work out $\Gamma(1)$
+
+$$\Gamma(1)=\int_0^\infty 1e^{-x}dx=\Bigl[-e^{x}\Bigr]_0^\infty=-(-1)=1$$
+
+\filbreak
+\vskip 1mm
+We work out $\Gamma(2)$
+
+$$\eqalign{\Gamma(2)&=\int_0^\infty x^{2-1}e^{-x}dx\cr
+		&=\int_0^\infty xe^{-x}dx\cr
+		&=\int_0^{\infty}(x)\Bigl({d\over dx}(-e^{-x})\Bigr)dx\cr
+		&=\Bigl[(x)(-e^{-x})\Bigr]_0^\infty-\int_0^{\infty}\Bigl({d\over dx}x\Bigr)\Bigl((-e^{-x})\Bigr)dx\cr
+		&=0-0-\int_0^{\infty}1\Bigl((-e^{-x})\Bigr)dx=1\cr}$$
+
+\filbreak
+\vskip 1mm
+We work out $\Gamma(3)$
+
+$$\eqalign{\Gamma(3)&=\int_0^\infty x^{3-1}e^{-x}dx=\int_0^\infty x^{2}e^{-x}dx\cr
+		&=\int_0^{\infty}(x^2)\Bigl({d\over dx}(-e^{-x})\Bigr)dx\cr
+		&=\Bigl[(x^2)(-e^{-x})\Bigr]_0^\infty-\int_0^{\infty}\Bigl({d\over dx}x^2\Bigr)\Bigl((-e^{-x})\Bigr)dx\cr
+		&=0-0+2\int_0^{\infty}xe^{-x}dx=1\cr
+		&=(2)\Gamma(2)=(2)(1)\cr}$$
+
+\filbreak
+\vskip 1mm
+We work out $\Gamma(4)$
+
+$$\eqalign{\Gamma(4)&=\int_0^\infty x^{4-1}e^{-x}dx=\int_0^\infty x^{3}e^{-x}dx\cr
+		&=\int_0^{\infty}(x^3)\Bigl({d\over dx}(-e^{-x})\Bigr)dx\cr
+		&=\Bigl[(x^3)(-e^{-x})\Bigr]_0^\infty-\int_0^{\infty}\Bigl({d\over dx}x^3\Bigr)\Bigl((-e^{-x})\Bigr)dx\cr
+		&=0-0+3\int_0^{\infty}x^2e^{-x}dx=1\cr
+		&=(3)\Gamma(3)=(3)(2)(1)\cr}$$
+
+If $n$ is any positive integer, then
+
+$$\Gamma(n)=(n-1)!$$
+
+\filbreak
+\vskip 1cm
+{\bf Some Elementary Facts about the Gamma Function}
+
+\vskip 1mm
+{\bf The Recurrence Formula}
+
+\vskip 1mm
+If $a$ is any positiv number then
+
+$$\Gamma(a+1)=a\Gamma(a)$$
+
+\filbreak
+\vskip 1mm
+{\bf Proof}
+
+$$\eqalign{\Gamma(a+1)&=\int_0^\infty x^{a+1-1}e^{-x}dx\cr
+			&=\int_0^\infty(x^a)\Bigl({d\over dx}(-e^{-x})\Bigr)dx\cr
+			&=\Bigl[(x^a)(-e^{-x})\Bigr]_0^\infty-\int_0^\infty\Bigl({d\over dx}x^a\Bigr)(-e^{-x})dx\cr
+			&=0-0+\int_0^\infty ax^{a-1}e^{-x}dx\cr
+			&=a\Gamma(a)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf The Gamma Function and Factorials}
+
+\vskip 1mm
+The fact that $\Gamma(1)=1$ and the recurrence formula $\Gamma(a+1)=a\Gamma(a)$ allows us to see that, if $n$ is any positive integer, then
+
+$$\Gamma(n)=(n-1)!$$
+
+\filbreak
+\vskip 1cm
+{\bf The Substitution} $x=t^2$
+
+\vskip 1mm
+In the definition
+
+$$\Gamma(a)=\int_0^\infty x^{a-1}e^{-x}dx$$
+
+we make the substitution $x=t^2$ (same as $t=\sqrt{x}$) and get $dx=2tdt$
+
+$$\eqalign{\Gamma(a)&=\int_0^\infty x^{a-1}e^{-x}dx\cr
+		&=\int_0^\infty(t^2)^{a-1}e^{-t^2}2tdt\cr
+		&=2\int_0^\infty t^{2a-1}e^{-t^2}dt\cr}$$
+
+
+\filbreak
+\vskip 1cm
+{\bf An Attempt Again to Find the Value of $\Gamma({1\over 2})$}
+
+$$\Gamma\Bigl({1\over 2}\Bigr)=2\int_0^\infty t^{2{1\over 2}-1}e^{-t^2}dt=2\int_0^\infty e^{-t^2}dt$$
+
+and we are stuck. This integral is hard but very important, especially in statistics.
+
+\filbreak
+\vskip 1cm
+{\bf The Beta Function}
+
+\vskip 1mm
+{\bf Definition of the Beta Function}
+
+\vskip 1mm
+The beta function is a function of two variables whose domain is the first quadrant. Whenever $a$ and $b$ are positive number, we define
+
+$$\beta(a.b)=\int_0^1t^{a-1}(1-t)^{b-1}dt$$
+
+\filbreak
+\vskip 1mm
+{\bf Some Examples to Illustrate the Beta Function}
+
+$$\beta(2,3)=\int_0^1t^1(1-t)^2dt={1\over 12}$$
+
+\filbreak
+\vskip 1cm
+{\bf Some Elementary Facts About the Beta Function}
+
+\vskip 1mm
+{\bf Symmetry of the Beta Function}
+
+\vskip 1mm
+We suppose that $a$ and $b$ are positive numbers.
+
+\filbreak
+\vskip 1mm
+{\bf The Substitution} $u=ct$
+
+\vskip 1mm
+We suppose that $a$ and $b$ are positive numbers.
+
+\vskip 1mm
+If $q$ is any positive number, we can make the substitution $u=qt$ in the integral
+
+$$\beta(a,b)=\int_0^1t{a-1}(1-t)^{b-1}dt$$
+
+This change of variable gives us
+
+$$\eqalign{\beta(a,b)&=\int_0^q\Bigl({u\over q}\Bigr)^{a-1}\Bigl(1-{u\over q}\Bigr)^{b-1}{1\over q}du\cr
+		&=\int_0^q\Bigl({u\over q}\Bigr)^{a-1} \Bigl({q-u\over q}\Bigr)^{b-1}{1\over q}du\cr
+		&={1\over q^{a-1+b-1+1}}\int_0^qu^{a-1}(q-u)^{b-1}du\cr}$$
+
+In other words
+
+$${1\over q^{a+b-1}}\int_0^qu^{a-1}(q-u)^{b-1}du$$
+
+\filbreak
+\vskip 1cm
+{\bf The Substitution} $t=\sin^2(\theta)$
+
+\vskip 1mm
+We suppose that $a$ and $b$ are positive numbers.
+
+\vskip 1mm
+If we make the substitution $\theta=arc\sin(\sqrt{t})$ which gives us $t=\sin^2(\theta)$ and $dt=2\sin(\theta)\cos(\theta)d\theta$, then we see that
+
+\filbreak
+\vskip 1cm
+{\bf The Value of $\beta\Bigl({1\over 2},{1\over 2}\Bigr)=\pi$}
+
+$$\beta\Bigl({1\over 2},{1\over 2}\Bigr)=2\int_0^{\pi\over 2}\sin^{2({1\over 2})-1}(\theta)\cos^{2({1\over 2})-1}(\theta)d\theta=\pi$$
+
+\filbreak
+\vskip 1cm
+{\bf The Relationship} $\Gamma(a)\Gamma(b)=\Gamma(a+b)\beta(a,b)$
+
+
+\filbreak
+\vskip 1cm
+{\bf Using This Relationship to Find} $\Gamma\Bigl({1\over 2}\Bigr)$
+
+$$\Gamma\Bigl({1\over 2}\Bigr)\Gamma\Bigl({1\over 2}\Bigr)=\Gamma\Bigl({1\over 2}+{1\over 2}\Bigr)\beta\Bigl({1\over 2},{1\over 2}\Bigr)=1\pi$$
+
+and so
+
+$$\Gamma\Bigl({1\over 2}\Bigr)=\sqrt{\pi}$$
+
+and now I can tell you from the equation
+
+$$\Gamma\Bigl({1\over 2}\Bigr)=2\int_0^\infty t^{2{(1\over 2)}-1}e^{-t^2}dt$$
+
+that
+
+$$\int_0^\infty e^{-t^2}dt={\sqrt{\pi}\over 2}$$
+
+
+\filbreak
+\vskip 1cm
+{\bf Proving the Equation} $\Gamma(a)\Gamma(b)=\Gamma(a+b)\beta(a,b)$
+
+$$\eqalign{\Gamma(a)\Gamma(b)&=\Gamma(a)\int_0^\infty y^{b-1}e^{-y}dy\cr
+				&=\int_0^\infty \Bigl(\Gamma(a)\Bigr)y^{b-1}e^{-y}dy\cr
+				&=\int_0^\infty\Bigl(x^{a-1}e^{-x}dx\Bigr)y^{b-1}e^{-y}dy\cr
+				&=\int_0^\infty\Bigl(\int_0^\infty x^{a-1}e^{-x}y^{b-1}e^{-y}\Bigr)dy\cr
+				&=\int_0^\infty\int_0^\infty x^{a-1}e^{-x}y^{b-1}e^{-y}dxdy\cr}$$
+
+and this is a repeated integral. In the inside we substitute $u=x+y$ giving $x=u-y$ and $dx=1du$ and we notice that, as $x$ runs from $0$ to $\infty$, the new variable $u$ runs from $y$ to $\infty$.
+
+\vskip 1mm
+Therefore
+
+$$\eqalign{\Gamma(a)\Gamma(b)&=\int_0^\infty\int_0^\infty(u-y)^{a-1}e^{-u+y}y^{b-1}e^{-y}1dudy\cr
+			&=\int_0^\infty\int_0^\infty(u-y)^{a-1}y^{b-1}e^{-u}dudy\cr}$$
+
+Now we interchange the order of integration and we see that
+
+$$\eqalign{\Gamma(a)\Gamma(b)&=\int_0^\infty\int_0^\infty(u-y)^{a-1}e^{-u+y}y^{b-1}e^{-y}1dydu\cr
+			&=\int_0^\infty e^{-u}\int_0^\infty(u-y)^{a-1}y^{b-1}dy\cr}$$
+
+
+Now recall the equation
+
+$$\beta(a,b)={1\over q^{a+b-1}}\int_0^qu^{a-1}(q-u)^{b-1}du$$
+
+and so
+
+$$\Gamma(a)\Gamma(b)=\int_0^\infty e^{-u}u^{a+b-1}\beta(a,b)=\beta(a,b)\Gamma(a+b)$$
+
+\filbreak
+\vskip 1cm
+{\bf A Hard Fact About Gamma Functions}
+
+\vskip 1mm
+Whenever $0<a<1$, we have the equation
+
+$$\Gamma(a)\Gamma(1-a)={\pi\over\sin(\pi a)}$$
+
+$$\eqalign{\Gamma\Bigl({1\over 2}\Bigr)\Gamma\Bigl({1\over 2}\Bigr)&={\pi\over\sin(\pi 2)}=\pi\cr
+	\Gamma\Bigl({1\over 4}\Bigr)\Gamma\Bigl({1\over 4}\Bigr)&={\pi\over\sin(\pi 4)}=\pi\sqrt{2}\cr
+	\Gamma\Bigl({1\over 3}\Bigr)\Gamma\Bigl({1\over 3}\Bigr)&={\pi\over\sin(\pi 3)}={2\pi\over\sqrt{3}}\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Polar Coordinates}
+
+\vskip 1mm
+{\bf Motivating the Change to Polars}
+
+\vskip 1mm
+We suppose that $S$ is a region of points $(x,y)$ in $R^2$ and that we change to polar coordinates
+
+$$\eqalign{x&=4\cos(\theta)\cr
+		y&=r\sin(\theta)\cr}$$
+
+and that $(x,y)$ runs once through the region $S$ as $(r,\theta)$ runs through a region $S^*$ in the $r,\theta$ plane.
+
+\vskip 1mm
+The area of the yellow region is called $E$ is
+
+$$(r_2-r_1)(\theta_2-\theta_1)$$
+
+This is $r_1$ times the area of the yellow rectangle called $E^*$
+
+$$\int_S\int f(x,y)d(x,y)=\int\int_{S^*}f\Bigl(r\cos(\theta),r\sin(\theta)\Bigr)rd(r,\theta)$$
+
+\filbreak
+\vskip 1cm
+{\bf Integration of a Function of Three Variables}
+
+\vskip 1mm
+{\bf Iterated Integrals with Constant Limits}
+
+\vskip 1mm
+Suppose that we are given $a_1\leq a_2$ and $b_1\leq b_2$ and $c_1\leq c_2$, and that $f(x,y,z)$ is defined whenever $a_1\leq x\leq a_2$ and $b_1\leq y\leq b_2$ and $c_1\leq z\leq c_2$
+
+\vskip 1mm
+The iterated integral
+
+$$\int_{a_1}^{a_2}\int_{b_1}^{b_2}\int_{c_1}^{c_2}f(x,y,z)dzdydx=\int_{a_1}^{a_2}\Biggl(\int_{b_1}^{b_2}\Biggl(\int_{c_1}^{c_2}f(x,y,z)dz\Biggr)dy\Biggr)dx$$
+
+\vskip 1mm
+{\bf More General Iterated Integrals}
+
+\vskip 1mm
+An example of a more general iterated integrals is
+
+$$\int_{a_1}^{a_2}\int_{b_1(x)}^{b_2(x)}\int_{a_3(x,y)}^{b_3(x,y)}f(x,y,z)dzdydx=\int_{a_1}^{a_2}\Biggl(\int_{b_2(x)}^{b_2(x)}\Biggl(\int_{a_3(xy)}^{b_3(x,y)}f(x,y,z)dz\Biggr)dy\Biggr)dx$$
+
+\filbreak
+\vskip 1cm
+{\bf Definition of the Integral over a Region in} $R^3$
+
+\vskip 1mm
+By analogy with our definition given in Section 12.2.8 of an integral over a region in $R^2$, we define the {\bf truncate} $f_S$ of a function to a region $S$ in $R^3$ by the formula
+
+$$f_S(x,y,z)=\cases{f(x,y,z)&\hbox{if $(x,y,z)\in S$}\cr
+			0&\hbox{if $(x.y.z)\not\in S$}}$$
+
+and we define the {\bf triple integral} $\int\int\int_Sf(x,y,z)d(x,y,z)$ by the equation
+
+$$\int\int\int_Sf(x,y,z)d(x,y,z)=\int_{-\infty}^\infty\int_{-\infty}^\infty\int_{-\infty}^\infty f_S(x,y,z)dxdydz$$
+
+and we can replace the iterated integrals
+
+$$\int_{-\infty}^\infty\int_{-\infty}^\infty\int_{-\infty}^\infty f_S(x,y,z)dxdydz$$
+
+by any one of the five integrals that can be obtained by changing the order of integration.
+
+\filbreak
+\vskip 1cm
+{\bf Darboux's Theorem}
+
+\vskip 1mm
+As we said in our discussion of {\bf Darboux's Theorem} for integrals over regions in $R^2$, we shall not attempt to state Darboux's Theorem precisely. We shall be content to say that, of $f$ is a continuous function on a region $S$ in $R^3$ which is partitioned into non-overlapping subregions $S_1.S_2.S_3,\ldots,S_n$ and if we choose a point $(x_j,y_j,z_j)$ in each subregion $S_j$,
+
+\vskip 1mm
+then we can make the sum
+
+$$\sum_{j=1}^nf(x,y,z)volume(S_j)$$
+
+as close as we like to the integral
+
+$$\int\int\int_Sf(x,y,z)d(x,y,z)$$
+
+by taking a small enough number $r$ and requiring that every one of the sets $S_1,S_2.S_3.\ldots,S_n$ is small enough to fit inside a ball with radius $r$.
+
+\filbreak
+\vskip 1cm
+{\bf Using a Triple Integral to Find Volume}
+
+\vskip 1mm
+Darboux's theorem allow us to conclude that, if $S$ is a region of points $(x,y,z)$ in $R^3$ then the colume of the region $S$ can be found by integrating the constant function $1$ on $S$. In other words
+
+$$volume(S)=\int\int\int_S1d(x,y,z)$$
+
+\filbreak
+\vskip 1cm
+{\bf Cost of Material}
+
+\vskip 1mm
+Suppose that $f(x,y,z)$ is the cost in dollars per cubic inch of a region $S$ at each point $(x,y,z)$. The integral
+
+$$\int\int\int_Sf(x,y,z)d(x,y,z)$$
+
+is the total value of the solid region $S$.
+
+\vskip 1mm
+Look at a Riemann sum:
+
+$$\int_{j=1}^nf(x_j,y_j,z_j)volume(S_j)$$
+
+approximates the total value in dollars of the solid region $S$.
+
+\filbreak
+\vskip 1cm
+{\bf Introucing the Sysmbols} $v_n(r)$
+
+\vskip 1mm
+We suppose that $r$ is a positive number.
+
+\vskip 1mm
+{\bf The Ball in Zero Dimensional Space}
+
+\vskip 1mm
+All we have is the origin $O$ and ball contains this single point and its zero dimensional "volume" is $1$
+
+$$v_0(r)=1$$
+
+\vskip 1mm
+{\bf The Ball in One Dimensional Space}
+
+\vskip 1mm
+This is the interval that runs from $-r$ to $r$
+
+\vskip 1mm
+The one dimensional "volume"' of this one-ball is the length of the interval and this is $2r$
+
+$$v_1(r)=2r$$
+
+\vskip 1mm
+{\bf The Ball in Two Dimensional Space}
+
+\vskip 1mm
+This is the disk inside the circle $x^2+y^2=r^2$
+
+\vskip 1mm
+And the two dimensional "volume" of this two-ball is $\pi r^2$
+
+$$v_2(r)=\pi r^2$$
+
+\filbreak
+\vskip 1mm
+{\bf The Ball in Three Dimensional Space}
+
+\vskip 1mm
+This is the ball of points $(x,y,z)$ inside the sphere
+
+$$x^2+y^2+z^2=r^2$$
+
+and we have seen the volume of the ball is ${4\over 3}\pi r^3$
+
+$$v_3(r)={4\over 4}\pi r^3$$
+
+\filbreak
+
+
+\filbreak
+\vskip 1cm
+{\bf Spherical Coordinates}
+
+\vskip 1mm
+{\bf Introduction to Spherical Coordinates}
+
+\vskip 1mm
+In the above figure we are looking at a point $P=(x,y,z)$ that lies above or below the point $Q=(x,y,0)$ in the $x,y$ plane.
+
+\vskip 1mm
+If $(x,y,0)$ has polar coordinates $r$ and $\theta$ then
+
+$$\eqalign{x&=r\cos(\theta)\cr
+	y&=r\sin(\theta)\cr}$$
+
+and to make $\theta$ unique we shall make $0\leq\theta<2\pi$
+
+\vskip 1mm
+We now introduce
+
+$$\rho=\sqrt{s^2+y^2+z^2}$$
+
+We introduce one more angle $\varphi$ as shown
+
+$$\eqalign{\rho&\geq 0\cr
+	0&\leq\theta<2\pi\cr
+	0&\leq\varphi\leq 180^\circ\cr}$$
+
+We call $\rho$ and $\varphi$ and $\theta$ {\bf spherical coordinates} for the point $P$
+
+$$\eqalign{x&=r\cos(\theta)=\rho\sin(\varphi)\cos(\theta)\cr
+	y&=r\sin(\theta)=\rho\sin(\varphi)\sin(\theta)\cr
+	z&=\rho\cos(\varphi)\cr}$$
+
+In $\triangle OQP$ we are seeing that
+
+$$\eqalign{{r\over\rho}\cr
+		{z\over\rho}&=\cos(\theta)\cr}$$
+
+$$\eqalign{x&=r\cos(\theta)=\rho\sin(\varphi)\cos(\theta)\cr
+	y&=r\sin(\theta)=\rho\sin(\varphi)\sin(\theta)\cr
+	z&=\rho\cos(\varphi)\cr}$$
+
+\filbreak
+\vskip 1cm
+{\bf Changing Integrals to Spherical Coordinates}
+
+\vskip 1mm
+The idea of changing an integral of the form
+
+$$\int\int\int_Sf(x,y,z)d(x,y,z)$$
+
+\vskip 1mm
+to spherical polar coordinates makes sense when we can identify a region that we shall call $S^*$ in $\rho,\varphi,\theta$ space in such a way that the equations
+
+$$\eqalign{x&=\rho\sin(\varphi)\cos*\theta)\cr
+		y&=\rho\sin(\varphi)\sin(\theta)\cr
+		z&=\rho\cos(\varphi)\cr}$$
+
+map the region $S^*$ to the region $S$
+
+\vskip 1mm
+The formula for changing to spherical polar coordinates tells us that
+
+$$\int\int\int_Sf(x,y,z)d(x,y,z)=\int\int\int_{S^*}f\Bigl(\rho\sin(\varphi)\cos(\theta),\rho\sin(\varphi)\sin(\theta),\rho\cos(\varphi)\Bigr)\rho^2\sin(\varphi)d(\rho,\varphi,\theta)$$.
+
+\filbreak
+\vskip 1cm
+{\bf Motivating the Change to Spherical Polar Coordinates}
+
+\vskip 1mm
+The volume of the little box is about
+
+$$(d\rho)(\rho d\varphi)(\rho\sin(\varphi) d\theta)=\rho^2\sin(\varphi)d\rho d\varphi d\theta$$
+
+%$$\vbox{\settabs 3 \columns
+%	\+ {\bf Quantity} & {\bf Letter Representation} & {\bf Units}\cr
+%	\+{}\cr
+%	\+Voltage Source & $ E$ &  volt$(V)$\cr
+%	\+{}\cr
+%	\+ Resistance & $ R$ &  ohm$(\omega)$\cr
+%	\+{}\cr
+%	\+ Inductance & $ R$ & henry$(H)$\cr
+%	\+{}\cr
+%	\+ Capacitance & $ C$ & farad$(F)$\cr
+%	\+{}\cr
+%	\+ Charge& $ q$ & coulomb$(C)$\cr
+%	\+{}\cr
+%	\+ Current& $ I$ & ampere$(A)$\cr}$$
+
+
+\vfill\eject
+\bye

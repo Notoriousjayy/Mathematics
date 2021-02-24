@@ -1,0 +1,16 @@
+\nopagenumbers
+{\bf Theorem 8.16}
+\vskip 6pt
+A graph $G$ is $2$-factorable {\it if and only if} $G$ is $r$-regular for some positive even integer $r$.
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+We have already observed that every $2$-factorable graph $r$-regular for some positive even integer $r$. Therefore, we need only establish the converse. Let $G$ be an $r$-regular graph, where $r=2k$ and $k \geq 1$. Without loss of generality, we may assume that $G$ is connected. By Theorem 6.1, $G$ is Eulerian and therefore contains an Eulerian circuit $C$. (Of course, a vertex of $G$ can appear more than once in $C$. In fact, each vertex of $G$ appears exactly $k$ times in $C$.)
+\vskip 1mm
+Let $V(G)= \lbrace v_1,v_2, \ldots ,v_n \rbrace$. We construct a bipartite graph $G$ with partite sets $$U= \lbrace u_1,u_2, \ldots ,u_n \rbrace \, and \, W= \lbrace w_1,w_2, \ldots , w_n \rbrace$$ where the vertices $u_i$ and $w_j(1 \leq i,j \leq n)$ are adjacent in $H$ if $v_j$ immediately follows $v_i$ on $C$. Since every vertex of $G$ appears exactly $k$ times in $C$, the graph $H$ is $k$-regular. By Theorem 8.15, $H$ is $1$-factorable and so $H$ can be factored into $k$ $1$-factors $F'_1,F'_2, \ldots , F'_k$.
+\vskip 1mm
+Next, we show each $1$-factor $F'_i(1 \leq i \leq k)$ of $H$ corresponds to a $2$-factor $F_i$ of $G$. Consider the $1$-factor $F'_1$, for example. Since $F'_1$ is a perfect matching of $H$, it follows that $E(F'_1)$ is an independt set of $k$ edges of $H$, say $$E(F'_1)= \lbrace u_1w_{i1} ,u_2w_{i2}, \ldots u_nw_{in} \rbrace$$ where the integers $i_1,i_2, \ldots i_n$ are the integers $1,2, \ldots ,n$ in some order and $i_j \neq j$ for each $j(1 \leq j \leq n)$. Suppose that $i_t=1$. Then the $1$-factor $F'_1$ gives rise to a cycle $C^{(1)}=(v_1,v_{i1}, \ldots , v_t, v_{i_t}=1)$. If $C^{(1)}$ has length $n$, then the Hamiltonian cycle $C^{(1)}$ of $G$ is a $2$-factor of $G$. If the length of $C^{(1)}$ is less than $n$, then there is a vertex of $v_{\ell}$ of $G$ that is not o $C^{(1)}$. Suppose that $i_s= \ell$. This gives rise to a second cycle $C^{(2)}= (v_{\ell},v_{i\ell}, \ldots ,v_{i_s}=v_{\ell})$. Continuing in this manner, we obtain a collection of pairwise vertex-disjoint cycles that contain each vertex of $G$ once, producing a $2$-factor $F_1$ of $G$. In general then, the $1$-factorization of $H$ into $1$-factors $F'_1,F'_2, \ldots , F'_k$ produces a $2$-factorization of $G$ into $2$-factors $F_1,F_2, \ldots , F_k$ as desired.
+
+
+
+\vfill\eject

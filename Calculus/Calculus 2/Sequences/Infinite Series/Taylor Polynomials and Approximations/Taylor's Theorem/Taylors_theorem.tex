@@ -1,0 +1,11 @@
+\nopagenumbers
+{\bf Theorem: Taylor's Theorem}
+\vskip 6pt
+If a function $f$ is diferrentiable through order $n+1$ in an interval $I$ containing $c$, then, for each $x$ in $I$, there exists $z$ between $x$ and $c$ such that $$f(x)=f(c)+f'(c)(x-c)+{f''(c)\over 2!}(x-c)^2+\ldots + {f^{(n)}(c)\over n!}(x-c)^n+R_n(x)$$ where $$R_n(x)={{f^{(n+1)(z)}\over (n+1)!}(x-c)^{n+1}}$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+To find $R_n(x)$, fix $x$ in $I(x\neq c$ and write $R_n(x)=f(x)-P_n(x)$, where $P_n(x)$ is the $n^{th}$ Taylor Polynomial for $f(x)$. Then let $g$ be a function of $t$ deined by $$g(t)=f(x)-f(t)-f'(t)(x-t)-\ldots - {f^{(n)}(t)\over n!}(x-t)^n-R_n(x){{(x-t)^{n+1}}\over (x-c)^{n+1}}$$ The derivative simplifies to $$g'(t)={f^{(n+1)}(t)\over n!}(x-t)^n+(n+1)R_n(x){(x-t)^n\over (x-c)^{n+1}}$$ for all $t$ between $c$ and $x$.
+\vskip 1mm
+Moreover, for a fixed $x$, $$g(c)=f(x)-[P_n(x)-R_n(x)]=f(x)-f(x)=0$$ and $$g(x)=f(x)-0-\ldots -0=f(x)=0$$ From Rolle's Theorem, Here is a number $z$ between $c$ and $x$ such that $g'(z)=0$. Substituting $z$ for $t$ in the equation for $g'(t)$ and then solving for $R_n(x)$, you obtain $$R_n(x)={{f^{(n+1)}(z)\over (n+1)!}(x-c)^{n+1}}$$ Finally, because $g(c)=0$, you have $$0=f(x)-f(c)-f'(c)(x-c)-\ldots-{f^{(n)}\over n!}(x-c)^n-R_n(x)$$ $$f(x)=f(c)+f'(c)(x-c)+\ldots+{f^{(n)}(c)\over n!}(x-c)^n+R(x)$$
+\vfill\eject

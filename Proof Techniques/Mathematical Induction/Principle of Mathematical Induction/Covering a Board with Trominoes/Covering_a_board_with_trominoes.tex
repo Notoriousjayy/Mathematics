@@ -1,0 +1,65 @@
+\nopagenumbers
+{\bf Theorem: Covering a Board with Trominoes}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+For any integer $n\geq 1$, if one square is removed from a $2^n\times 2^n$ checkerboard, the remaining squares can be completely covered by L-shaped trominoes.
+
+\vskip 10pt
+{\bf Proof (by mathematical induction)}
+
+\vskip 6pt
+Let the property $P(n)$ be the sentence
+
+\vskip 1mm
+\centerline{If any square is removed from a $2^n\times 2^n$ checkerboard,}
+
+\vskip 1mm
+\centerline{then the remaining squares can be completely covered.}
+
+\vskip 1mm
+\centerline{by L-shaped trominoes.}
+
+\vskip 6pt
+{\bf Show that $P(1)$ is true};
+
+\vskip 1mm
+A $2^1\times 2^1$ chekerboard just consists of any four squares. If one square is removed, the remaining squares form an L, which can be covered by a single L-shaped tromino. Hence $P(1)$ is true.
+
+\vskip 1pc
+{\bf Show that for all integers $k\geq 1$, if $P(k)$is true then $P(k+1)$ is also true}:
+
+\vskip 1mm
+[Suppose that $P(k)$ is true for a particular but arbitrarily chosen integer $k\geq 3$. That is:] Let $k$ be any integer such that $k\geq 1$, and suppose that
+
+\vskip 1mm
+\centerline{If any square is removed from a $2^n\times 2^n$ checkerboard,}
+
+\vskip 2mm
+\centerline{then the remaining squares can be completely covered. $\quad\quad\quad\quad\quad\quad\quad\longleftarrow P(k)$}
+
+\vskip 1mm
+\centerline{by L-shaped trominoes.}
+
+\vskip 3mm
+$P(k)$ is the inductive hypothesis.
+
+\vskip 1mm
+[We must show that $P(k+1)$ is true, That is:] We must show that
+
+\vskip 2mm
+\centerline{If any square is removed from a $2^{k+1}\times 2^{k+1}$ checkerboard,}
+
+\vskip 1mm
+\centerline{then the remaining squares can be completely covered. $\quad\quad\quad\quad\quad\quad\quad\longleftarrow P(k+1)$}
+
+\vskip 1mm
+\centerline{by L-shaped trominoes.}
+
+\vskip 3mm
+Consider a $2^{k+1}\times 2^{k+1}$ checkerboard with one square removed. Divide it into four equal quadrants. Each will consist of a $2^{k+1}\times 2^{k+1}$ checkerboard. In one of the quadrants, one square will have been removed, and so, by inductive hypothesis, all the remaining squares in this quadrant can be completely covered by L-shaped trominoes. The other three quadrants meet at the center of the checkerboard, and the center of the checkerboard serves as a corner of a square from each of those quadrants. An L-shaped tromino can, therefore, be placed on those three central squares. By inductive hypoyhesis, the remaining squares in each of the three quadrants can be ompletely covered by L-shaped trominoes. Thus every square in the $2^{k+1}\times 2^{k+1}$ checkerboard except the one that was removed can be completely covered by L-shaped trominoes.
+
+
+
+\vfill\eject

@@ -1,0 +1,11 @@
+\nopagenumbers
+{\bf Theorem: Convergence of a Geometric Series}
+\vskip 6pt
+A geometric series with ratio $r$ diverges when $|r| \geq 1$. If $|r|<1$, then the series converges to the sum $$\sum_{n=0}^\infty ar^n={a \over 1-r}, \, |r|<1$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+The series diverges when $r \pm 1$. If $r\neq \pm 1$, then $$S_n=a+ar+ar^2+\ldots +ar^{n-1}$$. Multiplying by $r$ yields $$rS_n=ar+ar^2+ar^3+ \ldots ar^n$$ Subtracting the second equation from the first produces $S_n-rS_n=a-ar^n$. Therefore, $S_n(1-r)=a(1-r^n)$, and the $n^{th}$ partial sum is $$S_n={a \over 1-r}(1-r^n)$$ When $|r|<1$, it follows that $r^n\to 0$ as $n\to \infty$, and you obtain $$\lim_{n\to\infty}S_n=\lim_{n\to\infty}\biggl\lbrace {a \over 1-r}(1-r^n \biggr\rbrace = {a\over 1-r} \biggl\lbrace \lim_{n\to\infty}(1-r^n) \biggr\rbrace ={a\over 1-r}$$ which means that the series {\it converges} and its sum is ${a \over (1-r)}$.
+
+
+\vfill\eject

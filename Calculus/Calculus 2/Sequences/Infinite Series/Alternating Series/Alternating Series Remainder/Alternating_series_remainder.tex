@@ -1,0 +1,18 @@
+\nopagenumbers
+{\bf Theorem: Alternating Series Remainder}
+\vskip 6pt
+If a convergent alternating series satisfies the condition $a_{n+1} \leq a_n$, then the absolute value of the remainder $R_N$ involved in approximating the sum $S$ by $S_N$ is less than (or equal to) the first neglected term. That is, $$|S-S_N|=|R_N| \leq a_{N+1}$$
+\vskip 10pt
+{\bf Proof:}
+\vskip 6pt
+The series obtained by deleting the first $N$ terms of the given series satisfies the conditions of the Alternating Series Test and has a sum of $R_N$.
+$$R_N=S-S_N=\sum_{n=1}^\infty(-1)^{n+1}a_n-\sum_{n=1}^N(-1)^{n+1}a_n$$
+$$=(-1)^Na_{n+1}+(-1)^{N+1}a_{N+2}+(-1)^{N+2}a_{N+3}+\ldots$$
+$$=(-1)^N(a_{N+1}-a_{N+2}+a_{N+3}-\ldots)$$
+$$|R_N|=a_{N+1}-a_{N+2}+a_{N+3}-a_{N+4}+a_{N+5}-\ldots$$
+$$=a_{N+1}-(a_{N+2}-a_{N+3})-(a_{N+4}-a_{N+5})-\ldots$$
+Consequently, $|S-S_N|=|R_N|\leq a_{N+1}$.
+
+
+
+\vfill\eject

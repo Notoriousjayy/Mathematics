@@ -1,0 +1,34 @@
+\nopagenumbers
+{\bf Theorem: Quotient-Remainder Theorem (Existence Part)}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+Given any integer $n$ and any positive integer $d$, there exists integers $q$ and $r$ such that 
+
+\vskip 10pt
+{\bf Proof }
+
+\vskip 6pt
+Let $S$ be the set of all non-negative integers of the form
+
+$$n-dk$$
+
+where $k$ is an integer. This set has at least one element. [For if $n$ is non-negative, then $$n-0\cdot d=n\geq 0$$ and so $n-0\cdot d$ is in $S$. And if $n$ is negative, then $$n-nd=n(1-d)\geq 0$$ and so $n-nd$ is in $S$.] It follows by the well-ordering principle for the integers that $S$ contains a least element $r$. Then, for some specific integer $k=q$,
+
+$$n-d1=r$$
+
+[because every integer in $S$ can be written in this form]. Adding $dq$ to both sides gives
+
+$$n=dq+r$$
+
+Furthermore, $r<d$. [ For suppose $r\geq d$. Then
+
+$$n-d(q+1)=n-dq-d=r-d\geq 0$$
+
+and so $n-d(q+1)$ would be a non-negative integer in $S$ that would be smaller than $r$. But $r$ is the smallest integer in $S$. This contradiction shows that the supposition $r\geq d$ must be false.] The preceding arguments prove that there exists integers $r$ and $q$ for which
+
+$$n=dq+r \quad\hbox{and}\quad 0\leq r < d$$
+
+
+\vfill\eject

@@ -1,0 +1,35 @@
+\nopagenumbers
+{\bf Theorem: Properties of Matrixs Multiplication}
+\vskip 1mm
+\hrule
+
+\vskip 6pt
+
+If $A,B$ and $C$ are matrices (with sizes such that matrix produts are defined), and $c$ is scalar, then the properties below are true.
+
+\vskip 10pt
+1. $A(BC)=(AB)C$\quad\quad\quad\quad\quad\quad\quad\quad Associative Property of Multiplication
+
+\vskip 6pt
+2. $A(B+C)=AB+AC$\quad\quad\quad\quad\quad$\,$ Distributive Property
+
+\vskip 6pt
+3. $(A+B)C=AB+AC$\quad\quad\quad\quad\quad\quad Distributive Property
+
+\vskip 6pt
+4. $c(AB)=(cA)B=A(cB)$
+
+\vskip 10pt
+{\bf Proof}
+
+\vskip 6pt
+To prove property 2, show that corresponding entries of matrices $A(B+C)$ and $AB+AC$ are equal. Assume $A$ has size $m\times n$, $B$ has size $n\times p$, and $C$ has size $n\times p$. Using the definition of matrix multiplication, the entry in the $i^{th}$ row and $j^{th}$ column of $A(B+C)$ is $a_{i1}(b_{1j}+c_{1j})+a_{i2}(b_{2j}+c_{2j})+\cdots+a_{in}(b_{nj}+c_{nj})$. Moreover, the entry in the $i^{th}$ row and $j^{th}$ column of $AB+AC$ is
+
+$$(a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots+a_{in}b_{nj})+(a_{i1}c_{1j}+a_{i2}c_{2j}+\cdots+a_{in}c_{nj})$$
+
+By distributing and regrouping, you can see that these two $ij^{th}$ entries are equal. So,
+
+$$A(B+C)=AB+AC$$
+
+\vfill\eject
+\bye

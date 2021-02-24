@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Example 3:} Suppose $v(t)$ satisfies the initial value problem
+
+$${dv\over dt}=-3-2v^2,\quad v(0)=2$$ 
+
+By experimenting with Euler's method, determine to within one decimal place $(\pm 0.1)$ the value of $v(0.2)$ and the time it will take $v(t)$ to reach zero.
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Determining rigorous estimates of the accuracy of the answers obtained by Euler's method can be quite a challenging problem. The common practice is to repeatedly approximate $v(0.2)$ and the zero crossing, using smaller and smaller values of $h$, until the digits of the computed vaues stabilize at the required accuracy level. For this example, Euler's algorithm yields the following values:
+
+$$\vbox{\settabs 4 \columns
+	\+$h=0.1$& $v(0.2)\approx 0.4380$&$v(0.3)\approx 0.0996$& $v(0.4)\approx -0.2024$\cr
+	\+$h=0.05$& $v(0.2)\approx 0.6036$&$v(0.35)\approx 0.0935$& $v(0.4)\approx -0.0574$\cr
+	\+$h=0.025$& $v(0.2)\approx 0.6659$&$v(0.375)\approx 0.0750$& $v(0.4)\approx -0.0003$\cr
+	\+$h=0.0125$& $v(0.2)\approx 0.6938$\cr
+	\+$h=0.00625$& $v(0.2)\approx 0.7071$\cr}$$
+
+Ackknowledging the remote possibility that finer values of $h$ might revel aberrations, we state with reasonable confidence that $v(0.2)=0.7\pm 0.1$. The Intermediate Value Theorem would imply that $v(t_0)=0$ at some time $t_0$ satisfying $0.375<t_0<0.4$, if the computations were perfect; they clearly provide evidence that $t_0=0.4\pm 0.1$
+
+\vfill\eject
+\bye

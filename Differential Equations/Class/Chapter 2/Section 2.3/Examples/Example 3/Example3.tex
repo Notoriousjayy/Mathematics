@@ -1,0 +1,34 @@
+\nopagenumbers
+{\bf Example 3:} For the initial value problem
+
+$$y'+y=\sqrt{1+\cos^2(x)},\quad y(1)=4$$
+
+find the value of $y(2)$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+The intergrating factor for the differential equation is, from $\mu(x)=e^{\int P(x)\,dx}$
+
+$$\mu(x)=e^{\int 1dx}=e^x$$
+
+The general solution from $y(x)={1\over\mu(x)\Bigl[\int\mu(x)Q(x)dx+C\Bigr]}$ thus reads
+
+\vskip 3mm
+$$y(x)=e^{-x}\Bigl(\int e^x\sqrt{1+\cos^2(x)}dx+C\Bigr)$$
+
+and take the definite integral from the initial value $x=1$ to the desired value $x=2$:
+
+$$e^xy\bigg\vert^{x=2}_{x=1}=e^2y(2)-e^1y(1)=\int^{x=2}_{x=1}e^x\sqrt{1+\cos^2(x)}dx$$
+
+Inserting the given value of $y(1)$ and solving, we express
+
+$$y(2)=e^{-2+1}(4)+e^{-2}\int^2_1e^x\sqrt{1+\cos^2(x)}dx$$
+
+Using Simpson's Rule, we find that the definite integral is approximately $4.841$, so
+
+$$y(2)\approx 4e^{-1}+4.841e^{-2}\approx 2.127$$
+
+\vfill\eject
+\bye

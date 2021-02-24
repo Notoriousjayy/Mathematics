@@ -1,0 +1,24 @@
+\nopagenumbers
+{\bf Example 1:} Solve the differential equation
+
+$${dy\over dx}={2xy^2+1\over 2x^2y}$$
+
+\vskip 10pt
+{\bf Solution}
+
+\vskip 6pt
+Some of the choices of differential forms corresponding to this equation are
+
+$$\eqalign{(2xy^2+1)dx+2x^2y\,dy&=0\cr
+	{2xy^2+1\over 2x^y}dx+dy&=0\cr
+	dx+{2x^2y\over 2xy^2+1}dy&=0\cr}$$
+
+However, the firt form is best for our purposes because it is a total differential of the function $F(x,y)=x^2y^2+x$:
+
+$$\eqalign{(2xy^2+1)dx+2x^2y\,dy&=d\bigl[x^2y^2+x\bigr]\cr
+	&={\partial\over\partial x}(x^2y^2+x)dx+{\partial\over\partial y}(x^2y^2+x)dy\cr}$$
+
+Thus, the solutions are given implicitly by the formula $x^2y^2+x=C$
+
+\vfill\eject
+\bye
